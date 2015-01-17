@@ -1,0 +1,44 @@
+#background-pic
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background: url(http://codeformuenster.org/img/prinzipalmarkt15-grau.jpg)
+  background-size: cover
+  background-position: right
+  z-index: -1
+.page-content
+  padding-top: 100px
+#main
+  @include outer-container()
+  .wrapper
+    @include span-columns(10)
+    margin-top: 2em
+    h1
+      color: white
+      font-size: 90px
+      letter-spacing: 1px
+      text-shadow: 2px 2px 5px black
+      padding-top: 0px
+      padding-bottom: 0
+      margin-bottom: 0
+      @media screen and (max-width: 1200px)
+        font-size: 70px
+        line-height: 80px
+      @media screen and (max-width: 900px)
+        font-size: 40px
+        line-height: 50px
+      @media screen and (max-width: 480px)
+        text-align: left
+        font-size: 35px
+        line-height: 60px
+    h3
+      color: white
+      text-shadow: 2px 2px 5px black
+      font-size: 40px
+      letter-spacing: 4px
+      text-transform: uppercase
+      margin-top: 0px
+      padding-top: 0
+      font-weight: bold
