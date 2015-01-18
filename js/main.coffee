@@ -4,7 +4,7 @@
 getVenueFromResult = (result) ->
   venue = ""
   if result.venue and result.venue.name
-    venue = result.venue.name
+    venue = "Ort: #{result.venue.name}"
     latLng = [
       result.lat
       result.lon
