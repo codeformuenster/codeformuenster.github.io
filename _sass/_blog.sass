@@ -1,17 +1,16 @@
 .blog
+  background: #E2F7CE
   h2 a
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4)
-  #page
-    width: 960px
-    margin: 120px auto 0
+  .wrapper
+    @include outer-container()
     li a
       font-weight: normal
       font-size: 1.1em
       text-shadow: none
       font-weight: 600
-  .page
-    padding: 20px
     ul
+      padding: 20px
       li
         color: #444
         padding: 10px
@@ -26,6 +25,7 @@
           margin-top: 5px
           color: #323232
   .post
+    @include outer-container()
     background: #909A92
     padding: 20px 40px
     text-shadow: none

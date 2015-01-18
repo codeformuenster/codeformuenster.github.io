@@ -1,15 +1,20 @@
 ---
 layout: default
+page_class: blog
+category: blog
 ---
-<div class="post">
+<div class="wrapper">
+  <h2>Geschichten aus Münster</h2>
+  <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    <header class="post-header">
+      <div class="date">{{page.date || date: "%d.%m.%Y"}} | {{page.author}}</div>
+      <h2 class="post-title">{{ page.title }}</h2>
+    </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+    <article class="post-content">
+      {{ content }}
+    </article>
 
+  </div>
 </div>
