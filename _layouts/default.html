@@ -3,10 +3,12 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{{page.page_class}}">
 
     {% include header.html %}
-    <div id="background-pic"></div>
+    {% if page.url == '/index.html' %}
+      <div id="background-pic"></div>
+    {% endif %}
     <div class="page-content">
       {{ content }}
     </div>
