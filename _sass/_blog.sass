@@ -1,17 +1,16 @@
 .blog
+  background: #E2F7CE
   h2 a
     text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4)
-  #page
-    width: 960px
-    margin: 120px auto 0
+  .wrapper
+    @include outer-container()
     li a
       font-weight: normal
       font-size: 1.1em
       text-shadow: none
       font-weight: 600
-  .page
-    padding: 20px
-    ul
+    ul.posts
+      padding: 20px
       li
         color: #444
         padding: 10px
@@ -26,14 +25,40 @@
           margin-top: 5px
           color: #323232
   .post
+    @include outer-container()
     background: #909A92
     padding: 20px 40px
     text-shadow: none
     color: #444
+    margin: 0.8em 0
     h1, h2, h3
-      margin: 15px 0
+      margin: 0.75em 0
       color: #323232
+    h4
+      margin: 0 0 0.75em
     p
-      font-weight: 600
-      line-height: 40px
-      margin-bottom: 50px
+      margin: 0 0 1.5em
+    ul
+      margin: 0 0 1.5em
+      list-style: circle
+      list-style-position: inside
+  .pagination
+    a
+      color: #333
+      font-size: 0.9em
+      &:hover
+        color: #777
+        text-decoration: underline
+    width: 100%
+    +clearfix
+    margin: 1em 0
+    .prev
+      float: left
+      +media($mobile)
+        float: none
+        text-align: center
+    .next
+      float: right
+      +media($mobile)
+        float: none
+        text-align: center
