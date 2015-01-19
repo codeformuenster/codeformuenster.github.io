@@ -1,0 +1,35 @@
+---
+layout: default
+title: Code for Münster
+page_class: about-us
+---
+<div class="wrapper">
+  <div id="about-us">
+    <div class="text">
+      <h2>Wer sind wir?</h2>
+      <p>Wir sind Teil des <a href="http://codefor.de">Code for Germany</a> Netzwerkes ins Leben gerufen von der <a href="http://okfn.de">Open Knowledge Foundation</a> Deutschland. Code for Germany ist der deutsche Teil des <a href="http://codeforall.org">Code for All</a> Netzwerkes, welches von <a href="http://codeforamerica.org">Code for America</a> ins leben gerufen wurde. In Deutschland sind aktuell 13 so genannte OK Labs Anfang 2014 gegründet worden. In Münster haben Mila und Daniel die Initiative gestartet und seit dem Open Data Day sind ca 10 Mitstreiter aus verschiedenen Unternehmen und Hintergründen aktiv. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studenten kommen die Mehrzahl vom <a href="http://ifgi.uni-muester.de">Institut für Geoinformatik.</a></p>
+      <h2>Was machen wir?</h2>
+      <p>Wir wollen in Münster den Bürgern bessere Möglichkeiten zur Verfügung stellen sich zu informieren und zu beteiligen. Darüber hinaus wollen wir der Stadtverwaltung und Politikern helfen besser und direkter mit den Bürger zu kommunizieren und deren Feedback zu bekommen.</p>
+    </div>
+    <div class="leads">
+      <h3>Leads/Köpfe</h3>
+      <ul>
+        {% for lead in site.data.members.leads %}
+        <li>
+          {{lead.name}}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="members">
+      <h3>Mitglieder</h3>
+      <ul>
+        {% for member in site.data.members.members %}
+        <li>
+          {{member.name}}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
