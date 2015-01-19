@@ -6,7 +6,7 @@
   <body class="{{page.page_class}}">
 
     {% include header.html %}
-    {% if page.url == '/index.html' %}
+    {% if page.page_class != 'blog' %}
       <div id="background-pic"></div>
     {% endif %}
     <div class="page-content">
