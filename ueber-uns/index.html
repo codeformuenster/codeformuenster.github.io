@@ -7,7 +7,7 @@ page_class: about-us
   <div id="about-us">
     <div class="text">
       <h2>Wer sind wir?</h2>
-      <p>Wir sind Teil des <a href="http://codefor.de">Code for Germany</a> Netzwerkes ins Leben gerufen von der <a href="http://okfn.de">Open Knowledge Foundation</a> Deutschland. Code for Germany ist der deutsche Teil des <a href="http://codeforall.org">Code for All</a> Netzwerkes, welches von <a href="http://codeforamerica.org">Code for America</a> ins leben gerufen wurde. In Deutschland sind aktuell 13 so genannte OK Labs Anfang 2014 gegründet worden. In Münster haben Mila und Daniel die Initiative gestartet und seit dem Open Data Day sind ca 10 Mitstreiter aus verschiedenen Unternehmen und Hintergründen aktiv. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studenten kommen die Mehrzahl vom <a href="http://ifgi.uni-muester.de">Institut für Geoinformatik.</a></p>
+      <p>Wir sind Teil des <a href="http://codefor.de" target="_blank">Code for Germany</a> Netzwerkes ins Leben gerufen von der <a href="http://okfn.de" target="_blank">Open Knowledge Foundation</a> Deutschland. Code for Germany ist der deutsche Teil des <a href="http://codeforall.org" target="_blank">Code for All</a> Netzwerkes, welches von <a href="http://codeforamerica.org" target="_blank">Code for America</a> ins leben gerufen wurde. In Deutschland sind aktuell 13 so genannte OK Labs Anfang 2014 gegründet worden. In Münster haben Mila und Daniel die Initiative gestartet und seit dem Open Data Day sind ca 10 Mitstreiter aus verschiedenen Unternehmen und Hintergründen aktiv. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studenten kommen die Mehrzahl vom <a href="http://ifgi.uni-muester.de" target="_blank">Institut für Geoinformatik.</a></p>
       <h2>Was machen wir?</h2>
       <p>Wir wollen in Münster den Bürgern bessere Möglichkeiten zur Verfügung stellen sich zu informieren und zu beteiligen. Darüber hinaus wollen wir der Stadtverwaltung und Politikern helfen besser und direkter mit den Bürger zu kommunizieren und deren Feedback zu bekommen.</p>
     </div>
@@ -17,6 +17,16 @@ page_class: about-us
         {% for lead in site.data.members.leads %}
         <li>
           {{lead.name}}
+          {% if lead.twitter %}
+            <a href="http://twitter.com/{{lead.twitter}}" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          {% endif %}
+          {% if lead.github %}
+            <a href="http://github.com/{{lead.github}}" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
@@ -27,6 +37,16 @@ page_class: about-us
         {% for member in site.data.members.members %}
         <li>
           {{member.name}}
+          {% if member.twitter %}
+            <a href="http://twitter.com/{{member.twitter}}" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          {% endif %}
+          {% if member.github %}
+            <a href="http://github.com/{{member.github}}" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
