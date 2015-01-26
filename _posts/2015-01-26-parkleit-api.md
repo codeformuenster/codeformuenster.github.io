@@ -1,3 +1,9 @@
+---
+layout: post
+title: Parkleitsystem-API
+author: Gerald Pape
+category: blog
+---
 Wer schon einmal ein bisschen auf muenster.de herumgesurft hat, ist sicherlich schon auf das [Parkleitsystem](http://www5.stadt-muenster.de/parkhaeuser/) des Tiefbauamtes Münster gestoßen. Das System erlaubt es seinen Nutzern die aktuell freien Parkplätze für insgesamt 16 Parkplätze, Parkhäuser und Tiefgaragen in Münsters Innenstadt abzurufen.
 
 Dafür allein schon mal ein großes Lob. Es ist nicht selbstverständlich diese Daten frei verfügbar im Internet bereit zu stellen. Auf einer statischen Karte kann der geneigte Nutzer zudem die Standorte der Parkmöglichkeiten sehen. Zusätzlich können über Popups weitere Daten zu den einzelnen Standorten angezeigt werden. Diese umfassen Öffnungszeiten, Preise und Behinderten- und Frauenparkplätze.
