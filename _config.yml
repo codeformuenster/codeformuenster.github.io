@@ -11,7 +11,28 @@ url: "codeformuenster.org" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
+keywords:
+  - "Münster"
+  - "Open Data"
+  - "Offene Daten"
+  - "Code"
+  - "Code for Münster"
+  - "E-Government"
+  - "Transparenz"
+  - "Bürgerbeteiligung"
+  - "Stadtentwicklung"
+  - "Visualisierung"
+  - "Stadt"
 
 collections:
   projekte:
       output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "blog"
