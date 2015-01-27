@@ -27,3 +27,12 @@ keywords:
 collections:
   projekte:
       output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "blog"

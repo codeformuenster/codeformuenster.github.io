@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Parkleitsystem-API
 author: Gerald Pape
 twitter: "@ubergesundheit"
-category: blog
 keywords:
   - "Parkleitsystem"
 ---
