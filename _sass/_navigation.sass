@@ -96,11 +96,17 @@ header.navigation
       line-height: $navigation-height
       text-decoration: none
       width: auto
+    +media($tablet)
+      line-height: $navigation-height / 1.5
+      border-bottom: 1px solid #ccc
 
     a
       color: $navigation-color
       display: inline-block
       font-weight: 400
+      +media($tablet)
+        padding-right: 1em
+        width: 100%
       +media($horizontal-bar-mode)
         padding-right: 1em
 
