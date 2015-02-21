@@ -1,9 +1,10 @@
 #next-meetup
   @include span-columns(5)
   @include shift(3)
-  margin-top: 40px
-  margin-bottom: 20px
-  +clearfix
+  margin: 0 auto
+  float: none
+  @media screen and (max-width: 600px)
+    @include span-columns(10)
   #date
     text-align: center
     border: 3px solid #fff

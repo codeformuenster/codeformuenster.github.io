@@ -16,21 +16,24 @@ This site is build using jekyll.
 
     sudo gem install jekyll
     sudo gem install rdiscount
+    sudo gem install bundler
+
+Install dependencies:
+
+    bundle install
 
 ### Change Stylesheets
 
-Compile the SASS code manually:
+The stylesheets are written in SASS/SCSS and are found in folder `_sass`. After changing the code you must compile manually to CSS with:
 
     compass compile
 
-Add the "watch" parameter to automatically recompile after saving a file:
-
-    compass watch
+Or run `compass watch` to automatically recompile after saving a file. If you intend to run the webserver as well, you don't need to compile the SASS code by hand. It is then managed by `bundler`/`jekyll`.
 
 ### Run
 
 Compiles the page after saving a code change:
 
-    jekyll serve --watch
+    bundle exec jekyll serve
 
 The website is now available at http://localhost:3000
