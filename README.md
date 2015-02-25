@@ -8,7 +8,7 @@ differently.)
 * Install [Docker](https://docs.docker.com/installation/#installation) and [Fig](http://www.fig.sh/).
 * Then run: `sudo fig up`
 
-The website is now available at [http://localhost:4000](http://localhost:4000). Posts and stylesheets will automatically be recompiled on change.
+The website is now available at [http://localhost:3340](http://localhost:3340). Posts and stylesheets will automatically be recompiled on change.
 
 ## Non-Docker Install
 

@@ -1,0 +1,6 @@
+app:
+  build: .
+  volumes:
+    - .:/usr/src/app
+  ports:
+    - 3340:4000
