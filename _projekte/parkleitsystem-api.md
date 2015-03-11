@@ -3,7 +3,7 @@ title: Parkleitsystem API Münster
 status: Abgeschlossen
 github: parkleitsystem-api
 link: http://codeformuenster.org/parkleitsystem-api
-description: Ein Wrapper für das Parkleitsystem des Tiefbauamts Münster
+description: Ein Wrapper für das Parkleitsystem des Tiefbauamts Münster, der die Daten im JSON-Format bereitstellt.
 members:
   - name: Gerald
 layout: projekt
