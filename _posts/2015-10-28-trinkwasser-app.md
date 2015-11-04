@@ -1,5 +1,5 @@
 ---
-title: Trinkwasser App für Münster
+title: Trinkwasser-App für Münster
 author: Marco Lünich
 twitter: "@MLuenich"
 keywords:
