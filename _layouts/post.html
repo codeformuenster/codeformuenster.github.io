@@ -9,13 +9,13 @@ category: blog
   <div class="post">
 
     <header class="post-header">
-      <div class="date">{{page.date || date: "%d.%m.%Y"}} | {{page.author}}</div>
+      <div class="date">{{page.date || date: "%d.%m.%Y"}} | {{page.author}} | <a href="https://twitter.com/share" class="twitter-share-button" data-via="codeformuenster" data-count="none" data-related="codeformuenster">Tweet</a></div>
       <h2 class="post-title">{{ page.title }}</h2>
     </header>
 
     <article class="post-content">
       {{ content }}
     </article>
-
+    <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="codeformuenster" data-related="codeformuenster">Tweet</a>
   </div>
 </div>
