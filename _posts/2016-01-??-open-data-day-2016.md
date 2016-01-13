@@ -11,7 +11,7 @@ keywords:
 
 Der zweite Geburtstag von Code for Münster fällt, wie jedes Jahr, auf den [Open Data Day](http://de.opendataday.org/). Das wird natürlich gebührend gefeiert!
 
-Wir laden alle Open Data und Civic Tech Interessierte ein, mit uns zusammen den Tag der offenen Daten zu gestalten. Wir planen Vorträge und Workshops rund um offene Daten. 
+Wir laden alle Open Data und Civic Tech Interessierte ein, mit uns zusammen den [Tag der offenen Daten](http://codeformuenster.org/opendataday/) zu gestalten. Wir planen Vorträge und Workshops rund um offene Daten. 
 
 Du oder jemand den du kennst möchte einen Vortrag halten oder ein cooles Tool rund um Daten vorstellen? Twittert doch einfach [@codeformuenster](https://twitter.com/codeformuenster) oder schreibt eine Mail an muenster [a] codefor [.] de 
 
