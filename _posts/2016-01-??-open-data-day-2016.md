@@ -32,3 +32,5 @@ Weitere Informationen findet ihr [hier](http://codeformuenster.org/opendataday/)
 Außerdem wird alles wichtige nochmal auf Twitter [@codeformuenster](https://twitter.com/codeformuenster) kommuniziert.
 
 Keine Zeit am 5. März? Schaut auf unserer [Meetup-Seite](http://www.meetup.com/OK-Lab-Munster/). Wir treffen uns jeden Mittwoch um 18:30 Uhr zur Hacknight um gemeinsam an Projekten zu arbeiten und uns über die neusten Technologien und Neuigkeiten auszutauschen.
+
+Wir freuen uns auf euer kommen!
