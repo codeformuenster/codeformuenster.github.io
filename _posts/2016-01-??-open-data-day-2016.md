@@ -7,12 +7,19 @@ keywords:
   - "OpenDataDay"
   - "Tag der offenen Daten"
 ---
-# Alter Text
-Es ist wieder soweit. Ein Jahr ist fast vergangen seit dem sich "Code
-for Münster" am Open Data Day 2014 gegründet hat. Grund genug ein Event
-zu veranstalten.  
-Und genau das werden wir auch machen. Speichert euch das das Datum in
-euren Terminkalender:  
-_5.März. Open Data Day in Münster._
+# Wir laden ein!
 
-Mehr Infos folgen in Kürze.  
+Der zweite Geburtstag von Code for Münster fällt, wie jedes Jahr, auf am Open Data Day. Dieser wird am **5. März** von **10 bis 17 Uhr** stattfinden. Wie im letzten Jahr sind wir wieder bei der VHS Münster im Forum 1 zu Gast. Wir laden alle Interessierten ein mit uns zusammen bei Getränken und Pizza, Vorträgen zu lauschen und Workshops mitzumachen.
+
+Also:
+**<p align="center">
+Open Data Day 2016<br />
+5. März 2016<br />
+10 bis 17 Uhr<br />
+VHS Forum, Aegidiistraße 3
+</p>**
+
+Weitere Informationen findet ihr [hier](http://codeformuenster.org/opendataday/)
+
+Außerdem wird alles wichtige nochmal auf Twitter [@codeformuenster](https://twitter.com/codeformuenster) kommuniziert
+
