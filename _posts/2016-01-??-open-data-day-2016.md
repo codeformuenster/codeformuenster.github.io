@@ -9,7 +9,15 @@ keywords:
 ---
 # Wir laden ein!
 
-Der zweite Geburtstag von Code for Münster fällt, wie jedes Jahr, auf am Open Data Day. Dieser wird am **5. März** von **10 bis 17 Uhr** stattfinden. Wie im letzten Jahr sind wir wieder bei der VHS Münster im Forum 1 zu Gast. Wir laden alle Interessierten ein mit uns zusammen bei Getränken und Pizza, Vorträgen zu lauschen und Workshops mitzumachen.
+Der zweite Geburtstag von Code for Münster fällt, wie jedes Jahr, auf den [Open Data Day](http://de.opendataday.org/). Das wird natürlich gebührend gefeiert!
+
+Wir laden alle Open Data und Civic Tech Interessierte ein, mit uns zusammen den Tag der offenen Daten zu gestalten. Wir planen Vorträge und Workshops rund um offene Daten. 
+
+Du oder jemand den du kennst möchte einen Vortrag halten oder ein cooles Tool rund um Daten vorstellen? Twittert doch einfach [@codeformuenster](https://twitter.com/codeformuenster) oder schreibt eine Mail an muenster [a] codefor [.] de 
+
+Dies alles wird am **5. März** von **10 bis 17 Uhr** stattfinden. Wie im letzten Jahr sind wir wieder bei der VHS Münster im Forum zu Gast.
+
+Für das leibliche Wohl ist gesorgt!
 
 Also:
 **<p align="center">
@@ -19,7 +27,8 @@ Open Data Day 2016<br />
 VHS Forum, Aegidiistraße 3
 </p>**
 
-Weitere Informationen findet ihr [hier](http://codeformuenster.org/opendataday/)
+Weitere Informationen findet ihr [hier](http://codeformuenster.org/opendataday/).
 
-Außerdem wird alles wichtige nochmal auf Twitter [@codeformuenster](https://twitter.com/codeformuenster) kommuniziert
+Außerdem wird alles wichtige nochmal auf Twitter [@codeformuenster](https://twitter.com/codeformuenster) kommuniziert.
 
+Keine Zeit am 5. März? Schaut auf unserer [Meetup-Seite](http://www.meetup.com/OK-Lab-Munster/). Wir treffen uns jeden Mittwoch um 18:30 Uhr zur Hacknight um gemeinsam an Projekten zu arbeiten und uns über die neusten Technologien und Neuigkeiten auszutauschen.
