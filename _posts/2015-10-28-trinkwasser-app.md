@@ -8,7 +8,7 @@ keywords:
   - "Redeployment"
 ---
 
-Stadtgeschichte Münster
+Finde heraus, was Dein Trinkwasser alles enthält.
 
 ## Die Idee
 
@@ -17,7 +17,7 @@ Das Code for Heilbronn-Team hat eine App geschrieben:  Alle wichtigen Informatio
 ## Welche Informationen über das Leitungswasser findet man?
 
 Auf dem von den Stadtwerken bereitgestellten Faktenblatt zu den Inhaltsstoffen des Wassers gibt es Informationen zum Gehalt von Natrium, Kalium, Calcium, Magnesium, Chlorid, Nitrat, Sulfat und dem Härtegrad.
-Die Stadtwerke Münster stellen Informationen zu den Inhaltsstoffen aufgeschlüsselt für die folgenden Wasserwerke bereit: Kinderhaus, Geist/Vennheide, Hohe Ward und Hornheide-Haskenau, sowie den Wasserzukauf von der Gelsenwasser AG. 
+Die Stadtwerke Münster stellen Informationen zu den Inhaltsstoffen aufgeschlüsselt für die folgenden Wasserwerke bereit: Kinderhaus, Geist/Vennheide, Hohe Ward und Hornheide-Haskenau, sowie den Wasserzukauf von der Gelsenwasser AG.
 In der neuen Trinkwasser-App werden diese Informationen nun anschaulich visualisiert: Der jeweilige Wert der im Wasser enthaltenen Mineralstoffe wird anhand des Füllstandes in einem Reagenzglas dargestellt. Zudem gibt es Informationen über den Grenzwert, den Durchschnitt aller Wasserwerke in Münster und dem empfohlenen ungefähren Tagesbedarf eines erwachsenen Menschen.
 
 ## Warum und für wen ist die App wichtig?
@@ -28,4 +28,3 @@ Als zusätzliche Information kann man das Münsteraner Leitungswasser mit etlich
 
 ## Link zur App
 - [Trinkwasser in Münster](http://codeformuenster.org/trinkwasser/)
-

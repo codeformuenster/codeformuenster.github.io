@@ -3,15 +3,47 @@ layout: default
 title: Code for Münster
 page_class: blog
 ---
-<div class="wrapper">
-  <h2><a href="{{ "/blog/index.html" | prepend: site.baseurl }}">Geschichten aus Münster</a></h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.date | date: "%-d %B %Y" }}<h2>{{ post.title }}</h2></a>
-      <div> {{ post.excerpt }}</div>
-      <a href="{{ post.url }}">weiterlesen&hellip;</a>
-    </li>
-    {% endfor %}
-  </ul>
+<div class="uk-grid" data-uk-grid-margin>
+    <div class="uk-width-medium-3-4">
+
+
+
+
+<!--
+      <h2><a href="{{ "/blog/index.html" | prepend: site.baseurl }}">Geschichten aus Münster</a></h2>
+    -->
+        {% for post in site.posts %}
+
+
+          <article class="uk-article">
+
+              <h1 class="uk-article-title">
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+              </h1>
+
+              <p class="uk-article-meta">
+                Verfasst von {{post.author}} am {{ post.date | date: "%-d %B %Y" }}
+                 in <a href="{{ post.url }}">{{post.category}}</a>
+               </p>
+
+              <p> {{ post.excerpt }}
+              </p>
+              <p><a class="uk-button uk-button-primary" href="{{ post.url }}">weiterlesen&hellip;</a>
+              </p>
+          </article>
+
+
+        {% endfor %}
+    </div>
+    <div class="uk-width-medium-1-4">
+
+      <div class="uk-panel uk-panel-box uk-text-center">
+          <h2>Stadtgeschichten aus </h2>
+          <img src="/img/ortsschild-muenster.png" />
+      </div>
+      <div class="uk-panel uk-panel-box uk-text-center">
+              <p>Hier bloggen die Mitglieder von Code For Münster in unregelmäßigen Abständen.</p>
+      </div>
+
+    </div>
 </div>
