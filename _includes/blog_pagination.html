@@ -1,20 +1,26 @@
-<div class="pagination">
-  {% if page.previous %}
-  <div class="prev">
-    <a href="{{page.previous.url}}">
-      <i class="fa fa-angle-double-left"></i>
-      {{page.previous.date || date: "%d.%m.%Y"}} |
-      {{page.previous.title}}
-    </a>
-  </div>
-  {% endif %}
+<div>
+
   {% if page.next %}
-  <div class="next">
+  <div class="next" style="float:right">
+
     <a href="{{page.next.url}}">
       {{page.next.date || date: "%d.%m.%Y"}} |
       {{page.next.title}}
-      <i class="fa fa-angle-double-right"></i>
+      <i class="uk-icon-angle-double-right"></i>
     </a>
   </div>
   {% endif %}
+
+
+{% if page.previous %}
+
+    <a href="{{page.previous.url}}"><i class="uk-icon-angle-double-left"></i>
+
+      {{page.previous.date || date: "%d.%m.%Y"}} |
+      {{page.previous.title}}
+      </a>
+
+
+  {% endif %}
+
 </div>
