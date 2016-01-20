@@ -2,6 +2,288 @@
 layout: default
 title: Code for Münster
 ---
+
+<style>
+#muensterBG {
+  background: url(/img/schloss-bg.jpg);
+  background-repeat: no-repeat;
+  -moz-background-size:100%;
+  -webkit-background-size:100%;
+  background-size:100%;
+  height: 500px
+}
+.progress {
+  width: 100%;
+  height: 50px;
+}
+
+.progress-wrap {
+  background: #077737;
+  height: 20px;
+  margin-bottom:5px;
+  overflow: hidden;
+  position: relative;
+}
+.progress-wrap .progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.projectTeaser p {margin:0}
+
+.previewImage {width:100%;height:160px;overflow:hidden;margin-bottom:10px}
+
+.module-header a {color:white}
+.module-header {
+    padding: 15px 5px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.previewText {height:60px;overflow:hidden}
+.icon-container-title {
+  padding: 15px;
+    background: #16CE65!important;
+    margin: 0 0 30px!important;
+    border-top: none;
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #137254;
+}
+.projectTeaser {     background: #CACACA; }
+.projectInner {padding: 20px 10px;}
+.meetup {color:#E0393E}
+.facebook {color: 	#3b5998}
+.twitter {color: #55acee}
+.micon {
+    padding: 7px 10px;
+    margin: 10px;
+}
+</style>
+
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-1">
+
+                <div class="uk-vertical-align uk-text-center" id="muensterBG" >
+                    <div class="uk-vertical-align-middle uk-width-1-2">
+                        <h1 class="uk-heading-large"><img src="http://codeformuenster.org/img/cfm_logo.png" /><br />Code for Münster</h1>
+                        <p class="uk-text-large"><b>Make a difference</b><br />Nutz' deine Fähigkeiten um deine Stadt zu verbessern!</p>
+<br />
+<center>
+    <a target="_blank" class="uk-button micon twitter" data-uk-tooltip title="twitter" href="https://twitter.com/codeformuenster"><i class="uk-icon-twitter uk-icon-large"></i></a>
+    <a target="_blank" class="uk-button micon facebook" data-uk-tooltip title="facebook" href="https://www.facebook.com/codeformuenster/"><i class="uk-icon-facebook-official uk-icon-large"></i></a>
+    <a target="_blank" class="uk-button micon meetup" data-uk-tooltip title="meetup.com" href="http://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-maxcdn uk-icon-large"></i></a>
+</center>
+
+<br /> <br /><br /><br /><br />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <hr class="uk-grid-divider wider">
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+            <div class="uk-width-medium-1-2">
+                <img width="660" height="400" src="/img/meetup.jpg" alt="">
+            </div>
+
+            <div class="uk-width-medium-1-2">
+              <a name="mitmachen"></a>
+              <h1>Wer sind wir?</h1>
+                    <p>Wir sind Teil des <a href="http://codefor.de" target="_blank">Code for Germany</a> Netzwerkes ins Leben gerufen von der <a href="http://okfn.de" target="_blank">Open Knowledge Foundation</a> Deutschland. Code for Germany ist der deutsche Teil des <a href="http://codeforall.org" target="_blank">Code for All</a> Netzwerkes, welches von <a href="http://codeforamerica.org" target="_blank">Code for America</a> ins leben gerufen wurde. In Deutschland sind aktuell 13 so genannte OK Labs Anfang 2014 gegründet worden. In Münster haben Mila und Daniel die Initiative gestartet und seit dem Open Data Day sind ca 10 Mitstreiter aus verschiedenen Unternehmen und Hintergründen aktiv. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studenten kommen die Mehrzahl vom <a href="http://ifgi.uni-muester.de" target="_blank">Institut für Geoinformatik.</a></p>
+                    <h2>Was machen wir?</h2>
+                    <p>Wir wollen in Münster den Bürgern bessere Möglichkeiten zur Verfügung stellen sich zu informieren und zu beteiligen. Darüber hinaus wollen wir der Stadtverwaltung und Politikern helfen besser und direkter mit den Bürger zu kommunizieren und deren Feedback zu bekommen.</p>
+               </p>            </div>
+
+        </div>
+
+        <hr class="uk-grid-divider wider">
+
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-2">
+              {% include meetup.html %}
+
+            </div>
+
+            <div class="uk-width-medium-1-2">
+                <img width="660" height="400" src="/img/hacknight.jpg" alt="">
+            </div>
+        </div>
+
+        <hr class="uk-grid-divider wider">
+
+
+        <a name="projekte"></a>
+
+        <h1 class="uk-text-center">Projekte</h1>
+
+        <div  class="uk-grid" id="projects" data-uk-grid-margin>
+
+        </div>
+
+
+        <hr class="uk-grid-divider wider">
+
+
+        <h2 class="uk-text-center">Aktuelle Blog-Artikel</h2>
+
+
+          <article class="uk-article uk-panel uk-panel-box uk-text-center">
+
+              <h2 class="uk-article-title">
+                  <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
+              </h2>
+
+              <p class="uk-article-meta">
+                Verfasst von {{site.posts[0].author}} am {{ site.posts[0].date | date: "%-d %B %Y" }}
+                 in <a href="{{ "/blog/index.html" | prepend: site.baseurl }}">{{site.posts[0].category}}</a>
+               </p>
+
+              <p> {{ site.posts[0].excerpt }}
+              </p>
+              <p><a class="uk-button uk-button-primary" href="{{ site.posts[0].url }}">weiterlesen&hellip;</a>
+              </p>
+          </article>
+
+
+          <article class="uk-article uk-panel uk-panel-box uk-text-center">
+
+              <h2 class="uk-article-title">
+                  <a href="{{ site.posts[1].url }}">{{ site.posts[1].title }}</a>
+              </h2>
+
+              <p class="uk-article-meta">
+                Verfasst von {{site.posts[1].author}} am {{ site.posts[1].date | date: "%-d %B %Y" }}
+                 in <a href="{{ "/blog/index.html" | prepend: site.baseurl }}">{{site.posts[1].category}}</a>
+               </p>
+
+              <p> {{ site.posts[1].excerpt }}
+              </p>
+              <p><a class="uk-button uk-button-primary" href="{{ site.posts[1].url }}">weiterlesen&hellip;</a>
+              </p>
+          </article>
+
+
+
+        <hr class="uk-grid-divider wider">
+
+
+
+        <h1 class="uk-text-center">Mitglieder</h1>
+
+        <div id="contributors" class="uk-grid" data-uk-grid-margin>
+
+        </div>
+
+
+<script type="text/javascript">
+
+    function showContributor( contributor ) {
+        //console.log(contributor);
+        $("#contributors").append('<div class="uk-width-1-4 uk-width-medium-1-6 uk-width-large-1-6">'+
+            '<figure class="uk-overlay uk-overlay-hover contrib-gray">'+ ( contributor.avatar_url ? '<img width="150" src="'+contributor.avatar_url+'">'
+                    : '<img width="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mO4/R8AArgB255xVG4AAAAASUVORK5CYII=">' )+
+               '<figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center"><div>'+contributor.login+'<br />'+( contributor.contributions?contributor.contributions+' points':"")+'</div>'+
+                '</figcaption><a class="uk-position-cover" href="'+contributor.html_url+'"></a></figure></div>'
+        );
+    }
+    $.getJSON( "/json/members.json", function( data ) {
+      $.each( data, function( key, val ) {
+        showContributor(val);
+      });
+
+    });
+
+    function showUser( user ) {
+        if (!user) return "";
+        return '<div data-uk-tooltip title="'+user.name+'" style="float:left;width:50px;margin:5px 5px 0 0;overflow:hidden">'
+        +'<a href="'+user.html_url+'" target="_blank"><img src="'+ user.avatar_url+'" width="100%" /></a></div>';
+    }
+
+    function showFeatureIcon(icon) {
+      var title = "fertiggestelltes Projekt";
+      var color="orange";
+      if (icon == "thumbs-down") {
+        color="#f33";
+        title ="derzeit kaputt";
+      }
+      return '<div style="width:1px;height:1px"><div data-uk-tooltip title="'+title+'" style="position:relative;left:5px;top:-15px;color:'+color+';font-size:30px"><i class="uk-icon-'+icon+'"></i></div></div>'
+
+    }
+
+    function showProject( p, noimage ) {
+        var percent = p.closed_tasks  / p.total_tasks  * 100;
+
+        var featureIcon = "";
+        featureIcon = ((p.status=='done')||(p.status=='ok'))?'star':'';
+        featureIcon = ((!featureIcon) && p.description.match(/\(down\)/i))?'thumbs-down':featureIcon;
+
+        $("#projects").append('<div class="uk-width-1-2 uk-width-medium-1-4 uk-width-large-1-4"><div class="projectTeaser">'
+
+        +(featureIcon?showFeatureIcon(featureIcon): '')
+            +'<div class="module-header uk-text-large"><a href="'+p.html_url+'">'+p.title+'</a></div>'
+            +'<div class="projectInner">'
+              + ( (p.image&&!noimage)?'<div class="previewImage"><a href="'+p.url+'"><img src="'+p.image+'" width="100%" /></a></div>' : "" )
+          //  + '<div class="users">'+showUser( p.users[0] )+showUser( p.users[1] )+showUser( p.users[2] ) +showUser( p.users[3] )+'</div>'
+              +'<div class="previewText">'+p.description+'</div>'
+            +'</div>'
+            +'<div class="icon-container-title">'
+              +'<div class="progress-wrap progress"><div style="position:relative;left:100px;z-index:20;color:white">'+Math.round(percent)+'%</div>'
+                +'<div style="background-color:#2ABD69;left:'+percent+'%;z-index:10" class="progress-bar progress"></div></div>'
+              +'<p style="display:block;float:right">'+ p.updated_at.substr(0,10)+'</p>'
+            +'<p><b>'+ (p.total_tasks ? p.closed_tasks + '/' + p.total_tasks : "" )+' issues</b></p></div>'
+
+            +'</div></div>'
+        );
+    }
+
+    var featured_projects = [
+      'opendataday', 'click_that_hood', 'muenster-runnermap', 'haushalt-muenster', 'containermap', 'open-data', 'kandidatenliste', 'weihnachtsmarkt',
+      'trinkwasser', 'open-events', 'wahlprogramm-matrix', 'wahlen', 'wahlkarte', 'bautaetigkeit', 'codeforgermany-presentation', 'civic-hacking-101',
+      'open-data-karte-muenster', 'codeformuenster.github.io', 'parkleitsystem-api', 'parkhaeuser-mobile', 'offenerrat-ms', 'muenster-dashboard',
+      'muenster-quiz','codeformuenster'
+    ];
+
+    $.getJSON( "/json/repos_meta.json", function( data ) {
+      var projectlist = {};
+      $.each( data, function( key, val ) {
+        projectlist[val['name']]=key;
+      });
+
+      console.log("projectlist", projectlist);
+
+      $.each( featured_projects, function( key, projectname ) {
+        var p =data[projectlist[projectname]];
+        if (!p) {
+          console.log("DID NOT FIND FEATURED PROJECT" , projectname );
+        } else {
+          showProject(p);
+          data[projectlist[projectname]] = "";
+        }
+      });
+
+      return ;
+      $.each( data, function( key, val ) {
+        if ( val ) {
+          showProject(val, 1);
+        }
+      });
+
+    });
+
+
+</script>
+
+
+<!--
 <div id="main">
   <div class="wrapper">
     <h1>Code a difference:</h1>
@@ -16,3 +298,4 @@ title: Code for Münster
     </div>
   </div>
 </div>
+-->

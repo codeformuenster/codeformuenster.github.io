@@ -30,6 +30,7 @@ The stylesheets are written in SASS/SCSS and are found in folder `_sass`. After 
 
 Or run `compass watch` to automatically recompile after saving a file. If you intend to run the webserver as well, you don't need to compile the SASS code by hand. It is then managed by `bundler`/`jekyll`.
 
+
 ### Run
 
 Compiles the page after saving a code change:
@@ -37,3 +38,16 @@ Compiles the page after saving a code change:
     bundle exec jekyll serve
 
 The website is now available at http://localhost:3000
+
+
+# How to update the project list on the homepage
+
+The project list can automatically be updated by fetching project data via the github api.
+
+You can even automatically create the screenshots, you just need to install shutter:
+
+    sudo apt-get install shutter
+
+Then you can update the data by running:
+
+    php update-data.php
