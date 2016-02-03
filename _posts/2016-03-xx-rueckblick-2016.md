@@ -33,9 +33,15 @@ Passend zum Thema Open Data und OpenStreetMap fand 2015 die [FossGIS 2015](http:
 
 
 ## Projekte
-Das Jahr 2015 stand bei uns ganz im Zeichen der Verfügbarmachung von Daten, die zwar im Internet abgegeben werden, aber nicht ohne weiteres maschinenlesbar sind.
+Das Jahr 2015 stand bei uns ganz im Zeichen der Verfügbarmachung von Daten, die zwar im Internet abgegeben werden, aber nicht ohne weiteres maschinenlesbar sind. So entstanden zum Beispiel die Parkleit-API ([Blogpost](http://codeformuenster.org/blog/2015/01/26/parkleit-api/)), die Bürgerbüro-Wartezeiten-API ([Code](https://github.com/codeformuenster/buergerbuero)) und das [Open Events](http://events.input23.de/) Projekt. Auch unsere [Trinkwasser-Seite](http://codeformuenster.org/trinkwasser/) ([Blogpost](http://codeformuenster.org/blog/2015/10/28/trinkwasser-app/)) basiert auf nicht maschinenlesbaren Daten. Auf Basis der Parkleit-API entstand sogar eine [mobile Webseite](http://codeformuenster.org/parkhaeuser-mobile/).
 
+Dank öffentlich verfügbaren Listen und Standpläne konnten wir für 2 der 5 Weihnachtsmärkte in Münster eine [mobile Webseite](http://codeformuenster.org/weihnachtsmarkt/) anbieten, auf der man Stände nach angebotenen Waren durchsuchen kann. Auch hier wurden die Daten manuell maschinenlesbar gemacht.
 
+Die [Open Data Karte Münter](http://codeformuenster.org/open-data-karte-muenster/) visualisiert einige der statistischen Kennwerte Münsters, welche vom Statistikamt veröffentlicht werden.
+
+Wer sich immer schon gefragt hat, ob er nun in Pluggendorf oder im Geist-Viertel wohnt, kann auf ["Click that Hood"](http://click-that-hood.com/muenster) die Stadtteile Münsters spielerisch erlernen.
+
+Weitere Projekte findet ihr auf [Github](https://github.com/codeformuenster/)
 
 ## Was sonst noch so war:
 
@@ -49,39 +55,9 @@ Das Jahr 2015 stand bei uns ganz im Zeichen der Verfügbarmachung von Daten, die
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">Heute hacken wir zu dritt. API für openevents, Trinkwasser Münster und der Datahub stehen auf dem Plan. <a href="http://t.co/eWRd7SBo3K">pic.twitter.com/eWRd7SBo3K</a></p>&mdash; codeformuenster (@codeformuenster) <a href="https://twitter.com/codeformuenster/status/649277742807142400">September 30, 2015</a></blockquote>
 
+## Schlusswort
 
+Alles in allem ein erfolgreiches Jahr 2015. Nun starten wir motiviert ins neue Jahr 2016 und unser drittes Jahr Code for Münster.
 
-
-- Parkleit-Api
-  - App http://parkleit-api.codeformuenster.org/
-  - Blogpost http://codeformuenster.org/blog/2015/01/26/parkleit-api/
-  - weitere App https://github.com/codeformuenster/parkhaeuser-mobile
-- Trinkwasser
-  - App http://codeformuenster.org/trinkwasser/
-  - Blogpost http://codeformuenster.org/blog/2015/10/28/trinkwasser-app/
-- Weihnachtsmarkt
-  - App http://codeformuenster.org/weihnachtsmarkt/
-- Open Events
-  - Page http://events.input23.de/
-  - Code 
-- DataHub
-  - Platzhalter  
-- Click That 'Hood
-  - http://click-that-hood.com/muenster
-- Open Data Karte Münster
-  - http://codeformuenster.org/open-data-karte-muenster/
-- Bürger Büro Wartezeiten API
-  - https://github.com/codeformuenster/buergerbuero
-- 
-
-
-Blogposts:
-- http://codeformuenster.org/blog/2015/01/26/parkleit-api/
-- 
-- http://codeformuenster.org/blog/2015/10/28/trinkwasser-app/
-
-- Weihnachtsmarkt
-  - http://codeformuenster.org/weihnachtsmarkt 
-
-
+Wer jetzt Lust bekommen hat bei uns mitzumachen: Kommt einfach Mittwochs Abends um 18:30 ins Drei:Klang auf der Wolbecker Straße oder schaut auf Twitter [@codeformuenster](https://twitter.com/codeformuenster) nach
  
