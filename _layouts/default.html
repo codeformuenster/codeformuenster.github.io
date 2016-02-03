@@ -25,7 +25,7 @@
         .tm-middle,
         .tm-section,
         .tm-footer { padding: 50px 0; }
-
+        div.uk-navbar-brand {overflow: hidden; white-space: nowrap;}
         /* Tablet and bigger */
         @media (min-width: 768px) {
 
@@ -95,8 +95,11 @@
         <div id="offcanvas" class="uk-offcanvas">
             <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-offcanvas">
-                    <li class="uk-active">
-                        <a href="{{ "/index.html#projekte" | prepend: site.baseurl }}"> Projekte</a>
+                  <li class="uk-active">
+                      <a href="/index.html">CodeForMuenster.Org</a>
+                  </li>
+                    <li>
+                        <a href="{{ "/index.html" | prepend: site.baseurl }}"> Startseite </a>
 
                     </li>
                     <li>
@@ -129,6 +132,7 @@
                     <li><a href="https://github.com/codeformuenster/codeformuenster/issues">Issues</a></li>
                     <li><a href="https://github.com/orgs/codeformuenster/people">Komplette Mitgliederliste</a></li>
                     <li><a href="https://twitter.com/codeformuenster">Twitter</a></li>
+                    <li><a href="/impressum.html">Impressum</a></li>
                 </ul>
 
                 <div class="uk-panel">
