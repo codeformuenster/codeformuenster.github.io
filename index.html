@@ -10,6 +10,7 @@ title: Code for Münster
   -moz-background-size:100%;
   -webkit-background-size:100%;
   background-size:100%;
+   background-position:center bottom;
   height: 500px
 }
 .progress {
@@ -32,7 +33,29 @@ title: Code for Münster
 }
 .projectTeaser p {margin:0}
 
-.previewImage {width:100%;height:160px;overflow:hidden;margin-bottom:10px}
+.previewImage {width:100%;
+  overflow:hidden;
+  margin-bottom:10px;
+  padding: 33%;
+  box-sizing: border-box;
+  position: relative;
+  background-color:#eee;
+}
+
+.previewImage img, .previewImage .emptyimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display:block;
+}
+.emptyimg {
+  text-align:center;
+  width:100%;
+  margin-top:-50px;
+  height:100%;
+  color: #ccc;
+  font-size: 80pt;
+}
 
 .module-header a {color:white}
 .module-header {
@@ -211,11 +234,15 @@ title: Code for Münster
     function showFeatureIcon(icon) {
       var title = "fertiggestelltes Projekt";
       var color="orange";
-      if (icon == "thumbs-down") {
+      if (icon == "flash") {
         color="#f33";
         title ="derzeit kaputt";
       }
-      return '<div style="width:1px;height:1px"><div data-uk-tooltip title="'+title+'" style="position:relative;left:5px;top:-15px;color:'+color+';font-size:30px"><i class="uk-icon-'+icon+'"></i></div></div>'
+      if (icon == 'gears') {
+        color="#88b";
+        title ="In der Planung";
+      }
+      return '<div style="width:1px;height:1px"><div data-uk-tooltip title="'+title+'" style="position:relative;left:5px;top:-25px;color:'+color+';font-size:50px"><i class="uk-icon-'+icon+'"></i></div></div>'
 
     }
 
@@ -224,14 +251,15 @@ title: Code for Münster
 
         var featureIcon = "";
         featureIcon = ((p.status=='done')||(p.status=='ok'))?'star':'';
-        featureIcon = ((!featureIcon) && p.description.match(/\(down\)/i))?'thumbs-down':featureIcon;
+        featureIcon = ((!featureIcon) && p.description.match(/\(down\)/i))?'flash':featureIcon;
+        featureIcon = ((!featureIcon) && p.description.match(/idee/i))?'gears':featureIcon;
 
         $("#projects").append('<div class="uk-width-1-2 uk-width-medium-1-4 uk-width-large-1-4"><div class="projectTeaser">'
 
         +(featureIcon?showFeatureIcon(featureIcon): '')
             +'<div class="module-header uk-text-large"><a href="'+p.html_url+'">'+p.title+'</a></div>'
             +'<div class="projectInner">'
-              + ( (p.image&&!noimage)?'<div class="previewImage"><a href="'+p.url+'"><img src="'+p.image+'" width="100%" /></a></div>' : "" )
+              + ( (p.image&&!noimage)?'<div class="previewImage"><a href="'+p.url+'"><img src="'+p.image+'" width="100%" /></a></div>' : '<div class="previewImage"><div class="emptyimg"><i class="uk-icon-question-circle uk-icon-large"></i></div></div>' )
           //  + '<div class="users">'+showUser( p.users[0] )+showUser( p.users[1] )+showUser( p.users[2] ) +showUser( p.users[3] )+'</div>'
               +'<div class="previewText">'+p.description+'</div>'
             +'</div>'
@@ -258,7 +286,7 @@ title: Code for Münster
         projectlist[val['name']]=key;
       });
 
-      console.log("projectlist", projectlist);
+    //  console.log("projectlist", projectlist);
 
       $.each( featured_projects, function( key, projectname ) {
         var p =data[projectlist[projectname]];
