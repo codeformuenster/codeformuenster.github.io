@@ -47,7 +47,7 @@ Weitere Projekte findet ihr auf [Github](https://github.com/codeformuenster/)
 
 - Wir waren beim Lab Leads Treffen in [Leipzig](https://twitter.com/codeformuenster/status/581743932016599040) &amp; [Hamburg](https://twitter.com/codeforde/status/652752989988483072)
 - Besuchte Hackathons:
-  - [Hack your City Dortmund](http://www.hackyourcity.de/dortmund/) ([Storyfiy](https://storify.com/Yannick11/hack-your-city-dortmund)
+  - [Hack your City Dortmund](http://www.hackyourcity.de/dortmund/) ([Storyfiy](https://storify.com/Yannick11/hack-your-city-dortmund))
   - [CycleHack Wuppertal](http://cyclehack-wuppertal.de/)
 - Ein eigener kleiner [Hackathon](https://twitter.com/codeformuenster/status/644958588134363136) zum Thema Docker auf der ARM-Architektur 
 
