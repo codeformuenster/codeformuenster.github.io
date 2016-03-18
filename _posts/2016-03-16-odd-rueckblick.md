@@ -81,11 +81,11 @@ Parallel gab es zum Open Data Day 2016 in vielen anderen Städten ähnliche Vera
 
 <br /><br />
 
-#<a name="fossgis"></a>Überblick der Beiträge
+#<a name="Beitraege"></a>Überblick der Beiträge
 
- 1. Rückblick 2015
+ 1. Rückblick 2015 - [Vortragsfolien](http://codeformuenster.org/codeforgermany-presentation/)
  2. Open Educational Resources (OER)
  3. senseBox
  4. Freifunk
  5. OSM Stammstisch
- 6. Open Data
+ 6. Open Data - [Vortragsfolien](http://codeformuenster.org/open-data/open-data-slides)
