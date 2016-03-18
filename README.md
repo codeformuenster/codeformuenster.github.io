@@ -51,3 +51,10 @@ You can even automatically create the screenshots, you just need to install shut
 Then you can update the data by running:
 
     php update-data.php
+
+
+## update single screenshot
+
+convert screenshots-large/$repoName.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 $screenshot_file
+
+convert screenshots-large/carparcsmuenster.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 screenshots/carparcsmuenster.jpg

@@ -238,6 +238,10 @@ title: Code for Münster
         color="#f33";
         title ="derzeit kaputt";
       }
+      if (icon == "cloud-upload") {
+        color="#39f";
+        title ="..work in progress..";
+      }
       if (icon == 'gears') {
         color="#88b";
         title ="In der Planung";
@@ -253,6 +257,9 @@ title: Code for Münster
         featureIcon = ((p.status=='done')||(p.status=='ok'))?'star':'';
         featureIcon = ((!featureIcon) && p.description.match(/\(down\)/i))?'flash':featureIcon;
         featureIcon = ((!featureIcon) && p.description.match(/idee/i))?'gears':featureIcon;
+        featureIcon = ((!featureIcon) && p.description.match(/\(neu\)/i))?'cloud-upload':featureIcon;
+
+
 
         $("#projects").append('<div class="uk-width-1-2 uk-width-medium-1-4 uk-width-large-1-4"><div class="projectTeaser">'
 
@@ -274,7 +281,7 @@ title: Code for Münster
     }
 
     var featured_projects = [
-      'opendataday', 'click_that_hood', 'muenster-runnermap', 'haushalt-muenster', 'containermap', 'open-data', 'kandidatenliste', 'weihnachtsmarkt',
+      'carparcsmuenster', 'wo-ist-markt', 'opendataday', 'click_that_hood', 'muenster-runnermap', 'haushalt-muenster', 'containermap', 'open-data', 'kandidatenliste', 'weihnachtsmarkt',
       'trinkwasser', 'open-events', 'wahlprogramm-matrix', 'wahlen', 'wahlkarte', 'bautaetigkeit', 'codeforgermany-presentation', 'civic-hacking-101',
       'open-data-karte-muenster', 'codeformuenster.github.io', 'parkleitsystem-api', 'parkhaeuser-mobile', 'offenerrat-ms', 'muenster-dashboard',
       'muenster-quiz','codeformuenster'
