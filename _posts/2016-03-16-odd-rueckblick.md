@@ -81,7 +81,7 @@ Parallel gab es zum Open Data Day 2016 in vielen anderen Städten ähnliche Vera
 
 <br /><br />
 
-#<a name="Beitraege"></a>Überblick der Beiträge
+<h1>Überblick der Beiträge</h1>
 
  1. Rückblick 2015 - [Vortragsfolien](http://codeformuenster.org/codeforgermany-presentation/)
  2. Open Educational Resources (OER)
