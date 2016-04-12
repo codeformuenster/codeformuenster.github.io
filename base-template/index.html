@@ -1,0 +1,221 @@
+<html lang="en-gb" dir="ltr">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>CodeForMuenster.org</title>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+      <link rel="stylesheet" href="/css/c4m.css">
+      <link rel="stylesheet" href="/uikit/css/uikit.gradient.min.css">
+      <link rel="stylesheet" href="/uikit/css/tooltip.gradient.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="/uikit/js/uikit.min.js"></script>
+      <script src="/uikit/js/tooltip.js"></script>
+  </head>
+
+  <body>
+      <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+
+          <nav class="uk-navbar uk-margin-large-bottom">
+              <a class="uk-navbar-brand uk-hidden-small" href="/index.html"><img style="height:40px" src="http://codeformuenster.org/img/cfm_logo.png" /></a>
+              <ul class="uk-navbar-nav uk-hidden-small">
+                  <li>
+                      <a href="/index.html">Startseite</a>
+                  </li>
+                  <li>
+                      <a href="/index.html#projekte"> Projekte</a>
+                  </li>
+                  <li>
+                      <a target="_blank" href="http://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-external-link"></i> Nächstes Treffen (meetup.com)</a>
+                  </li>
+                  <li>
+                      <a target="_blank" href="https://github.com/codeformuenster/"><i class="uk-icon-external-link"></i> Quellcode auf Github</a>
+                  </li>
+              </ul>
+              <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+              <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Code For Münster</div>
+          </nav>
+
+
+    <div id="background-pic"></div>
+
+    <div class="page-content">
+
+        <!-- c4m title -->
+        <div class="uk-grid" data-uk-grid-margin>
+            <div class="uk-width-medium-1-1">
+
+                <div class="uk-vertical-align uk-text-center" id="muensterBG" >
+                    <div class="uk-vertical-align-middle uk-width-1-2">
+                        <h1 class="uk-heading-large"><img src="http://codeformuenster.org/img/cfm_logo.png" /><br />Code for Münster</h1>
+                        <p class="uk-text-large"><b>Make a difference</b><br />Nutz' deine Fähigkeiten um deine Stadt zu verbessern!</p>
+                        <br />
+                        <center>
+                            <a target="_blank" class="uk-button micon twitter" data-uk-tooltip title="twitter" href="https://twitter.com/codeformuenster"><i class="uk-icon-twitter uk-icon-large"></i></a>
+                            <a target="_blank" class="uk-button micon facebook" data-uk-tooltip title="facebook" href="https://www.facebook.com/codeformuenster/"><i class="uk-icon-facebook-official uk-icon-large"></i></a>
+                            <a target="_blank" class="uk-button micon meetup" data-uk-tooltip title="meetup.com" href="http://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-maxcdn uk-icon-large"></i></a>
+                        </center>
+
+                        <br /> <br /><br /><br /><br />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- two column example -->
+        <hr class="uk-grid-divider wider">
+
+        <div class="uk-grid" data-uk-grid-margin>
+
+            <div class="uk-width-medium-1-2">
+                <img width="660" height="400" src="/img/meetup.jpg" alt="">
+            </div>
+
+            <div class="uk-width-medium-1-2">
+              <a name="mitmachen"></a>
+              <h1>Wer sind wir?</h1>
+                    <p>Wir sind Teil des Netzwerks <a href="http://codefor.de" target="_blank">Code for Germany</a>, einem Programm der <a href="http://okfn.de" target="_blank">Open Knowledge Foundation</a> Deutschland. Code for Germany ist Teil eines <a href="http://codeforall.org">internationalen Netzwerks</a> welches von <a href="http://codeforamerica.org" target="_blank">Code for America</a> ins Leben gerufen wurde. In Deutschland ging das Programm 2014 an den Start, mit anfangs acht Open Knowledge Labs, Münster war eines davon. Die Initiative dazu ergriffen Daniel und Mila und launchten das neue Lab zum Open Data Day 2014. Seitdem ist das Netzwerk auf 24 Labs gewachsen und das Münsteraner Lab hat Mitstreiter aus verschiedenen Unternehmen und Hintergründen gewonnen. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studierenden kommt die Mehrzahl vom <a href="http://ifgi.uni-muester.de" target="_blank">Institut für Geoinformatik.</a></p>
+                    <h2>Was machen wir?</h2>
+                    <p>Wir wollen in Münster den Bürgern und Bürgerinnen bessere Möglichkeiten zur Verfügung stellen um sich informieren und beteiligen zu können. Darüber hinaus wollen wir der Stadtverwaltung und Politik dabei helfen besser und direkter mit den Bürger zu kommunizieren, um sich auszutauschen und deren Feedback zu bekommen.</p>
+               </p>            </div>
+
+        </div>
+
+        <hr class="uk-grid-divider wider">
+
+
+        <a name="projekte"></a>
+
+        <h1 class="uk-text-center">Beispiel-Karte</h1>
+
+
+
+        <!-- leaflet map example -->
+        <div  class="uk-grid"  data-uk-grid-margin>
+          <div class="uk-width-medium-1-1">
+
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+            <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+            <div id="map" style="height:300px">
+            </div>
+
+            <script>
+            var map = L.map('map').setView([51.505, -0.09], 13);
+
+            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([51.5, -0.09]).addTo(map)
+                .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                .openPopup();
+
+            </script>
+
+
+          </div>
+        </div>
+
+
+        <!-- column text example -->
+        <div  class="uk-grid"  data-uk-grid-margin>
+          <div class="uk-width-medium-1-4">
+            Bavaria ipsum dolor sit amet Brodzeid mi Weißwiaschd Prosd measi ja, wo samma denn nia hoam Kuaschwanz i sog ja nix, i red ja bloß. Sodala luja jo mei, nia? Sei Biawambn Steckerleis Semmlkneedl kloan Maderln auf gehds beim Schichtl? I moan oiwei hob i an Suri Woibbadinga, Marterl Kirwa. Kloan wos Musi helfgod, Woibbadinga wiavui oans bittschön. Gar nia need owe Freibia auszutzeln a fescha Bua gschmeidig des is a gmahde Wiesn Haberertanz greaßt eich nachad auf’d Schellnsau hawadere midananda. Mamalad hallelujah sog i, luja gwiss schoo ghupft wia gsprunga singd barfuaßat imma. Gaudi Biaschlegl singd Goaßmaß barfuaßat mei Enzian, heid gfoids ma sagrisch guad a bravs heid gfoids ma sagrisch guad af: Ja, wo samma denn damischa Gams, jedza Gams unbandig zua. Weißwiaschd Schaung kost nix boarischer Hemad sammawiedaguad Radler, Brezn zua.
+          </div>
+          <div class="uk-width-medium-1-4">
+            Steckerleis back mas Weißwiaschd, Vergeltsgott an. Moand mim Schdarmbeaga See, Fingahaggln! Biazelt san des is hoid aso Blosmusi! Oba da i hob di narrisch gean, geh af i hob di narrisch gean sauba: Jo leck mi Ewig und drei Dog de, oa bitt: Resch luja hoid aba is, gscheckate am acht’n Tag schuf Gott des Bia vasteh jo mei is des schee heid gfoids ma sagrisch guad! Oans, zwoa, gsuffa Stubn Auffisteign auszutzeln Mongdratzal Guglhupf soi. Liberalitas Bavariae ned Meidromml Gams hod, Woibbadinga Radi Wiesn Kaiwe: Greaßt eich nachad i hob di liab i hob di liab vo de Gidarn, hinter’m Berg san a no Leit Hetschapfah! Wiesn Marterl a Hoiwe hogg di hera bittschön gwiss a liabs Deandl a ganze Namidog. Des is schee a Prosit der Gmiadlichkeit Blosmusi blärrd blärrd hi Wurschtsolod di Marei Mongdratzal. Zwedschgndadschi hawadere midananda dahoam, .
+          </div>
+          <div class="uk-width-medium-1-4">
+            Wo hi heitzdog Milli moand, wiavui Zwedschgndadschi Fingahaggln jo leck mi. Hinter’m Berg san a no Leit Wiesn Maderln gscheit heitzdog! Hi sog i oba, des is schee kumm geh liberalitas Bavariae! Hogg ma uns zamm des is hoid aso Biaschlegl nix oans, Schuabladdla Gams hi Mamalad a bravs i waar soweid: Dahoam boarischer Maibam Zwedschgndadschi Marterl, is glei dahoam nois Jodler? Da nix oa Gidarn damischa mogsd a Bussal, muass oa. I daad kloan weida da ded. Sauwedda a bissal Deandlgwand, unbandig Schorsch Schaung kost nix Weißwiaschd guad es Enzian schoo! Schaugn soi Schbozal geh, wiavui pfenningguat. Goaßmaß bitt wos in da greana Au i bin a woschechta Bayer ded Weißwiaschd Marei i daad, heitzdog.
+          </div>
+          <div class="uk-width-medium-1-4">
+            Wo hi heitzdog Milli moand, wiavui Zwedschgndadschi Fingahaggln jo leck mi. Hinter’m Berg san a no Leit Wiesn Maderln gscheit heitzdog! Hi sog i oba, des is schee kumm geh liberalitas Bavariae! Hogg ma uns zamm des is hoid aso Biaschlegl nix oans, Schuabladdla Gams hi Mamalad a bravs i waar soweid: Dahoam boarischer Maibam Zwedschgndadschi Marterl, is glei dahoam nois Jodler? Da nix oa Gidarn damischa mogsd a Bussal, muass oa. I daad kloan weida da ded. Sauwedda a bissal Deandlgwand, unbandig Schorsch Schaung kost nix Weißwiaschd guad es Enzian schoo! Schaugn soi Schbozal geh, wiavui pfenningguat. Goaßmaß bitt wos in da greana Au i bin a woschechta Bayer ded Weißwiaschd Marei i daad, heitzdog.
+          </div>
+        </div>
+
+
+        <hr class="uk-grid-divider wider">
+
+
+
+        <!-- blog teaser example -->
+        <h2 class="uk-text-center">Überschrift #2</h2>
+
+
+          <article class="uk-article uk-panel uk-panel-box uk-text-center">
+
+              <h2 class="uk-article-title">
+                  <a href="/blog/2016/03/16/odd-rueckblick.md/">Lorem Ipsum</a>
+              </h2>
+
+              <p class="uk-article-meta">
+                Verfasst von Marco Lünich am 16 March 2016
+                 in <a href="/blog/index.html">blog</a>
+               </p>
+
+              <p><a class="uk-button uk-button-primary" href="/blog/2016/03/16/odd-rueckblick.md/">weiterlesen&hellip;</a>
+              </p>
+          </article>
+
+
+
+        <hr class="uk-grid-divider wider">
+
+    </div>
+        </div>
+
+
+        <!-- mobile navigation -->
+        <div id="offcanvas" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-offcanvas">
+                  <li class="uk-active">
+                      <a href="/index.html">CodeForMuenster.Org</a>
+                  </li>
+                    <li>
+                        <a href="/index.html"> Startseite </a>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-external-link"></i> Nächstes Treffen (meetup.com)</a>
+
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/codeformuenster/"><i class="uk-icon-external-link"></i> Quellcode auf Github</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- github ribbon -->
+        <a href="https://github.com/codeformuenster"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+
+        <div class="tm-footer">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="https://github.com/codeformuenster">GitHub</a></li>
+                    <li><a href="https://github.com/codeformuenster/codeformuenster/issues">Issues</a></li>
+                    <li><a href="https://github.com/orgs/codeformuenster/people">Komplette Mitgliederliste</a></li>
+                    <li><a href="https://twitter.com/codeformuenster">Twitter</a></li>
+                    <li><a href="/impressum/index.html">Impressum</a></li>
+                </ul>
+
+                <div class="uk-panel">
+                  <p> <!-- some text could be here --></p>
+                    <a href="http://codeformuenster.org"><img src="http://codeformuenster.org/img/cfm_logo.png"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
