@@ -18,6 +18,8 @@ function repoSort( $a, $b ) {
 }
 
 
+$config = parse_ini_file('_config.ini');
+
 
 class UpdateData {
 
@@ -25,6 +27,7 @@ class UpdateData {
 	 * method to access the github api without getting blocked (you need to set user agent)
 	 */
 	private function getData($url) {
+
 		$ch = curl_init();
 		$timeout = 5;
 		curl_setopt($ch, CURLOPT_URL, $url);
@@ -32,24 +35,34 @@ class UpdateData {
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 	  curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
 		$data = curl_exec($ch);
+
+    if(!$data) {
+      echo "\nbroken response: \n";
+      die($data);
+    }
+
 		curl_close($ch);
 		return $data;
 	}
 
-	public function run( $update = 0 ) {
+	public function run( $config, $update = 0, $upateOnly = 'wo-ist-markt', $apiCred = '') {
 
+
+# carparcsmuenster
+    $apiCred = '&client_id='.$config['client_id'].'&client_secret='.$config['client_id'];
+    $githubOrg = $config['organisation_name'];
 
     $hideRepos  = [
       'WhatsMyDistrict' => 1
     ];
 
 
-
 		# update all the json files
 		if ( $update ) {
-		  file_put_contents("json/members.json", $this->getData("https://api.github.com/orgs/codeformuenster/members?per_page=100") );
+      $mainUrl = "https://api.github.com/orgs/$githubOrg/members?per_page=100" . $apiCred;
+  	  file_put_contents("json/members.json", $this->getData($mainUrl) );
 
-		  $repoString = $this->getData("https://api.github.com/orgs/codeformuenster/repos?per_page=100&sort=pushed&direction=desc");
+		  $repoString = $this->getData("https://api.github.com/orgs/$githubOrg/repos?per_page=100&sort=pushed&direction=desc" . $apiCred);
 		  file_put_contents("json/repos.json", $repoString);
 		}
 
@@ -74,10 +87,11 @@ class UpdateData {
 
 		  // get issue information
 		  $issueData = "";
-		  if ($update) {
-		    $issueData = $this->getData("https://api.github.com/repos/codeformuenster/$repoName/issues?state=all");
+		  if ($update && ((!$upateOnly)||($upateOnly &&($upateOnly==$repoName) ) ) ) {
+		    $issueData = $this->getData("https://api.github.com/repos/$githubOrg/$repoName/issues?state=all" . $apiCred);
 		    file_put_contents( "json/repos/".$repoName."_issues.json", $issueData );
 		  }
+
 		  if (!$issueData) {
 		    $issueData = file_get_contents("json/repos/".$repoName."_issues.json");
 		  }
@@ -110,8 +124,8 @@ class UpdateData {
 
 		  // get infos from readme.md
 		  $readme="";
-		  if ($update) {
-		    $readme = $this->getData('https://raw.githubusercontent.com/codeformuenster/'.$repoName.'/master/README.md');
+		  if ($update && ((!$upateOnly)||($upateOnly &&($upateOnly==$repoName) ) ) ) {
+		    $readme = $this->getData('https://raw.githubusercontent.com/'.$githubOrg.'/'.$repoName.'/master/README.md');
 		    file_put_contents("json/repos/".$repoName."_readme.md", $readme );
 		  }
 		  if (!$readme) {
@@ -198,7 +212,5 @@ class UpdateData {
 
 }
 
-
-
 $class = new UpdateData;
-$class->run( $argv[1] );
+$class->run( $config, $argv[1] );

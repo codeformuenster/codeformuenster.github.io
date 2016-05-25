@@ -1,5 +1,7 @@
 Code for Münster Homepage at [codeformuenster.org](http://www.codeformuenster.org).
 
+# Step 1: Install jekyll locally to simulate github pages
+
 ## Install & run using Docker
 
 (These instructions are for Linux. On OSX/Windows, Docker has to be installed
@@ -31,7 +33,34 @@ The stylesheets are written in SASS/SCSS and are found in folder `_sass`. After 
 Or run `compass watch` to automatically recompile after saving a file. If you intend to run the webserver as well, you don't need to compile the SASS code by hand. It is then managed by `bundler`/`jekyll`.
 
 
-### Run
+# Step 2: Generate the Homepage
+
+## Configuration
+
+The project list on the frontpage will automatically be updated by fetching all the repositories of an organisation via the github api.
+
+Create the file "_config.ini":
+
+    cp _config.ini.dist _config.ini
+
+Then enter your organisation name and github access keys.
+
+
+## Update the project list on the homepage
+
+
+You can even automatically create the screenshots, you just need to install shutter:
+
+    sudo apt-get install shutter
+
+Then you can update the repository list on the frontpage by running:
+
+    php update-data.php
+
+
+
+
+# Step 3: Run it
 
 Compiles the page after saving a code change:
 
@@ -40,21 +69,16 @@ Compiles the page after saving a code change:
 The website is now available at http://localhost:3000
 
 
-# How to update the project list on the homepage
-
-The project list can automatically be updated by fetching project data via the github api.
-
-You can even automatically create the screenshots, you just need to install shutter:
-
-    sudo apt-get install shutter
-
-Then you can update the data by running:
-
-    php update-data.php
 
 
-## update single screenshot
+# Other useful things
 
-convert screenshots-large/$repoName.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 $screenshot_file
 
-convert screenshots-large/carparcsmuenster.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 screenshots/carparcsmuenster.jpg
+## Update a single screenshot
+
+Sometimes the screenshot generator generates ugly things, especially for javascript heavy pages.
+Then use your favorite screenshot tool to take screenshots and then issue the following commands to resize the screenshot to appropriate size:
+
+    convert screenshots-large/$repoName.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 $screenshot_file
+
+    convert screenshots-large/wo-ist-markt.github.io.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 screenshots/wo-ist-markt.github.io.jpg

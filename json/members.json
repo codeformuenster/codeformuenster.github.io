@@ -57,6 +57,25 @@
     "site_admin": false
   },
   {
+    "login": "tfechner",
+    "id": 1140542,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1140542?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tfechner",
+    "html_url": "https://github.com/tfechner",
+    "followers_url": "https://api.github.com/users/tfechner/followers",
+    "following_url": "https://api.github.com/users/tfechner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tfechner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tfechner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tfechner/subscriptions",
+    "organizations_url": "https://api.github.com/users/tfechner/orgs",
+    "repos_url": "https://api.github.com/users/tfechner/repos",
+    "events_url": "https://api.github.com/users/tfechner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tfechner/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  {
     "login": "tomsrocket",
     "id": 6351193,
     "avatar_url": "https://avatars.githubusercontent.com/u/6351193?v=3",
