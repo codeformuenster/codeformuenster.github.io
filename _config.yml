@@ -36,3 +36,6 @@ defaults:
     values:
       layout: "post"
       category: "blog"
+
+gems:
+  - jekyll-feed
