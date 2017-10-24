@@ -16,7 +16,7 @@ setMeetupHtml = (result) ->
   $("#next-meetup #title").html result.name
   $("#next-meetup #venue").html getVenueFromResult(result)
   $("#next-meetup #description").html result.description
-  $("#next-meetup #rvsp").attr "href", result.eventUrl
+  $("#next-meetup #rvsp").attr "href", result.event_url
 
 setMeetup = ->
   meetup_url = "https://api.meetup.com/2/events?callback=?&sign=true&status=upcoming&group_urlname=OK-Lab-Munster&format=json&key=48406a31956272b2f12c3965547d"
