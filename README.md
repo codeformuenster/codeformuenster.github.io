@@ -100,9 +100,9 @@ Compiles the page after saving a code change:
 
 Or use this command to run it in docker:
 
-    docker run -t --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+    docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 
-The website is now available at http://localhost:3000
+The website is now available at http://localhost:4000
 
 Now you can make design changes, etc.
 
