@@ -141,6 +141,19 @@ title: Code for Münster
             </div>
         </div>
 
+
+        <hr class="uk-grid-divider wider">
+
+
+        <a name="showcase-projekte"></a>
+
+        <h1 class="uk-text-center">Showcase Projekte</h1>
+
+        <div  class="uk-grid" id="showcase-projects" data-uk-grid-margin>
+
+        </div>
+
+
         <hr class="uk-grid-divider wider">
 
 
@@ -250,6 +263,36 @@ title: Code for Münster
 
     }
 
+     function showShowcaseProject( p, noimage ) {
+        var percent = p.closed_tasks  / p.total_tasks  * 100;
+
+        var featureIcon = "";
+        featureIcon = ((p.status=='done')||(p.status=='ok'))?'star':'';
+        featureIcon = ((!featureIcon) && p.description.match(/\(down\)/i))?'flash':featureIcon;
+        featureIcon = ((!featureIcon) && p.description.match(/idee/i))?'gears':featureIcon;
+        featureIcon = ((!featureIcon) && p.description.match(/\(neu\)/i))?'cloud-upload':featureIcon;
+
+
+
+        $("#showcase-projects").append('<div class="uk-width-1-2 uk-width-medium-1-4 uk-width-large-1-4"><div class="projectTeaser">'
+
+        +(featureIcon?showFeatureIcon(featureIcon): '')
+            +'<div class="module-header uk-text-large"><a href="'+p.html_url+'">'+p.title+'</a></div>'
+            +'<div class="projectInner">'
+              + ( (p.image&&!noimage)?'<div class="previewImage"><a href="'+p.url+'"><img src="'+p.image+'" width="100%" /></a></div>' : '<div class="previewImage"><div class="emptyimg"><i class="uk-icon-question-circle uk-icon-large"></i></div></div>' )
+          //  + '<div class="users">'+showUser( p.users[0] )+showUser( p.users[1] )+showUser( p.users[2] ) +showUser( p.users[3] )+'</div>'
+              +'<div class="previewText">'+p.description+'</div>'
+            +'</div>'
+            +'<div class="icon-container-title">'
+              +'<div class="progress-wrap progress"><div style="position:relative;left:100px;z-index:20;color:white">'+Math.round(percent)+'%</div>'
+                +'<div style="background-color:#2ABD69;left:'+percent+'%;z-index:10" class="progress-bar progress"></div></div>'
+              +'<p style="display:block;float:right">'+ p.updated_at.substr(0,10)+'</p>'
+            +'<p><b>'+ (p.total_tasks ? p.closed_tasks + '/' + p.total_tasks : "" )+' issues</b></p></div>'
+
+            +'</div></div>'
+        );
+    }
+
     function showProject( p, noimage ) {
         var percent = p.closed_tasks  / p.total_tasks  * 100;
 
@@ -280,7 +323,18 @@ title: Code for Münster
         );
     }
 
-    var featured_projects = [
+    var showcaseprojects = [
+      'click_that_hood',
+      'open-events',
+      'trinkwasser',
+      'weihnachtsmarkt',  
+      'familien-dashboard',
+      'open-data-karte-muenster',
+      'alternative-skulptur-projekte',
+      'traffic-dynamics'
+    ];
+
+    var projects = [
       'traffic-dynamics', 'familien-dashboard', 'alternative-skulptur-projekte', 'spassmitdaten', 'opendataday',
       'click_that_hood', 'wo-ist-markt.github.io', 'muenster-runnermap', 'open-data-karte-muenster', 'containermap',
       'open-data', 'kandidatenliste', 'weihnachtsmarkt', 'trinkwasser', 'open-events',
@@ -294,11 +348,21 @@ title: Code for Münster
       var projectlist = {};
       $.each( data, function( key, val ) {
         projectlist[val['name']]=key;
-      });
+      }); 
 
     //  console.log("projectlist", projectlist);
 
-      $.each( featured_projects, function( key, projectname ) {
+      $.each( showcaseprojects, function( key, projectname ) {
+        var p =data[projectlist[projectname]];
+        if (!p) {
+          console.log("DID NOT FIND FEATURED SHOWCASE-PROJECT" , projectname );
+        } else {
+          showShowcaseProject(p);
+          data[projectlist[projectname]] = "";
+        }
+      });
+
+      $.each( projects, function( key, projectname ) {
         var p =data[projectlist[projectname]];
         if (!p) {
           console.log("DID NOT FIND FEATURED PROJECT" , projectname );
