@@ -14,17 +14,24 @@ We are generating a static html page that can be hosted on github pages.
 * It downloads all the repository meta data from GitHub and creates a summary json file that is then used by the static html frontpage.
 
 
-# Step 1: Install jekyll locally to simulate github pages
+# 1. Run jekyll locally to simulate github pages
 
 ## Install & run using Docker
 
-(These instructions are for Linux. On OSX/Windows, Docker has to be installed
-differently.)
 
-* Install [Docker](https://docs.docker.com/installation/#installation) and [Fig](http://www.fig.sh/).
-* Then run: `sudo fig up`
+1. Install [Docker](https://docs.docker.com/installation/#installation) 
 
-The website is now available at [http://localhost:4000](http://localhost:4000). Posts and stylesheets will automatically be recompiled on change.
+2. Use this command to run it in docker.
+Compiles the page after saving a code change:
+
+```
+    docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+```
+
+The website is available at [http://localhost:4000](http://localhost:4000). 
+
+Now you can make design changes, etc.
+Posts and stylesheets will automatically be recompiled on change.
 
 ## Non-Docker Install
 
@@ -47,7 +54,7 @@ The stylesheets are written in SASS/SCSS and are found in folder `_sass`. After 
 Or run `compass watch` to automatically recompile after saving a file. If you intend to run the webserver as well, you don't need to compile the SASS code by hand. It is then managed by `bundler`/`jekyll`.
 
 
-# Step 2: Generate the Homepage
+# 2. Regenerate the project list
 
 The project list will be created by fetching all sub-repositories from an organisation at github.
 
@@ -91,23 +98,7 @@ Then you can generate the metadata json file that is used to render the reposito
     php update-data.php
 
 
-
-# Step 3: Run it (for development)
-
-Compiles the page after saving a code change:
-
-    bundle exec jekyll serve
-
-Or use this command to run it in docker:
-
-    docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
-
-The website is now available at http://localhost:4000
-
-Now you can make design changes, etc.
-
-
-# Step 4: deploy it to github
+## Deploy your changes to github
 
 * Commit the files  _json/*.json_
 * Commit the file _index.html_
