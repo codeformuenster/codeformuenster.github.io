@@ -141,6 +141,19 @@ title: Code for Münster
             </div>
         </div>
 
+
+        <hr class="uk-grid-divider wider">
+
+
+        <a name="showcase-projekte"></a>
+
+        <h1 class="uk-text-center">Showcase Projekte</h1>
+
+        <div  class="uk-grid" id="showcase-projects" data-uk-grid-margin>
+
+        </div>
+
+
         <hr class="uk-grid-divider wider">
 
 
@@ -250,7 +263,7 @@ title: Code for Münster
 
     }
 
-    function showProject( p, noimage ) {
+    function showProject( container, p, noimage ) {
         var percent = p.closed_tasks  / p.total_tasks  * 100;
 
         var featureIcon = "";
@@ -261,7 +274,7 @@ title: Code for Münster
 
 
 
-        $("#projects").append('<div class="uk-width-1-2 uk-width-medium-1-4 uk-width-large-1-4"><div class="projectTeaser">'
+        $(container).append('<div class="uk-width-1-2 uk-width-medium-1-4 uk-width-large-1-4"><div class="projectTeaser">'
 
         +(featureIcon?showFeatureIcon(featureIcon): '')
             +'<div class="module-header uk-text-large"><a href="'+p.html_url+'">'+p.title+'</a></div>'
@@ -280,10 +293,21 @@ title: Code for Münster
         );
     }
 
-    var featured_projects = [
-      'traffic-dynamics', 'familien-dashboard', 'alternative-skulptur-projekte', 'spassmitdaten', 'opendataday',
-      'click_that_hood', 'wo-ist-markt.github.io', 'muenster-runnermap', 'open-data-karte-muenster', 'containermap',
-      'open-data', 'kandidatenliste', 'weihnachtsmarkt', 'trinkwasser', 'open-events',
+    var showcaseprojects = [
+      'traffic-dynamics',
+      'familien-dashboard',
+      'trinkwasser',
+      'click_that_hood',
+      'weihnachtsmarkt',
+      'open-events',
+      'open-data-karte-muenster',
+      'alternative-skulptur-projekte'
+    ];
+
+    var projects = [
+      'spassmitdaten', 'opendataday',
+      'wo-ist-markt.github.io', 'muenster-runnermap', 'containermap',
+      'open-data', 'kandidatenliste',
       'wahlprogramm-matrix', 'wahlen', 'wahlkarte', 'bautaetigkeit', 'codeforgermany-presentation',
       'civic-hacking-101',  'codeformuenster.github.io', 'parkleitsystem-api',
       'parkhaeuser-mobile', 'offenerrat-ms', 'muenster-dashboard', 'haushalt-muenster',
@@ -294,16 +318,26 @@ title: Code for Münster
       var projectlist = {};
       $.each( data, function( key, val ) {
         projectlist[val['name']]=key;
-      });
+      }); 
 
     //  console.log("projectlist", projectlist);
 
-      $.each( featured_projects, function( key, projectname ) {
+      $.each( showcaseprojects, function( key, projectname ) {
+        var p =data[projectlist[projectname]];
+        if (!p) {
+          console.log("DID NOT FIND FEATURED SHOWCASE-PROJECT" , projectname );
+        } else {
+          showProject("#showcase-projects", p);
+          data[projectlist[projectname]] = "";
+        }
+      });
+
+      $.each( projects, function( key, projectname ) {
         var p =data[projectlist[projectname]];
         if (!p) {
           console.log("DID NOT FIND FEATURED PROJECT" , projectname );
         } else {
-          showProject(p);
+          showProject("#projects", p);
           data[projectlist[projectname]] = "";
         }
       });
@@ -311,7 +345,7 @@ title: Code for Münster
       return ;
       $.each( data, function( key, val ) {
         if ( val ) {
-          showProject(val, 1);
+          showProject("#projects", val, 1);
         }
       });
 
