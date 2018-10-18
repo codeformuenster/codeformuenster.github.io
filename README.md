@@ -25,7 +25,7 @@ We are generating a static html page that can be hosted on github pages.
 Compiles the page after saving a code change:
 
 ```
-    docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 The website is available at [http://localhost:4000](http://localhost:4000). 
