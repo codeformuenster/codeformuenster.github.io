@@ -24,8 +24,14 @@ We are generating a static html page that can be hosted on github pages.
 2. Use this command to run it in docker.
 Compiles the page after saving a code change:
 
+
+Linux:
 ```
 docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+```
+Windows (PowerShell):
+```
+docker run -it --rm -v ${pwd}:/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
 
 The website is available at [http://localhost:4000](http://localhost:4000). 
