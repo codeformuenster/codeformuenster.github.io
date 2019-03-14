@@ -7,7 +7,7 @@ import os
 githubToken = os.environ['GITHUBTOKEN']
 #githubToken = ""
 githubOrganization = "codeformuenster"
-userJSONOutputFile = "members.json"
+userJSONOutputFile = "json/members.json"
 
 def getUsers(cursor, userarray):
   query = """
