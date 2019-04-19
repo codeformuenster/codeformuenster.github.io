@@ -103,6 +103,13 @@ Then you can generate the metadata json file that is used to render the reposito
 
     php update-data.php
 
+### Update the users list on the homepage with Docker
+
+1. get yourself a GitHub API Key [here](https://github.com/settings/tokens). The key needs to have the permission `repo:status`. Put in in `update_members_docker.sh` behind `GITHUBTOKEN=`. 
+
+2. build the update container with `containers/update_members/make_docker_container.sh`
+
+3. run the update script `./update_members_docker.sh`
 
 ## Deploy your changes to github
 
