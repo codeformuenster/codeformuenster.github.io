@@ -94,7 +94,6 @@ filled out in Github (The "Description" will used as project description and the
 
 ## Update the project list on the homepage
 
-
 First you need to install "shutter", so that it can automatically create the screenshots of your repositories:
 
     sudo apt-get install shutter
@@ -102,6 +101,13 @@ First you need to install "shutter", so that it can automatically create the scr
 Then you can generate the metadata json file that is used to render the repository list on the frontpage, by running:
 
     php update-data.php
+
+### Update project list without installing php
+
+The downside to this approach is, that screenshots will not be generated automagically, but you can create the screenshots manually (see last section of README)
+
+    docker run --rm -v $(pwd):/app -w /app php:cli php update-data.php 14
+
 
 ### Update the users list on the homepage with Docker
 
@@ -122,8 +128,12 @@ Then you can generate the metadata json file that is used to render the reposito
 
 # Other useful things
 
+## Generate a single screenshot
 
-## Update a single screenshot
+    npx pageres-cli http://www.google.com
+
+
+## Create correct screenshot size
 
 Sometimes the screenshot generator generates ugly things, especially for javascript heavy pages.
 Then use your favorite screenshot tool to take screenshots and then issue the following commands to resize the screenshot to appropriate size:
@@ -131,3 +141,5 @@ Then use your favorite screenshot tool to take screenshots and then issue the fo
     convert screenshots-large/$repoName.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 $screenshot_file
 
     convert screenshots-large/wo-ist-markt.github.io.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 screenshots/wo-ist-markt.github.io.jpg
+
+
