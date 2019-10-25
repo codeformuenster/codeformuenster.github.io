@@ -1,6 +1,6 @@
 # The "Code for Münster" Homepage
 
-See a live example at [codeformuenster.org](http://www.codeformuenster.org).
+See a live example at [codeformuenster.org](https://www.codeformuenster.org).
 
 The cool thing about this is, the fancy project list on the frontpage can automatically be fetched from the GitHub API by reading all the repositories of an organisation.
 
@@ -30,7 +30,7 @@ Windows (PowerShell):
 
     docker run -it --rm -v ${pwd}:/usr/src/app -p "4000:4000" starefossen/github-pages
 
-The website is available at [http://localhost:4000](http://localhost:4000). 
+The website is available at [https://localhost:4000](https://localhost:4000).
 
 Now you can make design changes, etc.
 Posts and stylesheets will automatically be recompiled on change.
@@ -120,7 +120,7 @@ The downside to this approach is, that screenshots will not be generated automag
 
 ## Generate a single screenshot
 
-    npx pageres-cli http://www.google.com
+    npx pageres-cli https://www.google.com
 
 ## Create correct screenshot size
 

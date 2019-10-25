@@ -16,8 +16,8 @@ Sonia Khan hat uns von der Open Knowledge Foundation aus Berlin besucht und Einb
 
 Seitens der Presse waren Uwe Renners und Carsten Vogel der Westfälischen Nachrichten anwesend. Sie führten Interviews für einen Artikel über den Tag der offenen Daten, den ihr hier nachlesen könnt. Die Westfälischen Nachrichten waren außerdem so nett und haben die Verpflegung übernommen. Hierfür vielen Dank!
 
-Ein großes Dankeschön geht ebenfalls an unseren zweiten Sponsor [con terra](http://www.conterra.de/) und an den [O'Reilly Verlag](http://www.oreilly.de/) für die Spende der vielen Sachbücher sowie an die [Volkshochschule Münster](http://vhs.muenster.de/) für die günstige Bereitstellung der Räumlichkeiten.
+Ein großes Dankeschön geht ebenfalls an unseren zweiten Sponsor [con terra](https://www.conterra.de/) und an den [O'Reilly Verlag](https://www.oreilly.de/) für die Spende der vielen Sachbücher sowie an die [Volkshochschule Münster](https://vhs.muenster.de/) für die günstige Bereitstellung der Räumlichkeiten.
 
 Insgesamt kann man den Tag der offenen Daten als sehr gelungen bezeichnen. Wir haben einen wichtigen Grundstein gelegt für eine Zusammenarbeit mit der Stadt Münster und gezeigt, dass offene Daten wichtig für Transparenz und gemeinsames Zusammenleben sind. Eines steht jetzt schon fest: Der Tag der offenen Daten wird nächstes Jahr wieder stattfinden.
 
-Doch auch dazwischen wird die Arbeit weitergehen. Wenn ihr interessiert seid, kommt doch einfach zu einem unserer wöchentlichen Treffen Mittwochs. Näheres findet ihr auf [unserer Webseite](http://codeformuenster.org/) und auf [meetup.com](http://www.meetup.com/OK-Lab-Munster/).
+Doch auch dazwischen wird die Arbeit weitergehen. Wenn ihr interessiert seid, kommt doch einfach zu einem unserer wöchentlichen Treffen Mittwochs. Näheres findet ihr auf [unserer Webseite](https://codeformuenster.org/) und auf [meetup.com](https://www.meetup.com/OK-Lab-Munster/).

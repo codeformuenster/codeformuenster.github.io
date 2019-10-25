@@ -226,7 +226,7 @@ class UpdateData {
       $title = preg_replace("/[^a-z0-9]+/i"," ",$repoName);
       $url = $repo['homepage'] ? $repo['homepage'] : ( $metaData['uri'] ? $metaData['uri'] : $metaData['url'] );
       if ( $url && (substr( strtolower($url), 0, 4) != "http" )) {
-          $url = 'http://'.$url;
+          $url = 'https://'.$url;
       }
 
       $screenshot_file = "";
