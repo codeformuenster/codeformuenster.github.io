@@ -5,7 +5,7 @@ title: Code for Münster
 
 <style>
 #muensterBG {
-  background: url(/img/schloss-bg.jpg);
+  background: url('{{ site.baseurl }}/img/schloss-bg.jpg');
   background-repeat: no-repeat;
   -moz-background-size:100%;
   -webkit-background-size:100%;
@@ -98,13 +98,13 @@ a.issues:hover {
 
                 <div class="uk-vertical-align uk-text-center" id="muensterBG" >
                     <div class="uk-vertical-align-middle uk-width-1-2">
-                        <h1 class="uk-heading-large"><img src="https://codeformuenster.org/img/cfm_logo.png" /><br />Code for Münster</h1>
+                        <h1 class="uk-heading-large"><img src="{{ site.baseurl }}/img/cfm_logo.png" /><br />Code for Münster</h1>
                         <p class="uk-text-large"><b>Make a difference</b><br />Nutz' deine Fähigkeiten um deine Stadt zu verbessern!</p>
 <br />
 <center>
     <a target="_blank" class="uk-button micon twitter" data-uk-tooltip title="twitter" href="https://twitter.com/codeformuenster"><i class="uk-icon-twitter uk-icon-large"></i></a>
     <a target="_blank" class="uk-button micon facebook" data-uk-tooltip title="facebook" href="https://www.facebook.com/codeformuenster/"><i class="uk-icon-facebook-official uk-icon-large"></i></a>
-    <a target="_blank" class="uk-button micon meetup" data-uk-tooltip title="meetup.com" href="http://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-maxcdn uk-icon-large"></i></a>
+    <a target="_blank" class="uk-button micon meetup" data-uk-tooltip title="meetup.com" href="https://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-maxcdn uk-icon-large"></i></a>
 </center>
 
 <br /> <br /><br /><br /><br />
@@ -121,13 +121,13 @@ a.issues:hover {
         <div class="uk-grid" data-uk-grid-margin>
 
             <div class="uk-width-medium-1-2">
-                <img width="660" height="400" src="/img/meetup.jpg" alt="">
+                <img width="660" height="400" src="{{ site.baseurl }}/img/meetup.jpg" alt="">
             </div>
 
             <div class="uk-width-medium-1-2">
               <a name="mitmachen"></a>
               <h1>Wer sind wir?</h1>
-                    <p>Wir sind Teil des Netzwerks <a href="http://codefor.de" target="_blank">Code for Germany</a>, einem Programm der <a href="http://okfn.de" target="_blank">Open Knowledge Foundation</a> Deutschland. Code for Germany ist Teil eines <a href="http://codeforall.org">internationalen Netzwerks</a> welches von <a href="http://codeforamerica.org" target="_blank">Code for America</a> ins Leben gerufen wurde. In Deutschland ging das Programm 2014 an den Start, mit anfangs acht Open Knowledge Labs, Münster war eines davon. Die Initiative dazu ergriffen Daniel und Mila und launchten das neue Lab zum Open Data Day 2014. Seitdem ist das Netzwerk auf 24 Labs gewachsen und das Münsteraner Lab hat Mitstreiter aus verschiedenen Unternehmen und Hintergründen gewonnen. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studierenden kommt die Mehrzahl vom <a href="http://ifgi.uni-muenster.de" target="_blank">Institut für Geoinformatik.</a></p>
+                    <p>Wir sind Teil des Netzwerks <a href="https://codefor.de" target="_blank">Code for Germany</a>, einem Programm der <a href="https://okfn.de" target="_blank">Open Knowledge Foundation</a> Deutschland. Code for Germany ist Teil eines <a href="https://codeforall.org">internationalen Netzwerks</a> welches von <a href="httsp://codeforamerica.org" target="_blank">Code for America</a> ins Leben gerufen wurde. In Deutschland ging das Programm 2014 an den Start, mit anfangs acht Open Knowledge Labs, Münster war eines davon. Die Initiative dazu ergriffen Daniel und Mila und launchten das neue Lab zum Open Data Day 2014. Seitdem ist das Netzwerk auf 24 Labs gewachsen und das Münsteraner Lab hat Mitstreiter aus verschiedenen Unternehmen und Hintergründen gewonnen. Die meisten von uns sind Softwareentwickler oder Studenten. Von den Studierenden kommt die Mehrzahl vom <a href="https://ifgi.uni-muenster.de" target="_blank">Institut für Geoinformatik.</a></p>
                     <h2>Was machen wir?</h2>
                     <p>Wir wollen in Münster den Bürgern und Bürgerinnen bessere Möglichkeiten zur Verfügung stellen um sich informieren und beteiligen zu können. Darüber hinaus wollen wir der Stadtverwaltung und Politik dabei helfen besser und direkter mit den Bürger zu kommunizieren, um sich auszutauschen und deren Feedback zu bekommen.</p>
                </p>            </div>
@@ -143,7 +143,7 @@ a.issues:hover {
             </div>
 
             <div class="uk-width-medium-1-2">
-                <img width="660" height="400" src="/img/hacknight.jpg" alt="">
+                <img width="660" height="400" src="{{ site.baseurl }}/img/hacknight.jpg" alt="">
             </div>
         </div>
 
@@ -181,7 +181,7 @@ a.issues:hover {
           <article class="uk-article uk-panel uk-panel-box uk-text-center">
 
               <h2 class="uk-article-title">
-                  <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
+                  <a href="{{ site.baseurl }}{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
               </h2>
 
               <p class="uk-article-meta">
@@ -191,7 +191,7 @@ a.issues:hover {
 
               <p> {{ site.posts[0].excerpt }}
               </p>
-              <p><a class="uk-button uk-button-primary" href="{{ site.posts[0].url }}">weiterlesen&hellip;</a>
+              <p><a class="uk-button uk-button-primary" href="{{ site.baseurl }}{{ site.posts[0].url }}">weiterlesen&hellip;</a>
               </p>
           </article>
 
@@ -199,17 +199,17 @@ a.issues:hover {
           <article class="uk-article uk-panel uk-panel-box uk-text-center">
 
               <h2 class="uk-article-title">
-                  <a href="{{ site.posts[1].url }}">{{ site.posts[1].title }}</a>
+                  <a href="{{ site.baseurl }}{{ site.posts[1].url }}">{{ site.posts[1].title }}</a>
               </h2>
 
               <p class="uk-article-meta">
                 Verfasst von {{site.posts[1].author}} am {{ site.posts[1].date | date: "%d.%m.%Y" }}
-                in <a href="{{ "/blog/index.html" | prepend: site.baseurl }}">{{site.posts[1].category}}</a>
+                in <a href="{{ site.baseurl }}/blog/index.html">{{site.posts[1].category}}</a>
               </p>
 
               <p> {{ site.posts[1].excerpt }}
               </p>
-              <p><a class="uk-button uk-button-primary" href="{{ site.posts[1].url }}">weiterlesen&hellip;</a>
+              <p><a class="uk-button uk-button-primary" href="{{ site.baseurl }}{{ site.posts[1].url }}">weiterlesen&hellip;</a>
               </p>
           </article>
 
@@ -237,7 +237,7 @@ a.issues:hover {
                 '</figcaption><a class="uk-position-cover" href="'+contributor.html_url+'"></a></figure></div>'
         );
     }
-    $.getJSON( "/json/members.json", function( data ) {
+    $.getJSON( "{{ site.baseurl }}/json/members.json", function( data ) {
       $.each( data, function( key, val ) {
         showContributor(val);
       });
@@ -321,7 +321,7 @@ a.issues:hover {
       'muenster-quiz','codeformuenster', 'carparcsmuenster', 'goto.nrw'
     ];
 
-    $.getJSON( "/json/repos_meta.json", function( data ) {
+    $.getJSON( "{{ site.baseurl }}/json/repos_meta.json", function( data ) {
       var projectlist = {};
       $.each( data, function( key, val ) {
         projectlist[val['name']]=key;
@@ -357,24 +357,4 @@ a.issues:hover {
       });
 
     });
-
-
 </script>
-
-
-<!--
-<div id="main">
-  <div class="wrapper">
-    <h1>Code a difference:</h1>
-    <h3>Nutz' deine Fähigkeiten um deine Stadt zu verbessern!</h3>
-    {% include meetup.html %}
-    <div class="more-info">
-      <p><a class="twitter-share-button" href="https://twitter.com/share" data-url="codeformuenster.org" data-text="Code for Münster, Code a Difference" data-via="codeformuenster"> Tweet </a>
-        <script>
-  window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
-        </script>
-      <p><a href="http://www.muenster.de/stadt/galerie/prinzipalmarkt_prinzipalmarkt15.html">Foto: Presseamt Münster / Angelika Klauser</a></p>
-    </div>
-  </div>
-</div>
--->

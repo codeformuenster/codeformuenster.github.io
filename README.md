@@ -6,13 +6,11 @@ The cool thing about this is, the fancy project list on the frontpage can automa
 
 We are generating a static html page that can be hosted on github pages.
 
-
 ## How does it work?
 
 * It would generate too many requests to the GitHub API if we would call the GitHub API live on every user request,  
 * That is why there is a php script in this repository that can be called from the command line.
 * It downloads all the repository meta data from GitHub and creates a summary json file that is then used by the static html frontpage.
-
 
 # 1. Run jekyll locally to simulate github pages
 
@@ -24,15 +22,13 @@ We are generating a static html page that can be hosted on github pages.
 2. Use this command to run it in docker.
 Compiles the page after saving a code change:
 
-
 Linux:
-```
-docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
-```
+
+    docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
+
 Windows (PowerShell):
-```
-docker run -it --rm -v ${pwd}:/usr/src/app -p "4000:4000" starefossen/github-pages
-```
+
+    docker run -it --rm -v ${pwd}:/usr/src/app -p "4000:4000" starefossen/github-pages
 
 The website is available at [http://localhost:4000](http://localhost:4000). 
 
@@ -59,11 +55,9 @@ The stylesheets are written in SASS/SCSS and are found in folder `_sass`. After 
 
 Or run `compass watch` to automatically recompile after saving a file. If you intend to run the webserver as well, you don't need to compile the SASS code by hand. It is then managed by `bundler`/`jekyll`.
 
-
 # 2. Regenerate the project list
 
 The project list will be created by fetching all sub-repositories from an organisation at github.
-
 
 ## Configuration
 
@@ -91,7 +85,6 @@ filled out in Github (The "Description" will used as project description and the
   https://raw.githubusercontent.com/codeformuenster/open-data/master/README.md
   If a status value of "ok" or "done" is found, then the project will be displayed as finished.
 
-
 ## Update the project list on the homepage
 
 First you need to install "shutter", so that it can automatically create the screenshots of your repositories:
@@ -108,7 +101,6 @@ The downside to this approach is, that screenshots will not be generated automag
 
     docker run --rm -v $(pwd):/app -w /app php:cli php update-data.php 14
 
-
 ### Update the users list on the homepage with Docker
 
 1. get yourself a GitHub API Key [here](https://github.com/settings/tokens). The key needs to have the permission `repo:status`. Put in in `update_members_docker.sh` behind `GITHUBTOKEN=`. 
@@ -124,14 +116,11 @@ The downside to this approach is, that screenshots will not be generated automag
 * Push it to the gh-pages branch.
 * Done!
 
-
-
 # Other useful things
 
 ## Generate a single screenshot
 
     npx pageres-cli http://www.google.com
-
 
 ## Create correct screenshot size
 
@@ -141,5 +130,3 @@ Then use your favorite screenshot tool to take screenshots and then issue the fo
     convert screenshots-large/$repoName.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 $screenshot_file
 
     convert screenshots-large/wo-ist-markt.github.io.png  -background white -resize 600x -crop 600x400+0+0 -strip -quality 80 screenshots/wo-ist-markt.github.io.jpg
-
-
