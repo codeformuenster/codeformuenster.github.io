@@ -19,7 +19,7 @@ setMeetupHtml = (result) ->
   $("#next-meetup #rvsp").attr "href", result.eventUrl
 
 setMeetup = ->
-  meetup_url = "https://api.meetup.com/2/events?callback=?&sign=true&status=upcoming&group_urlname=OK-Lab-Munster&format=json&key=48406a31956272b2f12c3965547d"
+  meetup_url = "https://api.meetup.com/OK-Lab-Munster/events?&sign=true&photo-host=public&page=1"
   $.getJSON meetup_url, (data) ->
     if data.results.length > 0
       result = data.results[0]
