@@ -20,7 +20,7 @@ Verkehrsunfallstatistik von Münster.
 ## Alle Unfälle in Münster
 
 Zu jedem Verkehrsunfall, zu dem die Polizei hinzu gerufen wird, wird ein
-Datensatz mit den „Eckdaten“ des Unfalls angelegt. Dazu gehört neben der Art
+Datensatz mit den "Eckdaten" des Unfalls angelegt. Dazu gehört neben der Art
 des Unfalls (Auffahrunfall, Abbiegeunfall, ...),
 Art und Anzahl der Beteiligten (Auto, Fahrrad, LKW, ...),
 Verletzungen/Sachschäden und Unfallursachen auch der Ort des Unfalls. Aus der
@@ -44,11 +44,11 @@ enthalten zwischen 31 und 38 Spalten mit Angaben je Unfall abhängig vom Jahr.
 
 Obwohl der Datensatz sehr detailliert ist, gibt es leider eine große Schwäche:
 
-Der Ort des Unfalls ist lediglich durch die Spalten „Unfallort“ und
+Der Ort des Unfalls ist lediglich durch die Spalten "Unfallort" und
 „Unfallhöhe“ beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
 erst nach einer Nachbearbeitung nutzbar.
 
-Der übliche Weg, um Adressen maschinenlesbar nutzbar zu machen, ist ein so
+Der übliche Weg, um Adressen maschinenlesbar nutzbar zu machen, ist einen so
 genannten Geocoder zu verwenden, um ein Koordinatenpaar zu einer
 Ortsbescheibung zu finden.
 
@@ -66,14 +66,12 @@ Maschinenlesbarkeit des Ortes.
 
 ## Mithelfen
 
-Derzeit wird noch fleissig an unserem Editor zur manuellen Überprüfung der 
+Derzeit wird noch fleissig an unserem Editor zur manuellen Überprüfung der
 Unfalldaten gearbeitet. Der
 [aktuelle Sourcecode](https://github.com/codeformuenster/verkehrsunfaelle-editor)
-ist bereits bei GitHub zu finden. Coder mit den entsprechenden Kenntnissen
-können sich gerne an der Entwicklung beteiligen, ansonsten sind 
-genauso Tester gesucht, die Feedback zur Benutzung des
-[Prototypen](https://ms-verkehrsunfaelle-beta.netlify.com/)
-liefern.
+ist bereits bei GitHub zu finden. Programmierer mit den entsprechenden
+Kenntnissen können sich gerne an der Entwicklung beteiligen, ansonsten sind
+genauso Tester gesucht, die Feedback zur Benutzung des Tools liefern.
 
 Nach Fertigstellung des Tools sind alle Bürger Münsters aufgerufen, mit dem
 Editor zur genauen Ortserfassung aller Unfälle und damit dem besseren
