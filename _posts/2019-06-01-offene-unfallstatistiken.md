@@ -14,7 +14,8 @@ keywords:
   - "Verkehrsunfallstatistik"
 ---
 
-Seit geraumer Zeit beschäftigen wir uns bei Code for Münster mit der Verkehrsunfallstatistik von Münster.
+Seit geraumer Zeit beschäftigen wir uns bei Code for Münster mit der
+Verkehrsunfallstatistik von Münster.
 
 ## Alle Unfälle in Münster
 
@@ -24,8 +25,7 @@ des Unfalls (Auffahrunfall, Abbiegeunfall, ...),
 Art und Anzahl der Beteiligten (Auto, Fahrrad, LKW, ...),
 Verletzungen/Sachschäden und Unfallursachen auch der Ort des Unfalls. Aus der
 Gesamtheit dieser Datensätze errechnet die Polizei dann jährlich
-zusammengefasste Verkehrsunfallstatistiken
-([Link](https://muenster.polizei.nrw/polizeiliche-verkehrsunfallstatistik-4))
+[zusammengefasste Verkehrsunfallstatistiken](https://muenster.polizei.nrw/polizeiliche-verkehrsunfallstatistik-4)
 als statisches PDF.
 
 Dank einer
@@ -45,10 +45,10 @@ enthalten zwischen 31 und 38 Spalten mit Angaben je Unfall abhängig vom Jahr.
 Obwohl der Datensatz sehr detailliert ist, gibt es leider eine große Schwäche:
 
 Der Ort des Unfalls ist lediglich durch die Spalten "Unfallort" und
-"Unfallhöhe" beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
+„Unfallhöhe“ beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
 erst nach einer Nachbearbeitung nutzbar.
 
-Der übliche Weg um Adressen maschinenlesbar nutzbar zu machen, ist einen so
+Der übliche Weg, um Adressen maschinenlesbar nutzbar zu machen, ist einen so
 genannten Geocoder zu verwenden, um ein Koordinatenpaar zu einer
 Ortsbescheibung zu finden.
 
@@ -60,10 +60,19 @@ auf Ortsebene nicht geeignet.
 
 ## Das Ziel
 
-Unser Ziel ist es, die vorhandenen Daten für Alle einfach zugänglich zu machen.
+Unser Ziel ist es, die vorhandenen Daten für alle einfach zugänglich zu machen.
 Dazu gehören neben einem einheitlichen Datums- und Zeitformat auch die
-maschinenlesbarkeit des Ortes.
+Maschinenlesbarkeit des Ortes.
 
 ## Mithelfen
 
-Als
+Derzeit wird noch fleissig an unserem Editor zur manuellen Überprüfung der
+Unfalldaten gearbeitet. Der
+[aktuelle Sourcecode](https://github.com/codeformuenster/verkehrsunfaelle-editor)
+ist bereits bei GitHub zu finden. Programmierer mit den entsprechenden
+Kenntnissen können sich gerne an der Entwicklung beteiligen, ansonsten sind
+genauso Tester gesucht, die Feedback zur Benutzung des Tools liefern.
+
+Nach Fertigstellung des Tools sind alle Bürger Münsters aufgerufen, mit dem
+Editor zur genauen Ortserfassung aller Unfälle und damit dem besseren
+Verständnis von Unfallschwerpunkten in der Stadt beizutragen.
