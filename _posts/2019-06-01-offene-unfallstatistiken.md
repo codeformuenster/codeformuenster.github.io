@@ -45,7 +45,7 @@ enthalten zwischen 31 und 38 Spalten mit Angaben je Unfall abhängig vom Jahr.
 Obwohl der Datensatz sehr detailliert ist, gibt es leider eine große Schwäche:
 
 Der Ort des Unfalls ist lediglich durch die Spalten "Unfallort" und
-„Unfallhöhe“ beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
+"Unfallhöhe" beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
 erst nach einer Nachbearbeitung nutzbar.
 
 Der übliche Weg, um Adressen maschinenlesbar nutzbar zu machen, ist einen so
