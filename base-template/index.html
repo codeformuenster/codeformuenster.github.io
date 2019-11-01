@@ -6,25 +6,25 @@
       <title>CodeForMuenster.org</title>
       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-      <link rel="stylesheet" href="/css/c4m.css">
-      <link rel="stylesheet" href="/uikit/css/uikit.gradient.min.css">
-      <link rel="stylesheet" href="/uikit/css/tooltip.gradient.min.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/css/c4m.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/uikit/css/uikit.gradient.min.css">
+      <link rel="stylesheet" href="{{ site.baseurl }}/uikit/css/tooltip.gradient.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-      <script src="/uikit/js/uikit.min.js"></script>
-      <script src="/uikit/js/tooltip.js"></script>
+      <script src="{{ site.baseurl }}/uikit/js/uikit.min.js"></script>
+      <script src="{{ site.baseurl }}/uikit/js/tooltip.js"></script>
   </head>
 
   <body>
       <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
           <nav class="uk-navbar uk-margin-large-bottom">
-              <a class="uk-navbar-brand uk-hidden-small" href="/index.html"><img style="height:40px" src="https://codeformuenster.org/img/cfm_logo.png" /></a>
+              <a class="uk-navbar-brand uk-hidden-small" href="{{ site.baseurl }}/index.html"><img style="height:40px" src="https://codeformuenster.org/img/cfm_logo.png" /></a>
               <ul class="uk-navbar-nav uk-hidden-small">
                   <li>
-                      <a href="/index.html">Startseite</a>
+                      <a href="{{ site.baseurl }}/index.html">Startseite</a>
                   </li>
                   <li>
-                      <a href="/index.html#projekte"> Projekte</a>
+                      <a href="{{ site.baseurl }}/index.html#projekte"> Projekte</a>
                   </li>
                   <li>
                       <a target="_blank" href="https://www.meetup.com/OK-Lab-Munster/"><i class="uk-icon-external-link"></i> Nächstes Treffen (meetup.com)</a>
@@ -72,7 +72,7 @@
         <div class="uk-grid" data-uk-grid-margin>
 
             <div class="uk-width-medium-1-2">
-                <img width="660" height="400" src="/img/meetup.jpg" alt="">
+                <img width="660" height="400" src="{{ site.baseurl }}/img/meetup.jpg" alt="">
             </div>
 
             <div class="uk-width-medium-1-2">
@@ -98,8 +98,8 @@
         <div  class="uk-grid"  data-uk-grid-margin>
           <div class="uk-width-medium-1-1">
 
-            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-            <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+            <link rel="stylesheet" href="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+            <script src="https://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
             <div id="map" style="height:300px">
             </div>
 
@@ -149,15 +149,15 @@
           <article class="uk-article uk-panel uk-panel-box uk-text-center">
 
               <h2 class="uk-article-title">
-                  <a href="/blog/2016/03/16/odd-rueckblick.md/">Lorem Ipsum</a>
+                  <a href="{{ site.baseurl }}/blog/2016/03/16/odd-rueckblick.md/">Lorem Ipsum</a>
               </h2>
 
               <p class="uk-article-meta">
                 Verfasst von Marco Lünich am 16 March 2016
-                 in <a href="/blog/index.html">blog</a>
+                 in <a href="{{ site.baseurl }}/blog/index.html">blog</a>
                </p>
 
-              <p><a class="uk-button uk-button-primary" href="/blog/2016/03/16/odd-rueckblick.md/">weiterlesen&hellip;</a>
+              <p><a class="uk-button uk-button-primary" href="{{ site.baseurl }}/blog/2016/03/16/odd-rueckblick.md/">weiterlesen&hellip;</a>
               </p>
           </article>
 
@@ -174,10 +174,10 @@
             <div class="uk-offcanvas-bar">
                 <ul class="uk-nav uk-nav-offcanvas">
                   <li class="uk-active">
-                      <a href="/index.html">CodeForMuenster.Org</a>
+                      <a href="{{ site.baseurl }}/index.html">CodeForMuenster.Org</a>
                   </li>
                     <li>
-                        <a href="/index.html"> Startseite </a>
+                        <a href="{{ site.baseurl }}/index.html"> Startseite </a>
 
                     </li>
                     <li>
@@ -205,13 +205,13 @@
                     <li><a href="https://github.com/codeformuenster/codeformuenster/issues">Issues</a></li>
                     <li><a href="https://github.com/orgs/codeformuenster/people">Komplette Mitgliederliste</a></li>
                     <li><a href="https://twitter.com/codeformuenster">Twitter</a></li>
-                    <li><a href="/impressum/index.html#impressum">Impressum</a></li>
-                    <li><a href="/impressum/index.html#datenschutz">Datenschutzerklärung</a></li>
+                    <li><a href="{{ site.baseurl }}/impressum/index.html#impressum">Impressum</a></li>
+                    <li><a href="{{ site.baseurl }}/impressum/index.html#datenschutz">Datenschutzerklärung</a></li>
                 </ul>
 
                 <div class="uk-panel">
                   <p> <!-- some text could be here --></p>
-                    <a href="https://codeformuenster.org"><img src="https://codeformuenster.org/img/cfm_logo.png"></a>
+                    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/cfm_logo.png"></a>
                 </div>
 
             </div>

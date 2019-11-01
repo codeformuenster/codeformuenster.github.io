@@ -45,19 +45,19 @@ Nach der Begrüßung durch die Veranstalter sprach zunächst Bürgermeisterin Vi
 <img class="inarticle" src="/img/odd2016-grusswort.jpg" style="float:left" /> Anschließend wurde zu den Vorträgen übergegangen:
 
 
-Zunächst gab es einen kurzen **Jahresrückblick des Teams von Code for Münster** von Gerald. Diesen könnt ihr nochmal [im vorherigen Blogpost nachlesen](http://codeformuenster.org/blog/2016/03/05/rueckblick-2015/).
+Zunächst gab es einen kurzen **Jahresrückblick des Teams von Code for Münster** von Gerald. Diesen könnt ihr nochmal [im vorherigen Blogpost nachlesen](https://codeformuenster.org/blog/2016/03/05/rueckblick-2015/).
 
 
 Hierauf folgte Olli, Informatiklehrer, der den Teilnehmer*innen* zeigte, mit welchen Herausforderungen schulischer Unterricht zu Themen wie Programmieren und Open Data umzugehen hat. Außerdem wurde **eine kurze Einführung zum Thema "Open Educational Resources"** gegeben.
 
 
-Dann wurde die **SenseBox, ein Projekt der Geoinformatik der WWU Münster**, von Christoph vorgestellt. Bei diesem Projekt kann jeder ganz einfach mit dem SenseBox-Bausatz verschiedene Umweltdaten erheben. [Auf der OpenSenseMap-Webseite sind bestehende Einsatzorte der SenseBox verzeichnet. ](http://opensensemap.org/)
+Dann wurde die **SenseBox, ein Projekt der Geoinformatik der WWU Münster**, von Christoph vorgestellt. Bei diesem Projekt kann jeder ganz einfach mit dem SenseBox-Bausatz verschiedene Umweltdaten erheben. [Auf der OpenSenseMap-Webseite sind bestehende Einsatzorte der SenseBox verzeichnet. ](https://opensensemap.org/)
 
 
 Es folgten **Ingomar und Simon vom Verein "Freifunk Münsterland"** mit einen Vortrag über das Schaffen und Gedeihen der Freifunk Community im Münsterland.
 [Die Freifunk Community ist im Münsterland sehr aktiv und hat bereits über 1700 freie WLAN-Zuganspunkte](https://freifunk-muensterland.de/).
 
-**Danach berichtete Simon von "Open Street Map"** von den vielfältigen Möglichkeiten, im digitalen Stadtraum von Münster zu navigieren, und [wie Bürger selbst zur Verbesserung des OSM-Angebots beitragen können](http://wiki.openstreetmap.org/wiki/M%C3%BCnster/Stammtisch).
+**Danach berichtete Simon von "Open Street Map"** von den vielfältigen Möglichkeiten, im digitalen Stadtraum von Münster zu navigieren, und [wie Bürger selbst zur Verbesserung des OSM-Angebots beitragen können](https://wiki.openstreetmap.org/wiki/M%C3%BCnster/Stammtisch).
 Er stellte den Allwetterzoo und die Rieselfelder auf OpenStreetMap vor, die dort besonders detailliert kartographiert sind, sogar besser als auf Google Maps.
 
 <img class="inarticle" src="/img/odd2016-hackers.jpg" style="float:right" />
@@ -83,9 +83,9 @@ Parallel gab es zum Open Data Day 2016 in vielen anderen Städten ähnliche Vera
 
 <h1>Überblick der Beiträge</h1>
 
- 1. Rückblick 2015 - [Vortragsfolien](http://codeformuenster.org/codeforgermany-presentation/)
+ 1. Rückblick 2015 - [Vortragsfolien](https://codeformuenster.org/codeforgermany-presentation/)
  2. Open Educational Resources (OER)
  3. senseBox
  4. Freifunk
  5. OSM Stammstisch
- 6. Open Data - [Vortragsfolien](http://codeformuenster.org/open-data/open-data-slides)
+ 6. Open Data - [Vortragsfolien](https://codeformuenster.org/open-data/open-data-slides)

@@ -12,8 +12,8 @@ function userCmp( $a, $b ) {
 }
 
 function repoSort( $a, $b ) {
-	if ( $a['image'] && !$b[image] ) { return -1;}
-	if ( (!$a['image']) && $b[image] ) { return 1;}
+  if ( $a['image'] && !$b[image] ) { return -1;}
+  if ( (!$a['image']) && $b[image] ) { return 1;}
   return 0 - strcmp( $a['updated_at'], $b['updated_at']);
 }
 
@@ -34,27 +34,27 @@ echo "\n  Using github organisation name from config:\n  " . $config['organisati
 
 class UpdateData {
 
-	/**
-	 * method to access the github api without getting blocked (you need to set user agent)
-	 */
-	private function getData($url) {
+  /**
+   * method to access the github api without getting blocked (you need to set user agent)
+   */
+  private function getData($url) {
 
-		$ch = curl_init();
-		$timeout = 5;
-		curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
-	  curl_setopt($ch, CURLOPT_USERAGENT,'CodeForDeGithubReader');
-		$data = curl_exec($ch);
+    $ch = curl_init();
+    $timeout = 5;
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+    curl_setopt($ch, CURLOPT_USERAGENT,'CodeForDeGithubReader');
+    $data = curl_exec($ch);
 
     if(!$data) {
       echo "\nbroken response: \n";
       die($data);
     }
 
-		curl_close($ch);
-		return $data;
-	}
+    curl_close($ch);
+    return $data;
+  }
 
 
   /**
@@ -76,7 +76,7 @@ class UpdateData {
 
       # check if a broken file was downloaded, and redownload
       $issueData = file_get_contents($file);
-		  $issues = json_decode( $issueData, true );
+      $issues = json_decode( $issueData, true );
 
       if (isset($issues['message']) && strpos( $issues['message'], 'rate limit exceeded')) {
         log_info('File seems to be broken! Re-downloading ' . $file);
@@ -91,7 +91,7 @@ class UpdateData {
   /**
    * Main function that downloads all the stuff and updates the meta data
    */
-	public function run( $config, $update = 0, $upateOnly = '')
+  public function run( $config, $update = 0, $upateOnly = '')
   {
 
     log_info("STARTING.. " );
@@ -110,24 +110,24 @@ class UpdateData {
     ];
 
 
-		# update all the basic json files
+    # update all the basic json files
     $this->downloadUrlToFile(
       "https://api.github.com/orgs/$githubOrg/members?per_page=100" . $apiCred,
-	     "json/members.json",
+       "json/members.json",
        $update
     );
     $this->downloadUrlToFile(
       "https://api.github.com/orgs/$githubOrg/repos?per_page=100&sort=pushed&direction=desc" . $apiCred,
-	     "json/repos.json",
+       "json/repos.json",
        $update
     );
-		$repoString = file_get_contents( "json/repos.json" );
-		$repos = json_decode( $repoString, true );
+    $repoString = file_get_contents( "json/repos.json" );
+    $repos = json_decode( $repoString, true );
 
 
     # download all the repo meta data
-		$allRepos = [];
-		foreach ( $repos AS $repo ) {
+    $allRepos = [];
+    foreach ( $repos AS $repo ) {
 
       $repoName = $repo['name'];
 
@@ -136,19 +136,19 @@ class UpdateData {
         continue;
       }
 
-		  log_info( "\Reading repository ==============================> " . $repoName, 'hl');
+      log_info( "\Reading repository ==============================> " . $repoName, 'hl');
 
-		  // get issue information
-		  if ((!$upateOnly)||($upateOnly &&($upateOnly==$repoName) ) ) {
+      // get issue information
+      if ((!$upateOnly)||($upateOnly &&($upateOnly==$repoName) ) ) {
         sleep(1);
-		    $this->downloadUrlToFile(
+        $this->downloadUrlToFile(
           "https://api.github.com/repos/$githubOrg/$repoName/issues?state=all" . $apiCred,
-		      "json/repos/".$repoName."_issues.json",
+          "json/repos/".$repoName."_issues.json",
           $update
         );
-		  }
-	    $issueData = file_get_contents("json/repos/".$repoName."_issues.json");
-		  $issues = json_decode( $issueData, true );
+      }
+      $issueData = file_get_contents("json/repos/".$repoName."_issues.json");
+      $issues = json_decode( $issueData, true );
 
       if (isset($issues['message']) && $issues['message']) {
         log_error('GITHUB API PROBLEM?');
@@ -157,76 +157,76 @@ class UpdateData {
       }
 
 
-		  // get users infos from issues
-		  $users = [];
-		  $closed = 0;
-		  $total = 0;
-		  foreach ( $issues AS $issue ) {
+      // get users infos from issues
+      $users = [];
+      $closed = 0;
+      $total = 0;
+      foreach ( $issues AS $issue ) {
         if (!$issue["user"]) {
           echo "\nBROKEN IssUE";
           print_r($issue);
           die();
         } else {
-  		    $issueUser = $issue["user"]["login"];
-  		    $users[$issueUser]['count']++;
-  		    $users[$issueUser]['name']        = $issueUser;
-  		    $users[$issueUser]["avatar_url"]  = $issue["user"]["avatar_url"];
-  		    $users[$issueUser]["html_url"]    = $issue["user"]["html_url"];
+          $issueUser = $issue["user"]["login"];
+          $users[$issueUser]['count']++;
+          $users[$issueUser]['name']        = $issueUser;
+          $users[$issueUser]["avatar_url"]  = $issue["user"]["avatar_url"];
+          $users[$issueUser]["html_url"]    = $issue["user"]["html_url"];
         }
 
-		    if ($issue['state']=="closed") {
-		      $closed++;
-		    }
-		    $total++;
-		  }
-		  usort( $users, "userCmp");
+        if ($issue['state']=="closed") {
+          $closed++;
+        }
+        $total++;
+      }
+      usort( $users, "userCmp");
 
 
-		  // get infos from readme.md
-		  $readme="";
-		  if ($update && ((!$upateOnly)||($upateOnly &&($upateOnly==$repoName) ) ) ) {
+      // get infos from readme.md
+      $readme="";
+      if ($update && ((!$upateOnly)||($upateOnly &&($upateOnly==$repoName) ) ) ) {
         $this->downloadUrlToFile(
           'https://raw.githubusercontent.com/'.$githubOrg.'/'.$repoName.'/master/README.md',
-		      "json/repos/".$repoName."_readme.md",
+          "json/repos/".$repoName."_readme.md",
           $update
         );
-		  }
-		  $readme = file_get_contents("json/repos/".$repoName."_readme.md");
+      }
+      $readme = file_get_contents("json/repos/".$repoName."_readme.md");
 
       $image = "";
-		  #if ( preg_match( '/\[[^\]+]\]\((htt[^\)]+png)\)/ims', $readme, $matches ) ) {
-		  if ( preg_match( '/\[([^\]]+)\]\((htt[^\)]+(?:png|jpg))/ims', $readme, $matches ) ) {
+      #if ( preg_match( '/\[[^\]+]\]\((htt[^\)]+png)\)/ims', $readme, $matches ) ) {
+      if ( preg_match( '/\[([^\]]+)\]\((htt[^\)]+(?:png|jpg))/ims', $readme, $matches ) ) {
         $imagetext =$matches[1];
         $image = $matches[2];
-		    if (preg_match('/build/i',$imagetext) ) {
+        if (preg_match('/build/i',$imagetext) ) {
           $image ="";
         }
         if (preg_match('/waffle/i',$image) ) {
           $image ="";
         }
       }
-		  if ($image) {
-		    echo "- $image\n";
-		  }
+      if ($image) {
+        echo "- $image\n";
+      }
 
       $metaData = [];
-			if ( preg_match('/---\n((?:[a-z]+:\s*.+\n)+)---/im', $readme, $matches) ) {
-				foreach( explode("\n", $matches[1] ) as $row) {
-					$crap = explode(":", $row );
-					$name = array_shift($crap);
-					if ($name ) {
-						$metaData[$name]=join(":", $crap);
+      if ( preg_match('/---\n((?:[a-z]+:\s*.+\n)+)---/im', $readme, $matches) ) {
+        foreach( explode("\n", $matches[1] ) as $row) {
+          $crap = explode(":", $row );
+          $name = array_shift($crap);
+          if ($name ) {
+            $metaData[$name]=join(":", $crap);
             $metaData[$name] = preg_replace('/^\s+/','',$metaData[$name]);
-					}
-				}
+          }
+        }
         log_info("Metadata in README.md found:");
         print_r($metaData);
-			}
+      }
 
-			$title = preg_replace("/[^a-z0-9]+/i"," ",$repoName);
+      $title = preg_replace("/[^a-z0-9]+/i"," ",$repoName);
       $url = $repo['homepage'] ? $repo['homepage'] : ( $metaData['uri'] ? $metaData['uri'] : $metaData['url'] );
       if ( $url && (substr( strtolower($url), 0, 4) != "http" )) {
-          $url = 'http://'.$url;
+          $url = 'https://'.$url;
       }
 
       $screenshot_file = "";
@@ -251,36 +251,36 @@ class UpdateData {
       }
 
       $allRepos[$repoName]=[
-		      'updated_at'    => $repo['updated_at'],
-		      'created_at'    => $repo['created_at'],
-		      'description'   => $repo['description'],
-		      'name'          => $repoName,
-					'title'         => $title,
-		      'total_tasks'   => $total,
-		      'closed_tasks'  => $closed,
-		      'users'         => $users,
-		      'image'         => $image,
-					'html_url'			=> $repo['html_url'],
-					'url' 				  => $url,
-					'forum' 			  => $metaData['forum'],
+          'updated_at'    => $repo['updated_at'],
+          'created_at'    => $repo['created_at'],
+          'description'   => $repo['description'],
+          'name'          => $repoName,
+          'title'         => $title,
+          'total_tasks'   => $total,
+          'closed_tasks'  => $closed,
+          'users'         => $users,
+          'image'         => $image,
+          'html_url'			=> $repo['html_url'],
+          'url' 				  => $url,
+          'forum' 			  => $metaData['forum'],
           'status'        => $metaData['status'],
           'meta'          => $metaData
-		  ];
+      ];
       #print_r($allRepos[$repoName]);
 
-		}
+    }
 
-		usort( $allRepos, 'repoSort' );
+    usort( $allRepos, 'repoSort' );
 
-		file_put_contents(
-		  "json/repos_meta.json",
-		  json_encode( $allRepos )
-		);
+    file_put_contents(
+      "json/repos_meta.json",
+      json_encode( $allRepos )
+    );
 
     log_info("writing meta-file: " . "json/repos_meta.json");
     log_info("DONE!");
 
-	}
+  }
 
 }
 

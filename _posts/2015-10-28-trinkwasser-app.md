@@ -27,4 +27,4 @@ Der Härtegrad des Wassers gibt zudem Auskunft darüber, wie beim Waschen Waschm
 Als zusätzliche Information kann man das Münsteraner Leitungswasser mit etlichen weitverbreiteten Wassermarken vergleichen. Dabei braucht das Wasser, das in Münster aus der Leitung kommt den Vergleich mit den Supermarkt-Wassern nicht scheuen.
 
 ## Link zur App
-- [Trinkwasser in Münster](http://codeformuenster.org/trinkwasser/)
+- [Trinkwasser in Münster](https://codeformuenster.org/trinkwasser/)
