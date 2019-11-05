@@ -10,6 +10,8 @@ url: "codeformuenster.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+kramdown:
+    smart_quotes: ["sbquo", "lsquo", "bdquo", "ldquo"]
 permalink: /:categories/:year/:month/:day/:title/
 keywords:
   - "Münster"
