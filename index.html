@@ -270,7 +270,12 @@ a.issues:hover {
     }
 
     function showProject( container, p, noimage ) {
-        var percent = p.closed_tasks  / p.total_tasks  * 100;
+        var percent = 0.0;
+        if(p.total_tasks == 0) {
+          percent = 50.0;
+        } else {
+          percent = p.closed_tasks  / p.total_tasks  * 100;
+        }
 
         var featureIcon = "";
         featureIcon = ((p.status=='done')||(p.status=='ok'))?'star':'';
