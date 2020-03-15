@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="content">
+    <p>Veröffentlicht: {{ page.date | date: "%d.%m.%Y" }} von {{ page.author }}{% if page.twitter %} <small>(<a href="https://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a>)</small>{% endif %}</p>
+    {{ content }}
+</div>
+
+<a href="{{ '/blog/' | prepend: site.baseurl }}" class="button is-link">Zurück zum Blog</a>
+
+<div class="tags">
+    {% for tag in page.tags %}
+    <span class="tag is-primary">{{ tag }}</span>
+    {% endfor %}
+</div>

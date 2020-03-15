@@ -1,0 +1,46 @@
+@import "carousel";
+
+.footer_cfg_logo {
+  width: 100px;
+}
+
+@include mobile {
+  .hero-body .title {
+    font-size: $size-3;
+  }
+  .hero-body .subtitle {
+    font-size: $size-5;
+  }
+}
+
+.landingpage_buttons > * {
+  display: flex;
+  justify-content: center;
+}
+
+.twitter {
+  color: #55acee;
+}
+
+.github {
+  color: #333;
+}
+
+.cfm_hero {
+  position: relative;
+}
+
+.cfm_hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/img/code.svg);
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+  filter: opacity(15%);
+  background-position: 128% 50%;
+  background-size: 80%;
+}

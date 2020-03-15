@@ -1,0 +1,82 @@
+/**
+ * Designed by Upperquad [https://upperquad.com] developed by Aranja [https://aranja.com] for Facebook.
+ * See it live on https://nonprofits.fb.com/learn-the-basics
+ */
+
+$em-base: 16px !default;
+
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+// Variables
+$numberOfImgs: 8 !default;
+$timePerImage: 3s !default;
+
+$imgSpacing: em(10px);
+$imgWidth: em(floor(640px/2));
+$imgHeight: em(floor(543px/2));
+$fbHeaderHeight: em(57px);
+
+.Carousel {
+  position: relative;
+  width: $imgWidth;
+  height: $imgHeight;
+  float: right;
+}
+
+.Carousel-slides {
+  position: relative;
+  display: flex;
+  width: $imgWidth;
+  height: $imgHeight;
+  overflow: hidden;
+}
+
+.Carousel-slide {
+  position: absolute;
+  padding-left: $imgSpacing;
+  width: $imgWidth;
+  height: $imgHeight;
+  display: flex;
+  justify-content: center;
+
+  @for $i from 1 through $numberOfImgs {
+    &:nth-child(#{$i}) {
+      animation: Carousel-animation
+        ($numberOfImgs * $timePerImage)
+        (-($numberOfImgs * $timePerImage) / $numberOfImgs * $i)
+        cubic-bezier(0.445, 0.050, 0.550, 0.950)
+        infinite;
+    }
+  }
+}
+
+.Carousel-item {
+  margin: auto;
+}
+
+@keyframes Carousel-animation {
+  $initialIndex: 3;
+  $index: $initialIndex;
+
+  @while $index - $initialIndex <= $numberOfImgs {
+    $startTime: 100% * ($index - $initialIndex) / $numberOfImgs;
+    $timeToWait: 80% / $numberOfImgs;
+    #{$startTime},
+    #{min($startTime + $timeToWait, 100%)} {
+      transform: translateX((100% * $numberOfImgs) - 100% * $index);
+    }
+    $index: $index + 1;
+  }
+}

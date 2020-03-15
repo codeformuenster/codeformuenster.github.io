@@ -1,0 +1,10 @@
+- name: Impressum
+  link: https://codeformuenster.org/impressum/#impressum
+- name: Datenschutz
+  link: https://codeformuenster.org/impressum/#datenschutz
+- name: Blog
+  local_link: /blog/
+- name: Code for Germany
+  local_image: /assets/img/CFG_logo.svg
+  image_class: footer_cfg_logo
+  link: https://codefor.de/
