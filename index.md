@@ -57,6 +57,7 @@ Klingt interessant? Komm gerne vorbei, wir sind immer offen für neue Leute! Uns
 
 ## Projekte
 
+TODO
 
 ## Aktuelle Blog-Artikel
 
