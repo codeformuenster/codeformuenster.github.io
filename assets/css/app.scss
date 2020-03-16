@@ -3,6 +3,7 @@
 $primary: #FFFFFF;
 $numberOfImgs: 7;
 $timePerImage: 5s;
+$assetsBaseUrl: {{ '/assets' | prepend: site.baseurl }};
 
 // Import Main CSS file from theme
 @import "main";
