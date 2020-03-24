@@ -8,7 +8,7 @@ We're using a very fine theme called [bulma-clean-theme](https://github.com/chri
 
 ## Development
 
-sudo docker run -it --rm -v "$PWD":/usr/src/app -e JEKYLL_GITHUB_TOKEN=my-github-token -p "4000:4000" starefossen/github-pages
+    sudo docker run -it --rm -v "$PWD":/usr/src/app -e JEKYLL_GITHUB_TOKEN=my-github-token -p "4000:4000" starefossen/github-pages
 
 ### I want to add an image to the front page carousel
 
