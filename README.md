@@ -8,7 +8,9 @@ We're using a very fine theme called [bulma-clean-theme](https://github.com/chri
 
 ## Development
 
-    sudo docker run -it --rm -v "$PWD":/usr/src/app -e JEKYLL_GITHUB_TOKEN=my-github-token -p "4000:4000" starefossen/github-pages
+    sudo docker run -it --rm -v "$PWD":/usr/src/app -e JEKYLL_GITHUB_TOKEN=my-github-token -p "4000:4000" starefossen/github-pages jekyll serve --drafts --unpublished --future --host 0.0.0.0
+
+Remove the `-e JEKYLL_GITHUB_TOKEN=my-github-token` option if you don't have a GitHub token handy (The GitHub API credentials you provided aren't valid.)
 
 ### I want to add an image to the front page carousel
 
@@ -28,3 +30,19 @@ We're using a very fine theme called [bulma-clean-theme](https://github.com/chri
         showcased: true/false
 
 - If your project should be showcased, add an image to assets/img/projects
+
+### I want to add a blog post
+
+- Create a new file in the `_posts` directory with filename `YYYY-MM-DD-title.md`
+- The date `YYYY-MM-DD` represents the blog posts publishing date
+- Your post should start with a frontmatter like this:
+
+      ---
+      layout: post
+      title: Open Data Day 2018 in Münster
+      author: Anthony Author
+      twitter: your_twitter_handle
+      category: blog
+      ---
+
+- Future posts won't be rendered on the live page
