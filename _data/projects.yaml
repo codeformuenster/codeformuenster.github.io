@@ -14,17 +14,101 @@ traffic-dynamics:
   project_url: https://traffics.codeformuenster.org/
   image: traffic-dynamics.jpg
 trinkwasser:
-  showcased: false
+  showcased: true
   title: Trinkwasser
   project_url: https://codeformuenster.org/trinkwasser/
   image: trinkwasser.jpg
 crashes-shiny:
-  showcased: false
+  showcased: true
   title: Verkehrsunfälle in Münster
   project_url: https://crashes.codeformuenster.org/
   image: crashes-shiny.jpg
 meine-stadt-transparent-customization:
-  showcased: false
+  showcased: true
   title: Meine Stadt Transparent
   project_url: https://meine-stadt-transparent.codeformuenster.org/
   image: mst.png
+click_that_hood:
+  showcased: true
+  title: Click that Hood
+  project_url: http://click-that-hood.com/muenster
+  image: click_that_hood.jpg
+digitransit:
+  showcased: true
+  title: Digitransit
+  project_url: https://digitransit.codeformuenster.org/
+  image: digitransit.jpg
+muenster-info-hub:
+  showcased: true
+  title: Münster Jetzt
+  project_url: https://muenster.jetzt/
+  image: muenster-info-hub.jpg
+open-data-karte-muenster:
+  showcased: true
+  project_url: https://codeformuenster.org/open-data-karte-muenster/
+  image: open-data-karte-muenster.jpg
+  title: Open Data Karte
+
+# not showcased
+
+muensterhack:
+  showcased: false
+  title: MÜNSTERHACK Projekt Doku
+parking-decks-muenster:
+  showcased: false
+  title: Datenarchiv Parkhäuser & Bürgerbüro Wartezeiten
+verkehrsunfaelle-editor:
+  showcased: false
+  title: Crowdsourcing Verkehrsunfallorte
+  project_url: https://crashes-editor.codeformuenster.org/
+wahlkarte:
+  showcased: false
+  title: Kommunalwahl 2014
+  project_url: https://codeformuenster.org/wahlkarte/
+verkehrsunfaelle:
+  showcased: false
+  title: Verkehrsunfalldaten Import
+open-data:
+  showcased: false
+  title: Open Data
+busradar:
+  showcased: false
+  title: Busradar
+  project_url: https://busradar.codeformuenster.org/
+alternative-skulptur-projekte:
+  showcased: false
+  title: Schatten Skulptura
+  project_url: https://www.skulptur-projekte-ms.de/
+sitzplan-rat:
+  showcased: false
+  title: Sitzplan Rat
+  project_url: https://rat-muenster.netlify.com/
+COVID-19-NRW:
+  showcased: false
+  title: COVID-19 Patientenzahlen in NRW
+  project_url: https://codeformuenster.org/COVID-19-NRW/
+muenster-info-app:
+  showcased: false
+  title: Münster Info Hub App
+  project_url: https://app.muenster.jetzt/
+weihnachtsmarkt:
+  showcased: false
+  title: Weihnachtsmarkt Münster App
+  project_url: https://weihnachtsmarkt.ms/
+open-events:
+  showcased: false
+  title: Open Events
+  project_url: http://events.input23.de/
+swms-busradar-gtfs-realtime:
+  showcased: false
+  title: Busradar GTFS-RT Converter
+mosmix-processor:
+  showcased: false
+  title: DWD Mosmix Parser/Processor
+mosmix-api:
+  showcased: false
+  title: DWD Mosmix API
+haushalt-muenster:
+  showcased: false
+  title: Haushalt Münster
+  project_url: https://openspending.org/viewer/7f037f45d2f473af5e754509a5bc9667:muenster-haushalt?measure=%22betrag.sum%22&groups%5B%5D=%22produktbereich.produktbereich%22&filters%5Bjahr.jahr%5D%5B%5D=2016&order=%22betrag.sum%7Cdesc%22&visualizations%5B%5D=%22Treemap%22&lang=en

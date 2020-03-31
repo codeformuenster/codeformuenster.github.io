@@ -2,12 +2,17 @@
   {% for repository in site.github.public_repositories %}
     {% if site.data.projects[repository.name] and site.data.projects[repository.name].showcased %}
       {% assign repo_data = site.data.projects[repository.name] %}
+      {% if repo_data.project_url %}
+        {% assign project_url = repo_data.project_url %}
+      {% else %}
+        {% assign project_url = repository.html_url %}
+      {% endif %}
       {% capture repo_image_path %}{{site.baseurl}}/assets/img/projects/{{ repo_data.image }}{% endcapture %}
       <div class="column is-3-desktop is-4-tablet is-6-mobile is-12-max-500">
         <div class="card project-card">
           <header class="card-header">
             <p class="card-header-title">
-              <a href="{{ repo_data.project_url }}">
+              <a href="{{ project_url }}">
                 {{ repo_data.title }}
               </a>
             </p>
@@ -23,9 +28,7 @@
             </div>
           </div>
           <footer class="card-footer">
-            <a href="{{ repository.html_url }}" class="card-footer-item"
-              >Quellcode</a
-            >
+            <a href="{{ repository.html_url }}" class="card-footer-item">Quellcode</a>
           </footer>
         </div>
       </div>

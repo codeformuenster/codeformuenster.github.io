@@ -2,11 +2,17 @@
   {% for repository in site.github.public_repositories %}
     {% if site.data.projects[repository.name] and site.data.projects[repository.name].showcased == false %}
       {% assign repo_data = site.data.projects[repository.name] %}
+      {% if repo_data.project_url %}
+        {% assign project_url = repo_data.project_url %}
+      {% else %}
+        {% assign project_url = repository.html_url %}
+      {% endif %}
       <div class="column is-3-desktop is-3-tablet is-4-mobile is-12-max-500">
-          <a href="{{ repo_data.url }}" class="has-text-weight-bold">{{ repo_data.title }}</a>
+          <a href="{{ project_url }}" class="has-text-weight-bold">{{ repo_data.title }}</a>
           {% if repository.description %} - {{ repository.description }}{% endif %}
           <a href="{{ repository.html_url }}">Quellcode</a>
       </div>
     {% endif %}
   {% endfor %}
+  <div class="column">Und noch weitere auf <a href="http://github.com/codeformuenster">GitHub</a></div>
 </div>
