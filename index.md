@@ -30,6 +30,8 @@ carousel_images:
   file_name: 12min_tw.jpeg
 ---
 
+{% include announcement.html title="#WirBleibenZuhause" subtitle="<a href=\"https://hackmd.okfn.de/codeformuenster-online-hacknights\">Bis auf weiteres finden unsere wöchentlichen Treffen nur noch online statt. Weitere Informationen findet ihr hier</a>." %}
+
 ## Wer sind wir?
 
 <div class="Carousel">
@@ -53,7 +55,7 @@ carousel_images:
 
 Als wichtiger Baustein unserer Demokratie, ermöglichen es Offene Daten, dass Bürger*innen sich besser über Stadt, Umwelt und Leben informieren und sich beteiligen können.
 
-Klingt interessant? Komm gerne vorbei, wir sind immer offen für neue Leute! Unsere Treffen finden meistens dienstags um 18:30 Uhr im [Café Drei:klang (Wolbecker Str. 36)](https://www.openstreetmap.org/node/3351819468) statt. Die genauen Termine entnehmt ihr am Besten unseren Seiten auf [wechange.de](https://wechange.de/project/code-for-muenster/) oder [gettogether.community](https://gettogether.community/events/3972/hacknight/).
+Klingt interessant? Komm gerne vorbei, wir sind immer offen für neue Leute! Unsere Treffen finden meistens dienstags um 18:30 Uhr im [Café Drei:klang (Wolbecker Str. 36)](https://www.openstreetmap.org/node/3351819468) statt. Die genauen Termine entnehmt ihr am Besten unseren Seiten auf [wechange.de](https://wechange.de/project/code-for-muenster/) oder [gettogether.community](https://gettogether.community/code-for-m%C3%BCnster/).
 
 ## Projekte
 
