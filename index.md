@@ -57,6 +57,10 @@ Klingt interessant? Komm gerne vorbei, wir sind immer offen für neue Leute! Uns
 
 ## Projekte
 
+{% include projects_showcase.html %}
+
+### Weitere Projekte
+
 {% include projects.html %}
 
 ## Aktuelle Blog-Artikel

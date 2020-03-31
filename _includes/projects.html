@@ -1,40 +1,12 @@
 <div class="columns is-multiline is-mobile">
   {% for repository in site.github.public_repositories %}
-  {% if site.data.projects[repository.name] %}
-  {% assign repo_data = site.data.projects[repository.name] %}
-  {% capture repo_image_path %}{{site.baseurl}}/assets/img/projects/{{ repo_data.image }}{% endcapture %}
-  <div class="column is-3-desktop is-4-tablet is-6-mobile">
-    <a href="{{ repo_data.project_url }}">
-    <div class="card project-card">
-        <div class="card-image">
-          <figure class="image">
-            <img class="project-image" src="{{ repo_image_path }}" alt="{{ repo_data.title }}">
-          </figure>
-        </div>
-        <div class="card-content">
-          <div class="media">
-            <!-- <div class="media-left">
-              <figure class="image is-48x48">
-                <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-              </figure>
-            </div> -->
-            <div class="media-content">
-              <p class="title is-4">{{ repo_data.title }}</p>
-              <p class="subtitle is-6">{{ repository.html_url }}</p>
-            </div>
-          </div>
-
-          <div class="content">{% if repository.description %}{{ repository.description }}{% endif %}
-            <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-            <a href="#">#css</a> <a href="#">#responsive</a>
-            <br>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
-          </div>
-        </div>
+    {% if site.data.projects[repository.name] and site.data.projects[repository.name].showcased == false %}
+      {% assign repo_data = site.data.projects[repository.name] %}
+      <div class="column is-3-desktop is-3-tablet is-4-mobile is-12-max-500">
+          <a href="{{ repo_data.url }}" class="has-text-weight-bold">{{ repo_data.title }}</a>
+          {% if repository.description %} - {{ repository.description }}{% endif %}
+          <a href="{{ repository.html_url }}">Quellcode</a>
       </div>
-    </a>
-  </div>
-  {% endif %}
+    {% endif %}
   {% endfor %}
 </div>

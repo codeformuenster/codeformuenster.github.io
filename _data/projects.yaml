@@ -1,8 +1,30 @@
 klimawatch:
+  showcased: true
   title: Klimawatch
-  project_url: https://klimawatch.codefor.de/
+  project_url: https://klimawatch.de/
   image: klimawatch.png
 muenster-dashboard:
+  showcased: true
   title: Mein Münster
   project_url: https://mein-ms.de/
   image: muenster-dashboard.jpg
+traffic-dynamics:
+  showcased: true
+  title: Traffic Dynamics
+  project_url: https://traffics.codeformuenster.org/
+  image: traffic-dynamics.jpg
+trinkwasser:
+  showcased: false
+  title: Trinkwasser
+  project_url: https://codeformuenster.org/trinkwasser/
+  image: trinkwasser.jpg
+crashes-shiny:
+  showcased: false
+  title: Verkehrsunfälle in Münster
+  project_url: https://crashes.codeformuenster.org/
+  image: crashes-shiny.jpg
+meine-stadt-transparent-customization:
+  showcased: false
+  title: Meine Stadt Transparent
+  project_url: https://meine-stadt-transparent.codeformuenster.org/
+  image: mst.png
