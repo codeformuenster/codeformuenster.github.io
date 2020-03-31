@@ -112,3 +112,6 @@ haushalt-muenster:
   showcased: false
   title: Haushalt Münster
   project_url: https://openspending.org/viewer/7f037f45d2f473af5e754509a5bc9667:muenster-haushalt?measure=%22betrag.sum%22&groups%5B%5D=%22produktbereich.produktbereich%22&filters%5Bjahr.jahr%5D%5B%5D=2016&order=%22betrag.sum%7Cdesc%22&visualizations%5B%5D=%22Treemap%22&lang=en
+divi-crawler:
+  showcased: false
+  title: Divi Crawler
