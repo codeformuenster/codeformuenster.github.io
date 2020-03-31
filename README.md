@@ -15,3 +15,16 @@ We're using a very fine theme called [bulma-clean-theme](https://github.com/chri
 - Add your image to `assets/img/carousel`
 - Add the filename to the `carousel_images` array in `index.md`
 - Change the `$numberOfImgs` variable in `assets/css/app.scss`
+
+### I want to add a project
+
+- Open `_data/projects.yaml`
+- Add your project in the following form
+
+       repositoryname
+         title: The title of the project
+         project_url: The url of the project (optional github project url will be used if missing)
+         image: the file name of the project image. File should be in assets/img/projects
+         showcased: true/false
+
+- If your project should be showcased, add an image to assets/img/projects
