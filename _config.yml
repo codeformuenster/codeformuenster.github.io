@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Jede Woche treffen sich in ganz Deutschland „Code for Germany“ Teams, die gemeinsam an nützlichen Anwendungen und Visualisierungen rund um offene Daten und digitale Werkzeuge für Bürgerinnen arbeiten.
   Lokale Gruppen, bestehend aus Programmiererinnen, Designern und Open Data Interessierten, erproben, wie Code und Software dabei helfen können ihre Stadt und Nachbarschaft zu verbessern.
   Auch in Münster besteht seit einem Jahr eine Gruppe aus interessierten Nutzern, die sich „Code for Münster“ nennt.
-baseurl: "/new-c4m-website" # the subpath of your site, e.g. /blog, change when you fork the repo from Code for Münster!
+baseurl: "/" # the subpath of your site, e.g. /blog, change when you fork the repo from Code for Münster!
 url: "codeformuenster.org" # the base hostname & protocol for your site
 
 # Build settings
