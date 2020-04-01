@@ -4,6 +4,8 @@
   link: https://codeformuenster.org/impressum/#datenschutz
 - name: Blog
   local_link: /blog/
+- name: Presseberichte
+  local_link: /presse/
 - name: Code for Germany
   local_image: /assets/img/CFG_logo.svg
   image_class: footer_cfg_logo
