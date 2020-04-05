@@ -46,3 +46,14 @@ Remove the `-e JEKYLL_GITHUB_TOKEN=my-github-token` option if you don't have a G
       ---
 
 - Future posts won't be rendered on the live page
+
+### I want to add a press article
+
+- Open `_data/presse.yaml`
+- Add the article in the following form
+
+
+      - wann: YYYY-MM-DD
+        wer: Káseblatt des Westens
+        thema: Lobhudelei der Open-Data-Schergen aus Münster
+        link: https://kaseseblatt.org/posts/codeformuenster-ist-einfach-toll
