@@ -36,13 +36,13 @@ sind wir 2015 zum ersten mal mit den Rohdaten der Unfallstatistiken 2007 bis
 2014 in Kontakt. Über die folgenden Jahre fanden die weiteren Jahresdatensätze
 ihren Weg zu uns.
 
-Auf offizieller Seite wird eine Software namens EUSKa (Elektronische Unfalltypensteckkarte) [1]
+Auf offizieller Seite wird eine Software namens [EUSKa (Elektronische Unfalltypensteckkarte)]
 eingesetzt, um die Unfälle an Zentraler stelle zu speichern und zu analysieren.
 Der uns vorliegende Datensatz stammt jedoch aus einer Handgepflegten Excel-Tabelle.
 
 Zum Zeitpunkt dieses Blogposts werden jedoch die Unfalldaten von NRW noch nicht in den
 [Unfallatlas des Statistikportal der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/)
-eingepflegt. Dies soll jedoch ab nächstem Jahr geschehen. [2]
+eingepflegt. Dies sollte jedoch ab [Mitte diesen Jahres] geschehen.
 
 ## Was ist im Datensatz
 
@@ -75,11 +75,11 @@ nachverfolgen. Dort finden sich auch Links zu CSV-Exports.
 Aufbauend auf dem bisher erstellten Datensatz haben wir eine
 [interaktive räumliche Unfalldatenvisualisierung](https://crashes.codeformuenster.org/)
 programmiert. Sie erlaubt es, über sämtliche Unfallparameter detailliert zu filtern und
-erlaubt es so, Antworten zu eigenen Fragestellungen (zumindest teilweise) zu beantworten.
+somit Antworten zu eigenen Fragestellungen (zumindest teilweise) zu beantworten.
 
-Am 23.10.2019 berichteten auch die Westfälischen Nachrichten über die Unfalldatenvisualiserung [3].
+Neben einem [Artikel in den Westfälischen Nachrichten], konnten wir das Projekt auf dem Forum Citizen Science 2019 ([Folien]) in Münster vorstellen.
 
-Für die Vervollständigung des Datensatzes haben wir außerdem einen [Unfalldaten Editor](https://crashes-editor.codeformuenster.org/) enwickelt.
+Für die Vervollständigung des Datensatzes haben wir außerdem einen [Unfalldaten-Editor] enwickelt.
 Dieser ermöglicht es, die Ergebnisse des Geocoders zu überprüfen und ggf. zu korrigieren.
 
 Wir würden uns freuen, wenn wir mit Hilfe allen ortskundigen Bürgern Münsters einen
@@ -94,15 +94,17 @@ Verständnis von Unfallschwerpunkten in der Stadt beizutragen.
 
 ## Wie geht es weiter
 
-Wer bis hier hin durchgehalten hat, wird sicherlich aufgefallen sein, dass das Jahr 2019 mit keinem Wort erwäht wurde.
+Wer bis hier hin durchgehalten hat, dem wird sicherlich aufgefallen sein, dass das Jahr 2019 mit keinem Wort erwäht wurde.
 Das liegt daran, dass trotz mehrfachen Nachfragen die Daten nicht mehr durch die Polizei veröffentlicht werden.
 Uns bleibt lediglich auf eine baldige Aktualisierung des Unfallatlas zu hoffen.
 
 Vor uns liegt jedoch auch abseits der Daten von 2019 noch genug Arbeit. Zum Beispiel müssen die Ergebnisse des
-Unfalldaten Editor sinnvoll in den Datensatz eingepflegt werden.
+[Unfalldaten-Editor] sinnvoll in den Datensatz eingepflegt werden.
 
 Wer jetzt Lust bekommen hat, sich mit uns zusammen weiterhin mit Unfalldaten zu beschäftigen, soll sich gerne melden!
 
-[1]: https://polizei.nrw/artikel/unfallhaeufungsstellen-erkennen-mit-euska
-[2]: https://kleineanfragen.de/nordrhein-westfalen/17/7085-wann-kommen-die-daten-aus-nrw-in-den-unfallatlas-der-statistischen-aemter-des-bundes-und-der-laender
-[3]: https://www.wn.de/Muenster/Stadtteile/Hiltrup/4007359-Interaktive-Unfallkarte-zeigt-Gefahrenpunkte-in-Hiltrup-Hier-kracht-es-am-Haeufigsten
+[EUSKa (Elektronische Unfalltypensteckkarte)]: https://polizei.nrw/artikel/unfallhaeufungsstellen-erkennen-mit-euska
+[Mitte diesen Jahres]: https://kleineanfragen.de/nordrhein-westfalen/17/7085-wann-kommen-die-daten-aus-nrw-in-den-unfallatlas-der-statistischen-aemter-des-bundes-und-der-laender
+[Artikel in den Westfälischen Nachrichten]: https://www.wn.de/Muenster/Stadtteile/Hiltrup/4007359-Interaktive-Unfallkarte-zeigt-Gefahrenpunkte-in-Hiltrup-Hier-kracht-es-am-Haeufigsten
+[Folien]: https://github.com/codeformuenster/crashes-shiny/blob/master/doc/vortrag_forum_citizen_science_september_2019/PVI_Terstiege_SichererRadfahren_26Sep.pdf
+[Unfalldaten-Editor]: https://crashes-editor.codeformuenster.org/
