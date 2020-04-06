@@ -32,13 +32,13 @@ Dank einer
 [IfG-Anfrage](https://de.wikipedia.org/wiki/Informationsfreiheitsgesetz)
 über
 [Frag den Staat](https://fragdenstaat.de/anfrage/rohdaten-der-verkehrsunfallstatistik-munster/)
-sind wir 2015 zum ersten mal mit den Rohdaten der Unfallstatistiken 2007 bis
+sind wir 2015 zum ersten Mal mit den Rohdaten der Unfallstatistiken 2007 bis
 2014 in Kontakt. Über die folgenden Jahre fanden die weiteren Jahresdatensätze
 ihren Weg zu uns.
 
 Auf offizieller Seite wird eine Software namens [EUSKa (Elektronische Unfalltypensteckkarte)]
 eingesetzt, um die Unfälle an Zentraler stelle zu speichern und zu analysieren.
-Der uns vorliegende Datensatz stammt jedoch aus einer Handgepflegten Excel-Tabelle.
+Der uns vorliegende Datensatz stammt jedoch aus einer handgepflegten Excel-Tabelle.
 
 Zum Zeitpunkt dieses Blogposts werden jedoch die Unfalldaten von NRW noch nicht in den
 [Unfallatlas des Statistikportal der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/)
@@ -47,8 +47,9 @@ eingepflegt. Dies sollte jedoch ab [Mitte diesen Jahres] geschehen.
 ## Was ist im Datensatz
 
 Der uns vorliegende Datensatz besteht aus zwölf Excel-Tabellen und beinhaltet
-insgesamt 119616 Einträge aus den Jahren 2007 bis 2018. Die einzelnen Dateien
-enthalten zwischen 31 und 38 Spalten mit Angaben je Unfall abhängig vom Jahr.
+insgesamt 119616 Einträge aus den Jahren 2007 bis 2018.
+Die einzelnen Dateien enthalten abhängig vom Jahr zwischen
+31 und 38 Dimensionen (Unfallart, Beteiligte, etc...) zu jedem Unfall.
 
 Obwohl der Datensatz sehr detailliert ist, gibt es leider eine große Schwäche:
 
@@ -56,7 +57,7 @@ Der Ort des Unfalls ist lediglich durch die Spalten "Unfallort" und
 "Unfallhöhe" beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
 erst nach einer Nachbearbeitung nutzbar.
 
-Der übliche Weg, um Adressen maschinenlesbar nutzbar zu machen, ist einen so
+Der übliche Weg, um Adressen maschinenlesbar zu machen, ist einen so
 genannten Geocoder zu verwenden, um ein Koordinatenpaar zu einer
 Ortsbescheibung zu finden.
 
@@ -74,19 +75,19 @@ nachverfolgen. Dort finden sich auch Links zu CSV-Exports.
 
 Aufbauend auf dem bisher erstellten Datensatz haben wir eine
 [interaktive räumliche Unfalldatenvisualisierung](https://crashes.codeformuenster.org/)
-programmiert. Sie erlaubt es, über sämtliche Unfallparameter detailliert zu filtern und
+programmiert. Sie erlaubt es, sämtliche Unfallparameter detailliert zu filtern und
 somit Antworten zu eigenen Fragestellungen (zumindest teilweise) zu beantworten.
 
-Neben einem [Artikel in den Westfälischen Nachrichten], konnten wir das Projekt auf dem Forum Citizen Science 2019 ([Folien]) in Münster vorstellen.
+Neben einem [Artikel in den Westfälischen Nachrichten] konnten wir das Projekt auf dem Forum Citizen Science 2019 ([Folien]) in Münster vorstellen.
 
 Für die Vervollständigung des Datensatzes haben wir außerdem einen [Unfalldaten-Editor] enwickelt.
 Dieser ermöglicht es, die Ergebnisse des Geocoders zu überprüfen und ggf. zu korrigieren.
 
-Wir würden uns freuen, wenn wir mit Hilfe allen ortskundigen Bürgern Münsters einen
+Wir würden uns freuen, wenn wir mit Hilfe aller ortskundigen Bürgern Münsters einen
 vollständigen Datensatz erarbeiten könnten.
 
 Unser Ziel ist es, die vorhandenen Daten für alle einfach zugänglich zu machen.
-Dazu gehören neben einem einheitlichen Datums- und Zeitformat auch die
+Dazu gehört neben einem einheitlichen Datums- und Zeitformat auch die
 Maschinenlesbarkeit des Ortes.
 
 Alle Bürger Münsters sind aufgerufen, bei der genauen Ortserfassung aller Unfälle und damit dem besseren
@@ -95,10 +96,10 @@ Verständnis von Unfallschwerpunkten in der Stadt beizutragen.
 ## Wie geht es weiter
 
 Wer bis hier hin durchgehalten hat, dem wird sicherlich aufgefallen sein, dass das Jahr 2019 mit keinem Wort erwäht wurde.
-Das liegt daran, dass trotz mehrfachen Nachfragen die Daten nicht mehr durch die Polizei veröffentlicht werden.
-Uns bleibt lediglich auf eine baldige Aktualisierung des Unfallatlas zu hoffen.
+Das liegt daran, dass trotz mehrfacher Nachfrage die Daten nicht mehr durch die Polizei veröffentlicht werden.
+Uns bleibt lediglich, auf eine baldige Aktualisierung des Unfallatlas zu hoffen.
 
-Vor uns liegt jedoch auch abseits der Daten von 2019 noch genug Arbeit. Zum Beispiel müssen die Ergebnisse des
+Vor uns liegt jedoch, auch abseits der Daten von 2019, noch genug Arbeit. Zum Beispiel müssen die Ergebnisse des
 [Unfalldaten-Editor] sinnvoll in den Datensatz eingepflegt werden.
 
 Wer jetzt Lust bekommen hat, sich mit uns zusammen weiterhin mit Unfalldaten zu beschäftigen, soll sich gerne melden!
