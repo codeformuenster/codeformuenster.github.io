@@ -83,7 +83,7 @@ Neben einem [Artikel in den Westfälischen Nachrichten] konnten wir das Projekt 
 Für die Vervollständigung des Datensatzes haben wir außerdem einen [Unfalldaten-Editor] enwickelt.
 Dieser ermöglicht es, die Ergebnisse des Geocoders zu überprüfen und ggf. zu korrigieren.
 
-Wir würden uns freuen, wenn wir mit Hilfe aller ortskundigen Bürgern Münsters einen
+Wir würden uns freuen, wenn wir mit Hilfe aller ortskundigen Bürgern Münsters, einen
 vollständigen Datensatz erarbeiten könnten.
 
 Unser Ziel ist es, die vorhandenen Daten für alle einfach zugänglich zu machen.
