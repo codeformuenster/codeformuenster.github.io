@@ -8,7 +8,7 @@ keywords:
 ---
 Der 21. Februar stand bei uns ganz im Zeichen des internationalen Open Data Day, in dessen Rahmen wir hier in Münster den "Tag der offenen Daten" veranstaltet haben. Der Tag sollte Bürgern und Stadt die Möglichkeit geben, sich gemeinsam über offene Daten und Transparenz auszutauschen. Neben einem Vortrag von Mila über das Arbeiten mit Geo-Daten wurde fleißig an Projekten gearbeitet sowie Ideen und Wünsche zum Thema offene Daten gesammelt und diskutiert. Die gesammelten Ideen und Wünsche sollen in Zukunft der Stadt überreicht werden.
 
-<img src="{{ '/assets/img/blog/odd2015-gerhard-joksch-300px.jpg' | prepend: site.baseurl }}" style="float:right"/>
+<img loading="lazy" src="{{ '/assets/img/blog/odd2015-gerhard-joksch-300px.jpg' | prepend: site.baseurl }}" style="float:right"/>
 
 Nach einer Einführung in das Wirken und Projekte von Code for Münster sprach der anwesende Bürgermeister der Stadt Münster Gerhard Joksch noch ein Grußwort. Unter den weiteren Anwesenden waren Frank Helmer, Vertreter des städtischen IT-Dienstleisters citeq, und Michael Tegtmeier vom Vermessungs- und Katasteramt. Sie zeigten großes Interesse an unserer Arbeit und einer zukünftigen Zusammenarbeit. Die Bedeutung von offenen Daten im Sinne der Transparenz wurde deutlich unterstrichen. Für die Zukunft wurden einige Neuerungen hinsichtlich offener Daten und Möglichkeiten des Dialogs in Aussicht gestellt.
 
