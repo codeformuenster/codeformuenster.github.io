@@ -41,10 +41,10 @@ carousel_images:
     <div class="Carousel-slide">
       {% if item.link %}
         <a href="{{ item.link }}" class="Carousel-item">
-          <img src="{{ full_path }}" alt="{{ item.alt }}">
+          <img loading="lazy" src="{{ full_path }}" alt="{{ item.alt }}">
         </a>
       {% else %}
-        <img src="{{ full_path }}" class="Carousel-item" alt="{{ item.alt }}">
+        <img loading="lazy" src="{{ full_path }}" class="Carousel-item" alt="{{ item.alt }}">
       {% endif %}
     </div>
     {% endfor %}

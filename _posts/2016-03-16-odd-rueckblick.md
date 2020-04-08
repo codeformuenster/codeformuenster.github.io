@@ -30,7 +30,7 @@ img.inarticle {margin:20px}
 Themen: [Open Data Day](#odd), [Projekte](#projekte)
 
 
-<img class="inarticle" src="{{ '/assets/img/blog/odd2016/odd2016-gerald.jpg' | prepend: site.baseurl }}" style="float:right"/>
+<img loading="lazy" class="inarticle" src="{{ '/assets/img/blog/odd2016/odd2016-gerald.jpg' | prepend: site.baseurl }}" style="float:right"/>
 
 
 Auch in Münster wurde dieses Jahr wieder der Open Data Day 2016 veranstaltet.
@@ -43,7 +43,7 @@ Auf dem Programm standen etliche Vorträge, die die ganze Bandbreite der Anwendu
 
 Nach der Begrüßung durch die Veranstalter sprach zunächst Bürgermeisterin Vilhjalmsson ein Grußwort an die Teilnehmer*innen und versprach eine größere Unterstützung durch die lokale Politik für die Open Data-Bewegung.
 
-<img class="inarticle" src="{{ '/assets/img/blog/odd2016/odd2016-grusswort.jpg' | prepend: site.baseurl }}" style="float:left" /> Anschließend wurde zu den Vorträgen übergegangen:
+<img loading="lazy" class="inarticle" src="{{ '/assets/img/blog/odd2016/odd2016-grusswort.jpg' | prepend: site.baseurl }}" style="float:left" /> Anschließend wurde zu den Vorträgen übergegangen:
 
 
 Zunächst gab es einen kurzen **Jahresrückblick des Teams von Code for Münster** von Gerald. Diesen könnt ihr nochmal [im vorherigen Blogpost nachlesen](https://codeformuenster.org/blog/2016/03/05/rueckblick-2015/).
@@ -61,7 +61,7 @@ Es folgten **Ingomar und Simon vom Verein "Freifunk Münsterland"** mit einen Vo
 **Danach berichtete Simon von "Open Street Map"** von den vielfältigen Möglichkeiten, im digitalen Stadtraum von Münster zu navigieren, und [wie Bürger selbst zur Verbesserung des OSM-Angebots beitragen können](https://wiki.openstreetmap.org/wiki/M%C3%BCnster/Stammtisch).
 Er stellte den Allwetterzoo und die Rieselfelder auf OpenStreetMap vor, die dort besonders detailliert kartographiert sind, sogar besser als auf Google Maps.
 
-<img class="inarticle" src="{{ '/assets/img/blog/odd2016/odd2016-hackers.jpg' | prepend: site.baseurl }}" style="float:right" />
+<img loading="lazy" class="inarticle" src="{{ '/assets/img/blog/odd2016/odd2016-hackers.jpg' | prepend: site.baseurl }}" style="float:right" />
 <br />
 <br />
 

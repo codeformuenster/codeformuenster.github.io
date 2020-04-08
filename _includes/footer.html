@@ -8,7 +8,7 @@
                 <div>
                     <a href="{% if item.local_link %}{{ item.local_link | prepend: site.baseurl }}{% else %}{{ item.link }}{% endif %}" class="link">
                         {% if item.local_image %}
-                            <img src="{{ item.local_image | prepend: site.baseurl }}" class="{{ item.image_class }}" alt="{{ item.name }}" />
+                            <img loading="lazy" src="{{ item.local_image | prepend: site.baseurl }}" class="{{ item.image_class }}" alt="{{ item.name }}" />
                         {% else %}
                             {{ item.name }}
                         {% endif %}
