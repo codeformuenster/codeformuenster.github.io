@@ -96,7 +96,7 @@ Wer am meisten Unfälle korrigiert, bekommt [einen virtuellen goldenen Pokal]!
 Wer bis hier hin durchgehalten hat, dem wird sicherlich aufgefallen sein, dass das Jahr 2019 mit keinem Wort erwähnt wurde.
 Das liegt daran, dass trotz mehrfacher Nachfrage die Polizei die Daten nicht mehr veröffentlicht.
 Wir bleiben dran, auch mit Unterstützung des [ADFC Münsterlands]. Anders als in den Vorjahren erhält nämlich auch der ADFC bisher keine Daten mehr.
-Sollten wir wider Erwarten die Unfalldaten nicht direkt von der Polizei Münster bekommen, bleibt uns lediglich, auf eine baldige Aktualisierung des Unfallatlas auch mit Datenm aus NRW zu hoffen. Und darauf, dass im Unfallatlas ebenso detaillierte Daten zur Verfügung gestellt werden, wie sie die Polizei eigentlich auch vorhält.
+Sollten wir wider Erwarten die Unfalldaten nicht direkt von der Polizei Münster bekommen, bleibt uns lediglich, auf eine baldige Aktualisierung des Unfallatlas auch mit Daten aus NRW zu hoffen. Und darauf, dass im Unfallatlas ebenso detaillierte Daten zur Verfügung gestellt werden, wie sie die Polizei eigentlich auch vorhält.
 
 Vor uns liegt jedoch, auch abseits der Daten von 2019, noch genug Arbeit. Zum Beispiel müssen die Ergebnisse des
 [Unfalldaten-Editor] sinnvoll in den Datensatz eingepflegt werden.
