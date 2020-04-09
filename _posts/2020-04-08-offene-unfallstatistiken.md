@@ -39,7 +39,7 @@ Dank einer
 über
 [Frag den Staat](https://fragdenstaat.de/anfrage/rohdaten-der-verkehrsunfallstatistik-munster/)
 haben wir 2015 zum ersten Mal Zugriff auf die Rohdaten der Unfallstatistiken 2007 bis
-2014. Über die folgenden Jahre fanden die weiteren Jahresdatensätze
+2014 bekommen. Über die folgenden Jahre fanden die weiteren Jahresdatensätze
 ihren Weg zu uns.
 
 Auf offizieller Seite wird eine Software namens [EUSKa (Elektronische Unfalltypensteckkarte)]
@@ -47,7 +47,7 @@ eingesetzt, um die Unfälle an zentraler Stelle zu speichern und zu analysieren.
 Der uns vorliegende Datensatz stammt jedoch aus einer handgepflegten Excel-Tabelle.
 
 Zum Zeitpunkt dieses Blogposts werden die Unfalldaten ganz NRWs noch nicht in den
-[Unfallatlas des Statistikportal der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/)
+[Unfallatlas des Statistikportals der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/)
 eingepflegt. Dies soll jedoch [Mitte 2020] geschehen.
 
 ## Was ist im Datensatz
@@ -57,7 +57,7 @@ insgesamt 119 616 Einträge aus den Jahren 2007 bis 2018.
 Die einzelnen Dateien enthalten abhängig vom Jahr zwischen
 31 und 38 Spalten (Unfallart, Beteiligte, etc.) zu jedem Unfall.
 
-Obwohl der Datensatz also sehr detailliert ist, gibt es aber leider eine große Schwäche:
+Obwohl der Datensatz also sehr detailliert ist, gibt es leider eine große Schwäche:
 Der Ort des Unfalls ist lediglich durch die Spalten "Unfallort" und
 "Unfallhöhe" beschrieben. Für eine maschinelle Verarbeitung sind diese Angaben
 erst nach einer Nachbearbeitung nutzbar.
