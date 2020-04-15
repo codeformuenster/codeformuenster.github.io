@@ -119,7 +119,7 @@ Wer jetzt Lust bekommen hat, sich mit uns zusammen weiterhin mit Unfalldaten zu 
 [Mitte 2020]: https://kleineanfragen.de/nordrhein-westfalen/17/7085-wann-kommen-die-daten-aus-nrw-in-den-unfallatlas-der-statistischen-aemter-des-bundes-und-der-laender
 [Artikel in den Westfälischen Nachrichten]: https://www.wn.de/Muenster/Stadtteile/Hiltrup/4007359-Interaktive-Unfallkarte-zeigt-Gefahrenpunkte-in-Hiltrup-Hier-kracht-es-am-Haeufigsten
 [Folien]: https://github.com/codeformuenster/crashes-shiny/blob/master/doc/vortrag_forum_citizen_science_september_2019/PVI_Terstiege_SichererRadfahren_26Sep.pdf
-[ADFC Münsterlands](https://www.adfc-nrw.de/kreisverbaende/kv-muenster/willkommen-beim-adfcnbspim-muensterland.html)
+[ADFC Münsterlands]: https://www.adfc-nrw.de/kreisverbaende/kv-muenster/willkommen-beim-adfcnbspim-muensterland.html
 [Unfalldaten-Editor]: https://crashes-editor.codeformuenster.org/
 [einen virtuellen goldenen Pokal]: https://crashes-editor.codeformuenster.org/
-[jeden Dienstag Abend](https://codeformuenster.org/)
+[jeden Dienstag Abend]: https://codeformuenster.org/
