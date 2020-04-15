@@ -98,10 +98,10 @@ Gleichzeitig lassen sich nur schwer Informationen zu Unfällen an bestimmten Ort
 Fragen wie "Ist diese Kreuzung ein Unfallschwerpunkt für Fahrradfahrende?" oder "Gab es seit Einführung von Tempo 30 auf Straße X im Schnitt weniger Unfallverletzte als vorher?" lassen sich so nur schwer und von bestimmten Personenkreisen beantworten.
 
 Nach dem Motto "Wissen ist Macht" verleihen jedoch Informationen wie diese der Bevölkerung die Möglichkeit zum informierten und selbstbestimmten Handeln.
-Damit solche Fragen in Zukunft jede:r ohne große Barrieren beantworten kann stellen wir in diesem Projekt die gesamten Unfalldaten für Münster zur Verfügung.
+Damit solche Fragen in Zukunft jede:r ohne große Barrieren beantworten kann, stellen wir in diesem Projekt die gesamten Unfalldaten für Münster zur Verfügung.
 
 Wir können das, weil uns als Bürger:innen durch die Informationsfreiheit im Prinzip der freie Zugang zu sämtlichen amtlichen Informationen garantiert wird.
-Wenn du mehr zum Thema Informationsfreiheit wissen möchtest findest du auf [fragdenstaat.de](https://fragdenstaat.de/info/informationsfreiheit/einfuehrung/) eine gute Einführung.
+Wenn du mehr zum Thema Informationsfreiheit wissen möchtest, findest du auf [fragdenstaat.de](https://fragdenstaat.de/info/informationsfreiheit/einfuehrung/) eine gute Einführung.
 
 ## Wie geht es weiter
 
