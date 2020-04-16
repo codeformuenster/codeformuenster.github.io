@@ -50,7 +50,7 @@ Zum Zeitpunkt dieses Blogposts werden die Unfalldaten ganz NRWs noch nicht in de
 [Unfallatlas des Statistikportals der Statistischen Ämter des Bundes und der Länder](https://unfallatlas.statistikportal.de/)
 eingepflegt. Dies soll jedoch [Mitte 2020] geschehen.
 
-## Was ist im Datensatz
+## Was ist im Datensatz?
 
 Der uns vorliegende Datensatz besteht aus zwölf Excel-Tabellen und beinhaltet
 insgesamt 119 616 Einträge aus den Jahren 2007 bis 2018.
@@ -103,7 +103,7 @@ Damit solche Fragen in Zukunft jede:r ohne große Barrieren beantworten kann, st
 Wir können das, weil uns als Bürger:innen durch die Informationsfreiheit im Prinzip der freie Zugang zu sämtlichen amtlichen Informationen garantiert wird.
 Wenn du mehr zum Thema Informationsfreiheit wissen möchtest, findest du auf [fragdenstaat.de](https://fragdenstaat.de/info/informationsfreiheit/einfuehrung/) eine gute Einführung.
 
-## Wie geht es weiter
+## Wie geht es weiter?
 
 Wer bis hier hin durchgehalten hat, dem wird sicherlich aufgefallen sein, dass das Jahr 2019 mit keinem Wort erwähnt wurde.
 Das liegt daran, dass trotz mehrfacher Nachfrage die Polizei die Daten nicht mehr veröffentlicht.
