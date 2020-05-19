@@ -6,5 +6,5 @@ $timePerImage: 5s;
 $assetsBaseUrl: {{ '/assets' | prepend: site.baseurl }};
 
 // Import Main CSS file from theme
-@import "main";
+@import "custom";
 @import "c4m";
