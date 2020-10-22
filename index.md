@@ -30,7 +30,7 @@ carousel_images:
   file_name: 12min_tw.jpeg
 ---
 
-{% include announcement.html title="#WirBleibenZuhause" subtitle="<a href=\"https://hackmd.okfn.de/codeformuenster-online-hacknights\">Bis auf weiteres finden unsere wöchentlichen Treffen (jeden Dienstag um 18:30) nur noch online statt. Weitere Informationen findet ihr <u>hier in unserem HackMd</u></a>." %}
+{% include announcement.html title="#WirBleibenZuhause" subtitle="<a href=\"https://hackmd.okfn.de/codeformuenster-online-hacknights\">Bis auf weiteres finden unsere wöchentlichen Treffen (jeden Dienstag um 18:30) nur noch online statt. Weitere Informationen findet ihr <u>auf dieser Seite</u></a>." %}
 
 ## Wer sind wir?
 
