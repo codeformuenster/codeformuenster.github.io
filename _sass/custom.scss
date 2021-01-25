@@ -1,5 +1,5 @@
 /*
-This file is based on the [bulma clean theme](https://github.com/chrisrhymes/bulma-clean-theme) of chrisrhymes, 
+This file is based on the [bulma clean theme](https://github.com/chrisrhymes/bulma-clean-theme) of chrisrhymes,
 adding custom code to replace Google Fonts with locally hosted ones.
 
 ---
@@ -91,4 +91,8 @@ $hero-darken: $dark !default;
 
 hr {
   color: #d8d9da;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
 }
