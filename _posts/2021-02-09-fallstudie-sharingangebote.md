@@ -101,13 +101,13 @@ Für die Einbeziehung der Auto-Anbieter wird die Betrachtung komplizierter, da w
 Wir stellen uns die Frage, wie weit/lange wir mit den Autos fahren können, bevor wir die Kosten eines Tretty-Monatsabos von 14,99€ erreicht haben.
 Wir lösen die Gleichung `Kilometerkosten x gefahrene Kilometer + Stundenkosten x gebuchte Zeit = 14,99` und bekommen pro Anbieter eine Kurve.
 
-Stadtteilauto: https://www.wolframalpha.com/input/?i=0.23y%2B2.75x%3D14.99
+[Stadtteilauto](https://www.wolframalpha.com/input/?i=0.23y%2B2.75x%3D14.99)
 
-Wuddi: https://www.wolframalpha.com/input/?i=0.28y%2B2.4x%3D14.99
+[Wuddi](https://www.wolframalpha.com/input/?i=0.28y%2B2.4x%3D14.99)
 
-Ergebnis: https://www.desmos.com/calculator/l8anciqj6b
+[Ergebnis](https://www.desmos.com/calculator/l8anciqj6b)
 
-<img loading="lazy" class="inarticle" src="{{ '/assets/img/blog/sharingangebote/desmos-graph.png' | prepend: site.baseurl }}" style="float:right"/>
+<img loading="lazy" class="inarticle" src="{{ '/assets/img/blog/sharingangebote/desmos-graph.png' | prepend: site.baseurl }}" style="max-width: 500px; float:left; margin: 15px"/>
 
 Bei einer Fahrleistung von 25 km lohnt es sich rein monetär also ein Auto zu nehmen, solange ich sie nicht länger als ca. 3,25 Stunden reserviere.
 Dabei legen wir wieder die Tarife von oben zu Grunde.
@@ -135,9 +135,9 @@ einen Parkplatz reserviert habe).
 
 ### Break Even Point VW Up
 Für eine erste Abschätzung machen wir zusätzliche Annahmen:
-Wir fahren jeweils nur Strecken <= 100km und weniger als 850km im Monat. Außerdem sind wir hauptsächlich innerstädtisch unterwegs. Um die Tarife leichter zu vergleichen nehmen wir eine Durchschnittsgeschwindigkeit von 40 km/h an, während das Fahrzeug bewegt wird (Quelle: https://www.adac.de/der-adac/aktuelles/studie-verkehrsfluss-in-staedten/). Wir gehen davon aus, dass die Fahrzeuge während der Buchungszeit zu 20% bewegt werden und 80% geparkt sind. Zu jedem gefahrenen Kilometer kommen demnach 0,13 Stunden Buchungszeit. Zum Vergleich: In den vergangen 2 Jahren meiner Nutzung eines Carsharingdienstes habe ich im Mittelwert über 50 Fahrten 0,155 Stunden pro gefahrenen Kilometer bezahlt.
+Wir fahren jeweils nur Strecken <= 100km und weniger als 850km im Monat. Außerdem sind wir hauptsächlich innerstädtisch unterwegs. Um die Tarife leichter zu vergleichen nehmen wir eine Durchschnittsgeschwindigkeit von 40 km/h an, während das Fahrzeug bewegt wird ([Quelle](https://www.adac.de/der-adac/aktuelles/studie-verkehrsfluss-in-staedten/)). Wir gehen davon aus, dass die Fahrzeuge während der Buchungszeit zu 20% bewegt werden und 80% geparkt sind. Zu jedem gefahrenen Kilometer kommen demnach 0,13 Stunden Buchungszeit. Zum Vergleich: In den vergangen 2 Jahren meiner Nutzung eines Carsharingdienstes habe ich im Mittelwert über 50 Fahrten 0,155 Stunden pro gefahrenen Kilometer bezahlt.
 
-Ein eigener VW Up kostet, wenn man alle Kosten wie Wartung, Werteverlust und Betrieb einrechnet, 387€ - 468€ pro Monat (Quelle: https://www.adac.de/infotestrat/autodatenbank/autokosten/autokosten-rechner/default.aspx), ohne die zeitlichen Aufwände zu berücksichtigen. Ein Smart fortwo liegt laut ADAC zwischen 371€ und 469€. Gehen wir von einem Schätzwert von 400€ aus.
+Ein eigener VW Up kostet, wenn man alle Kosten wie Wartung, Werteverlust und Betrieb einrechnet, 387€ - 468€ pro Monat ([Quelle](https://www.adac.de/infotestrat/autodatenbank/autokosten/autokosten-rechner/default.aspx)), ohne die zeitlichen Aufwände zu berücksichtigen. Ein Smart fortwo liegt laut ADAC zwischen 371€ und 469€. Gehen wir von einem Schätzwert von 400€ aus.
 
 Wie weit kommen wir also mit einem Budget von 400€ im Monat?
 
@@ -186,7 +186,7 @@ Stadtteilauto|Komfort|0,29|2,40|0,60|15,00|972
 ## Weitere Sharing-Angebote
 Um die Komplexität beherrschbar zu halten habe ich die Anzahl der Anbieter eingeschränkt. Je nach persönlichem Anwendungsfall (und Wohnort) gibt es aber noch mehr:
 
-Der ADFC Münsterland e.V. bietet unter https://lastenrad-ms.de/ Lastenräder zur kostenlosen Leihe an.
+Der ADFC Münsterland e.V. bietet unter [https://lastenrad-ms.de/](https://lastenrad-ms.de/) Lastenräder zur kostenlosen Leihe an.
 
 Die Deutsche Bahn bietet unter der Marke Flinkster am Hauptbahnhof sowie einer weiteren Station in Handorf insgesamt fünf Autos zur Buchung an. Die Preise bewegen sich aktuell zwischen 1,50€ - 1,90€ pro Stunde und einer Kilometerpauschale von 0,25€.
 
@@ -207,7 +207,7 @@ Ich hoffe, dass sich der Sharing-Gedanke weiter durchsetzt und dazu beiträgt, d
 Die Verwunderung, warum das gesharte Auto, in bestimmten Fällen, günstiger ist als das gesharte Rad bleibt.
 
 ## Abschließende Hinweise
-Die Berechnungen, welche ich hier benutzt habe, sowie der Code zur Erstellung der Plots stehen auf https://github.com/thunfischtoast/Fallstudie_Sharingangebote_Muenster zur Verfügung.
+Die Berechnungen, welche ich hier benutzt habe, sowie der Code zur Erstellung der Plots stehen auf [Github](https://github.com/thunfischtoast/Fallstudie_Sharingangebote_Muenster) zur Verfügung.
 
 ## Über den Autor
-Christian ist Master der Informatik und beschäftigt sich seit mehreren Jahren als Spezialist für Data Science mit der Suche nach interessanten Erkenntnissen aus komplexen Datenhaufen. Bei Code for Münster hat er z.B. an der Analyse der Verkehrsunfallstatistiken für Münster (https://crashes.codeformuenster.org/) oder der Visualisierung von kommunalen Klimaschutzbemühungen (https://klimawatch.de/) mitgewirkt.
+Christian ist Master der Informatik und beschäftigt sich seit mehreren Jahren als Spezialist für Data Science mit der Suche nach interessanten Erkenntnissen aus komplexen Datenhaufen. Bei Code for Münster hat er z.B. an der Analyse der Verkehrsunfallstatistiken für Münster ([Link](https://crashes.codeformuenster.org/)) oder der Visualisierung von kommunalen Klimaschutzbemühungen ([Link](https://klimawatch.de/)) mitgewirkt.
