@@ -14,7 +14,7 @@ keywords:
 ---
 
 ## Vorwort
-Dies ist eine kleine Zusammenstellung von Daten zu diversen Mobilitäts-Sharing-Angeboten in Münster (Westfl.).
+Dies ist eine kleine Zusammenstellung von Preisen von diversen Mobilitäts-Sharing-Angeboten in Münster (Westf.).
 Alle Daten sind von mir persönlich aus öffentlich verfügbaren Quellen am 07.02.2021 zusammengetragen worden.
 Es besteht keine Garantie auf Richtigkeit.
 
