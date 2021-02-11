@@ -195,7 +195,7 @@ Stadtteilauto|Komfort|0,29|2,40|0,60|15,00|972
 ## Weitere Sharing-Angebote
 Um die Komplexität beherrschbar zu halten habe ich die Anzahl der Anbieter eingeschränkt. Je nach persönlichem Anwendungsfall (und Wohnort) gibt es aber noch mehr:
 
-Der ADFC Münsterland e.V. bietet unter [https://lastenrad-ms.de/](https://lastenrad-ms.de/) Lastenräder zur kostenlosen Leihe an.
+Unter [https://lastenrad-ms.de/](https://lastenrad-ms.de/) stehen in Kooperation mit u.a. dem ADFC Münsterland e.V. und sowie der STADTTEIL Offensive Hiltrup e. V. Lastenräder zur kostenlosen Leihe zur Verfügung.
 
 Die Deutsche Bahn bietet unter der Marke Flinkster am Hauptbahnhof sowie einer weiteren Station in Handorf insgesamt fünf Autos zur Buchung an. Die Preise bewegen sich aktuell zwischen 1,50€ - 1,90€ pro Stunde und einer Kilometerpauschale von 0,25€.
 
