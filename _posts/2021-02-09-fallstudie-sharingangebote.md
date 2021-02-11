@@ -102,17 +102,17 @@ Wir stellen uns die Frage, wie weit/lange wir mit den Autos fahren können, bevo
 Wir lösen die Gleichung `Kilometerkosten x gefahrene Kilometer + Stundenkosten x gebuchte Zeit = 14,99` und bekommen pro Anbieter eine Kurve.
 
 <details>
-  <summary>[Stadtteilauto](https://www.wolframalpha.com/input/?i=0.23y%2B2.75x%3D14.99)</summary>
+  <summary><a href="https://www.wolframalpha.com/input/?i=0.23y%2B2.75x%3D14.99">Stadtteilauto</a></summary>
   Lösung für die Gleichung mit den Preisen von Stadtteilauto im CarSharingPlus-Tarif für die Fahrzeugkategorie "Mini"
 </details>
 
 <details>
-  <summary>[Wuddi](https://www.wolframalpha.com/input/?i=0.28y%2B2.4x%3D14.99)</summary>
+  <summary><a href="https://www.wolframalpha.com/input/?i=0.28y%2B2.4x%3D14.99">Wuddi</a></summary>
   Lösung für die Gleichung mit den Preisen von Wuddi im Flex-Tarif für die Fahrzeugkategorie "Small"
 </details>
 
 <details>
-  <summary>[Ergebnis](https://www.desmos.com/calculator/l8anciqj6b)</summary>
+  <summary><a href="https://www.desmos.com/calculator/l8anciqj6b">Ergebnis</a></summary>
   Visualisierung der Lösungsgleichungen
 </details>
 
