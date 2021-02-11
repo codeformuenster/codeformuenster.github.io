@@ -209,6 +209,8 @@ Die Stadt plant außerdem ein öffentliches Leihradsystem mit "5000 Mieträdern 
 
 In Münsters Süden wird derzeit unter der Marke LOOPmünster der Nahverkehr auf Bestellung getestet.
 
+Außerdem gibt es verschiedene Projekte, bei welchen sich Bürger:innen gegenseitig Dinge leihen können. Im Mobilitätsbereich wäre da beispielsweise [https://www.leihleeze.de/](https://www.leihleeze.de/).
+
 # Abschluss
 Das Thema ist aus meiner Sicht zu facettenreich, um es würdig in einem oder zwei Sätzen zusammenfassen zu können.
 Das Fazit für mich persönlich ist, dass ich glücklicherweise kein eigenes Auto brauche (Dinge nicht zu besitzen finde ich auch irgendwie schön).
