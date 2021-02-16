@@ -16,7 +16,7 @@ carousel_images:
   file_name: hacknight_terrasse.jpeg
 - alt: Visualisierung von Verkehrszählungen in Münster
   file_name: traffics_1.png
-  link: https://trafics.codeformuenster.org
+  link: https://traffics.codeformuenster.org
 - alt: Zu Gast in der B-Side
   file_name: schattenskulptura_hack.jpeg
 - alt: Verkehrsunfälle in Münster
