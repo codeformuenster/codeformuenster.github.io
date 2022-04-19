@@ -18,7 +18,7 @@ Dadurch sollen diese Sourcecodes leicht auffindbar und damit für andere Stellen
 
 Die Beschreibung auf "Docs Italia" sagt dazu folgendes: *"Indem eine Datei mit dem Namen `publiccode.yml` in das Stammverzeichnis eines Repositorys aufgenommen und mit Informationen über die Software gefüllt wird, können Software-Entwickler diese bewerten. Da das Format sowohl für Menschen als auch für Maschinen leicht lesbar sein soll, können auch automatische Indizierungswerkzeuge erstellt werden."*
 
-Eine gute Theorie. Leider habe ich keine Liste aller Repositories gefunden, die eine Publiccode-Datei enthalten. Entsprechend gibt's anscheinend auch noch keine Liste, in der diese Repositories systematisch bewertet werden. In einem Thread im CodeForGermany-Slack-Chat hat dann jemand eine Github-Suchanfrage formuliert, die alle Repositories mit publiccode.yml-Datei auflistet. Ich hab das zum Anlass genommen, die Repositories anhand der Github-Suche auszulesen und automatisiert auszuwerten.
+Eine gute Theorie. Leider habe ich keine Liste aller Repositories gefunden, die eine Publiccode-Datei enthalten. Entsprechend gibt's anscheinend auch noch keine Liste, in der diese Repositories systematisch bewertet werden. In einem Thread im CodeForGermany-Slack-Chat hat dann jemand eine GitHub-Suchanfrage formuliert, die alle Repositories mit publiccode.yml-Datei auflistet. Ich hab das zum Anlass genommen, die Repositories anhand der GitHub-Suche auszulesen und automatisiert auszuwerten.
 
 Weitere Informationen zum Publiccode.yml-Standard finden sich [auf der offiziellen italienischen Seite zum Publiccode-Standard](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html).
 
@@ -35,12 +35,12 @@ Die Spalten 3-6 der Tabelle verdeutlichen das Bewertungsschema, das der Abschät
 
 ## Versuch einer Bewertung der Repositories
 
-Über die Github-API können für jedes Repository einige interessante Werte abgerufen werden:
+Über die GitHub-API können für jedes Repository einige interessante Werte abgerufen werden:
 
 * Wann war der letzte Commit?
 * Wieviele Commits gab es bisher insgesamt?
 * Wieviele unterschiedliche Committer, bzw. "Contributors" hat das Repository?
-* Wieviele Stars hat das Repository auf Github?
+* Wieviele Stars hat das Repository auf GitHub?
 
 Anhand dieser vier Kennzahlen lässt sich schon relativ gut abschätzen, ob hinter dem Repository eine lebendige Community steht, und ob das Projekt noch aktiv weiterentwickelt wird:
 * **Letzter Commit mehrere Jahre alt** => Projekt ist nicht mehr in aktiver Entwicklung
@@ -52,11 +52,11 @@ Wenn man dann mal schaut, wie viele Repositories nach diesem Schema ein gutes Ra
 
  <iframe width="100%" height="400" scrolling="no" src="https://tomsrocket.github.io/github-publiccode/public/analysis-1.html"></iframe>
 
-Nur ca. ein Viertel der Repositories werden aktiv weiterentwickelt und haben eine aktive Community.
+Nur etwa ein Viertel der Repositories werden aktiv weiterentwickelt und haben eine aktive Community.
 
 Man könnte nun meinen, das wäre ein schlechter Wert. Aber genauer betrachtet ist bei Quellcode, der von öffentlichen Stellen finanziert wird, ja nicht gefordert, dass dahinter eine aktive Open-Source-Community steht. Vielmehr geht es darum, dass der Code überhaupt als Open Source bereitgestellt wird, und wenn dann sogar 25% davon eine aktive Entwicklercommunity haben, dann ist das ein gutes Ergebnis.
 
-Stichproben bei den Repositories mit schlechten Community-Ratings haben ergeben, dass diese auch gar nicht unbedingt aktiv bei Github weiterentwickelt werden müssen:
+Stichproben bei den Repositories mit schlechten Community-Ratings haben ergeben, dass diese auch gar nicht unbedingt aktiv bei GitHub weiterentwickelt werden müssen:
 * Quellcode statischer Infos-Webseiten
 * Wikis (der Content liegt nicht im Repository, sondern in einer extra Datenbank)
 * Desktop-Anwendungen, die über eine Projektlaufzeit entwickelt wurden => Solange die Anwendung funktioniert, muss da nichts weiterentwickelt werden
