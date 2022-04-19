@@ -47,7 +47,7 @@ Die Spalten 1-7 enthalten Meta-Informationen zu den Software-Repositories selbst
 Anhand dieser Kennzahlen lässt sich schon relativ gut abschätzen, ob hinter dem Repository eine lebendige Community steht, und ob das Projekt noch aktiv weiterentwickelt wird:
 * **Letzter Commit mehrere Jahre alt** => Projekt ist nicht mehr in aktiver Entwicklung
 * **Nur sehr wenige Commits** => Risiko eines "Fake"-Open-Source-Projekts, ohne richtige Community dahinter. Z.B.: Eine Firma entwickelt es intern, und postet nur ab und an den gesamten aktuellen Quellcode in einem einzelnen Commit.
-* **Nur eine Hand voll Contributors** => Keine besonders große Entwickler-Community, hoher "Bus-Factor" (Wieviele Leute können vom Bus überfahren werden, ohne dass ein Weiterführen des Projekts gefährdet wäre)
+* **Nur eine Hand voll Contributors** => Keine besonders große Entwickler-Community, hoher "Bus-Factor" (Wie viele Leute können vom Bus überfahren werden, ohne dass ein Weiterführen des Projekts gefährdet wäre)
 * **Nur wenige Stars** => Eher unbekanntes Projekt ohne viele "Fans"
 
 Diese Kennzahlen werden in der Tabelle oben in den Spalten 3-6 angezeigt.
