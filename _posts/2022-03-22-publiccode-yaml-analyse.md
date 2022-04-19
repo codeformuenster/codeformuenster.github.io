@@ -39,10 +39,10 @@ Die Spalten 1-7 enthalten Meta-Informationen zu den Software-Repositories selbst
 Über die GitHub-API können für jedes Repository einige interessante Werte abgerufen werden:
 
 * Wann war der letzte Commit?
-* Wieviele Commits gab es bisher insgesamt?
-* Wieviele unterschiedliche Committer, bzw. "Contributors" hat das Repository?
-* Wieviele Commits haben die Committer beigetragen
-* Wieviele Stars hat das Repository auf GitHub?
+* Wie viele Commits gab es bisher insgesamt?
+* Wie viele unterschiedliche Committer, bzw. "Contributors" hat das Repository?
+* Wie viele Commits haben die Committer beigetragen
+* Wie viele Stars hat das Repository auf GitHub?
 
 Anhand dieser Kennzahlen lässt sich schon relativ gut abschätzen, ob hinter dem Repository eine lebendige Community steht, und ob das Projekt noch aktiv weiterentwickelt wird:
 * **Letzter Commit mehrere Jahre alt** => Projekt ist nicht mehr in aktiver Entwicklung
@@ -106,7 +106,7 @@ Das Auffinden solchen Codes wäre normalerweise in den Weiten des Internets fast
 
 In Frankreich gibt es eine zentrale Liste allen öffentlich geförderten Codes. Diese Liste könnte in einem nächsten Schritt betrachtet werden.
 
-In Deutschland gibt es Bestrebungen, ebenfalls die "publiccode.yml" zu nutzen, zusätzlich zu einem öffentlichen Code-Repository ähnlich GitHub.com, basierend auf GitLab. Dazu wurde im April 2022 das Projekt [opencode.de/](https://opencode.de/) geschaffen. Das ist sehr zu begrüßen, fördert es doch die Transparenz und ermöglicht eine Nachnutzung in verschiedenen Bundesländern und auf verschiedenen Staatsebenen wie Bund, Ländern und Kommunen. Das könnte in einem föderalen System wie in Deutschland durch eine Nachnutzung von Software große Synergieeffekte haben.
+In Deutschland gibt es Bestrebungen, ebenfalls die "publiccode.yml" zu nutzen, zusätzlich zu einem öffentlichen Code-Repository ähnlich GitHub.com, basierend auf GitLab. Dazu wurde im April 2022 das Projekt [opencode.de](https://opencode.de/) geschaffen. Das ist sehr zu begrüßen, fördert es doch die Transparenz und ermöglicht eine Nachnutzung in verschiedenen Bundesländern und auf verschiedenen Staatsebenen wie Bund, Ländern und Kommunen. Das könnte in einem föderalen System wie in Deutschland durch eine Nachnutzung von Software große Synergieeffekte haben.
 
 ## Abschließende Hinweise
 Die hier wiedergegebenen Aussagen spiegeln die private Meinung des Autors wieder.
