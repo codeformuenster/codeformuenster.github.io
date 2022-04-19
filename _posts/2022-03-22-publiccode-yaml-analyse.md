@@ -76,7 +76,7 @@ Bei den Lizenzen fällt auf, dass der Großteil der Software (mind. 75%) unter C
 Aus Open-Source-"Hardliner"-Sicht ist das natürlich erfreulich, wird hiermit doch eine Kommerzialisierung dieser Softwareprojekte erschwert, und statt dessen der Aufbau eines Kataloges an offenem, digitalen Allgemeingut unterstützt.
 
 **Programmiersprachen**<br />
-Die Topliste der verwendeten Programmiersprachen entspricht weitestgehend den diversen im Internet kursierenden Listen der meistgenutzten Programmiersprachen weltweit. Java liegt mit 66 Repositories bzw. 22% höher als erwartet. Aber wenn man genauer hinschaut, stellt man fest, dass z.B. die ["Regione Marche"](https://github.com/regione-marche) sehr viele Java-Repositories veröffentlicht, die allesamt ein und der gleichen E-Procurement-Lösung zuzuordnen sind. Dass eine Software, die z.B. in Microservice- oder Plugin-Architektur erstellt wurde und daher über viele Einzelrepositories verteilt ist, in dieser Liste überpropoertional einfließt, ist ein Gesichtspunkt, der in dieser Analyse nicht näher berücksichtigt wird, und generell die Ergebnisse verfälschen kann.
+Die Topliste der verwendeten Programmiersprachen entspricht weitestgehend den diversen im Internet kursierenden Listen der meistgenutzten Programmiersprachen weltweit. Java liegt mit 66 Repositories bzw. 22% höher als erwartet. Aber wenn man genauer hinschaut, stellt man fest, dass z.B. die ["Regione Marche"](https://github.com/regione-marche) sehr viele Java-Repositories veröffentlicht, die allesamt ein und der gleichen E-Procurement-Lösung zuzuordnen sind. Dass eine Software, die z.B. in Microservice- oder Plugin-Architektur erstellt wurde und daher über viele Einzelrepositories verteilt ist, in dieser Liste überproportional einfließt, ist ein Gesichtspunkt, der in dieser Analyse nicht näher berücksichtigt wird, und generell die Ergebnisse verfälschen kann.
 
 ## Anwendungstypen
 
@@ -94,13 +94,13 @@ Quelle: [https://tomsrocket.github.io/github-publiccode/public/analysis.html](ht
 
 Dass öffentlich geförderter Code als Open Source bereitgestellt werden muss, ist eine sehr gute Vorgabe. Man muss bedenken, dass es sich hier um Code handelt, der üblicherweise mit Steuergeldern bezahlt wurde, und somit sollte auch der Quellcode als digitales Allgemeingut wieder an die Allgemeinheit zurückfließen.
 
-Das Auffinden solchen Codes wäre normalerweise in den Weiten des Internets fast unmöglich. Dass diese Code-Repositories eine "publiccode.yml"-Datei enthalten müssen, ist zwar eine gute Idee, funktioniert aber nur eingeschränkt. In diesem Fall wurden nur Repositories betrachtet, die bei Github verwaltet werden und das dürfte nur auf einen Bruchteil der öffentlich geförderten Repositories zutreffen.
+Das Auffinden solchen Codes wäre normalerweise in den Weiten des Internets fast unmöglich. Dass diese Code-Repositories eine "publiccode.yml"-Datei enthalten müssen, ist zwar eine gute Idee, funktioniert aber nur eingeschränkt. In diesem Fall wurden nur Repositories betrachtet, die bei GitHub verwaltet werden und das dürfte nur auf einen Bruchteil der öffentlich geförderten Repositories zutreffen.
 
 ## Ausblick
 
 In Frankreich gibt es eine zentrale Liste allen öffentlich geförderten Codes. Diese Liste könnte in einem nächsten Schritt betrachtet werden.
 
-In Deutschland gibt es Bestrebungen, ebenfalls die "publiccode.yml" zu nutzen, zusätzlich zu einem öffentlichen Code-Repository ähnlich Github.com, basierend auf Gitlab. Das wäre sehr zu begrüßen, fördert es doch die Transparenz und ermöglicht eine Nachnutzung in verschiedenen Bundesländern und auf verschiedenen Staatsebenen wie Bund, Ländern und Kommunen. Das könnte in einem föderalen System wie in Deutschland durch eine Nachnutzung von Software große Synergieeffekte haben.
+In Deutschland gibt es Bestrebungen, ebenfalls die "publiccode.yml" zu nutzen, zusätzlich zu einem öffentlichen Code-Repository ähnlich GitHub.com, basierend auf GitLab. Das wäre sehr zu begrüßen, fördert es doch die Transparenz und ermöglicht eine Nachnutzung in verschiedenen Bundesländern und auf verschiedenen Staatsebenen wie Bund, Ländern und Kommunen. Das könnte in einem föderalen System wie in Deutschland durch eine Nachnutzung von Software große Synergieeffekte haben.
 
 ## Abschließende Hinweise
-Der Code zur Erstellung der Software-Liste sowie zur Erstellung der Diagramme steht auf [Github](https://github.com/tomsrocket/github-publiccode) zur Verfügung.
+Der Code zur Erstellung der Software-Liste sowie zur Erstellung der Diagramme steht auf [GitHub](https://github.com/tomsrocket/github-publiccode) zur Verfügung.
