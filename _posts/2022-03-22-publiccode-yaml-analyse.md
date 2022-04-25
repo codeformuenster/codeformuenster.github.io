@@ -104,9 +104,9 @@ Das Auffinden solchen Codes wäre normalerweise in den Weiten des Internets fast
 
 ## Ausblick
 
-In Frankreich gibt es eine zentrale Liste allen öffentlich geförderten Codes. Diese Liste könnte in einem nächsten Schritt betrachtet werden.
+In Frankreich gibt es [eine zentrale Liste allen öffentlich geförderten Codes unter code.gouv.fr](https://code.gouv.fr). Diese Liste ist [bereits in einem maschinenlesbaren JSON-Format verfügbar](https://code.gouv.fr/data/repos.json) und könnte in einem nächsten Schritt betrachtet werden.
 
-In Deutschland gibt es Bestrebungen, ebenfalls die "publiccode.yml" zu nutzen, zusätzlich zu einem öffentlichen Code-Repository ähnlich GitHub.com, basierend auf GitLab. Dazu wurde im April 2022 das Projekt [opencode.de](https://opencode.de/) geschaffen. Das ist sehr zu begrüßen, fördert es doch die Transparenz und ermöglicht eine Nachnutzung in verschiedenen Bundesländern und auf verschiedenen Staatsebenen wie Bund, Ländern und Kommunen. Das könnte in einem föderalen System wie in Deutschland durch eine Nachnutzung von Software große Synergieeffekte haben.
+In Deutschland gibt es Bestrebungen, ebenfalls die "publiccode.yml" zu nutzen, zusätzlich zu einem öffentlichen Code-Repository ähnlich GitHub.com, basierend auf GitLab. Dazu wurde im April 2022 das Projekt [opencode.de](https://opencode.de/) geschaffen. Das ist sehr zu begrüßen, fördert es doch die Transparenz und ermöglicht eine Nachnutzung von staatlich entwickelten Tools in verschiedenen Bundesländern und auf verschiedenen Staatsebenen wie Bund, Ländern und Kommunen. Das könnte in einem föderalen System wie in Deutschland durch eine Nachnutzung von Software große Synergieeffekte haben.
 
 ## Abschließende Hinweise
 Die hier wiedergegebenen Aussagen spiegeln die private Meinung des Autors wieder.
