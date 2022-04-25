@@ -23,6 +23,7 @@ Eine gute Theorie. Leider habe ich keine Liste aller Repositories gefunden, die 
 Weitere Informationen zum Publiccode.yml-Standard finden sich [auf der offiziellen italienischen Seite zum Publiccode-Standard](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html).
 
 Das Ergebnis ist in folgender Tabelle zu sehen:
+(Die Datenbasis wurde erzeugt im März 2022)
 
 ## Übersicht der Repositories
 
