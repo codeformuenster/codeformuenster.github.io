@@ -13,3 +13,10 @@ if (window.location.hostname === "codeformuenster.org") {
   fathom('trackPageview');
 }
 </script>
+<script>
+// Dynamically write the next hacknight date into the content
+var d = new Date();
+d.setDate(d.getDate() + ((7-d.getDay())%7+2) % 7);
+dateString = d.toLocaleDateString("de-DE", { weekday: 'long' })+ ", " + d.getDate()  + "." + (d.getMonth()+1) + "." + d.getFullYear()
+document.getElementById('hacknight_date').innerHTML = dateString;
+</script>
