@@ -58,6 +58,10 @@ Klingt interessant? Komm vorbei, wir sind immer offen für neue Leute! Unser reg
 
 {% include hacknight.html %}
 
+## Weitere Termine
+
+{% include events_showcase.html %}
+
 
 ## Projekte
 
