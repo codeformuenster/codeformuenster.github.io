@@ -47,6 +47,13 @@ Remove the `-e JEKYLL_GITHUB_TOKEN=my-github-token` option if you don't have a G
 
 - Future posts won't be rendered on the live page
 
+### I want to add an event
+
+- Open `_data/events.yaml`
+- Add event in the format of the other events
+- Only next 4 events will be shown
+- Events older than today will automatically disappear as soon as the github-page is regnerated (e.g. after a PR is merged)
+
 ### I want to add a press article
 
 - Open `_data/presse.yaml`
