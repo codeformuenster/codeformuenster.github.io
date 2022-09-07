@@ -7,29 +7,33 @@
   url: https://codefor.de
 -->
 
+  {% assign eventcount = 0 %}
   {% for event in site.data.events %}
     {% assign today_date = 'now' | date: '%s' %}
     {% assign event_date = event.date | date: '%s' %}
     {% if today_date < event_date %}
-    <div class="column is-3-desktop is-4-tablet is-6-mobile is-12-max-500">
-        <div class="card project-card">
-          <div class="card-content">
-            <div class="content">
-              {{ event.date | date: "%d.%m.%Y" }}
-              <a class="event-title" href="{{ event.url }}">
-                {{ event.title }}
-              </a>
-              {{ event.text }}
-              <div class="event-address">
-                Adresse: {{ event.address}}
+      {% assign eventcount = eventcount | plus:1 %}
+      {% if eventcount < 5 %}
+        <div class="column is-3-desktop is-4-tablet is-6-mobile is-12-max-500">
+          <div class="card project-card">
+            <div class="card-content">
+              <div class="content">
+                {{ event.date | date: "%d.%m.%Y" }}
+                <a class="event-title" href="{{ event.url }}">
+                  {{ event.title }}
+                </a>
+                {{ event.text }}
+                <div class="event-address">
+                  Adresse: {{ event.address}}
+                </div>
               </div>
             </div>
+            <!-- footer class="card-footer">
+              {{ event.address}}
+            </footer -->
           </div>
-          <!-- footer class="card-footer">
-            {{ event.address}}
-          </footer -->
         </div>
-      </div>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </div>
