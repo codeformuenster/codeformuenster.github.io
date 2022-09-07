@@ -3,14 +3,19 @@
   text: Code For Niederrhein veranstaltet jedes Jahr den Hackday (#ODDMO22) im Rathaus Moers. Vorträge hören, hacken, Leute treffen! Es gibt eine Fahrgemeinschaft aus Münster.
   address: Rathausplatz 1, 47441 Moers
   url: https://www.codeforniederrhein.de/hackday-2022/
-- date: 2022-09-24
+- date: 2022-09-16
+  title: Parking Day Hammer Str.
+  text: Beim Parking day wird dieses Jahr die Hammer Straße für Autos gesperrt, und es gibt statt dessen auf der Straße viele Aktionen, Stände und Platz zum flanieren. Ein empfehlenswertes Event!
+  address: Hammer Straße, Münster
+  url: https://www.facebook.com/parkingdayms/
+- date: 2022-09-23
   title: Münsterhack
   text: Jedes Jahr im September findet der Münsterhack statt. Ein entspannter Hackathon, bei dem man in Teams lustige Ideen programmieren kann. Freitags morgens geht's los, bis zur Abschlussparty am Samstag Abend.
   address: Hafenweg 16, 48155 Münster
   url: https://www.muensterhack.de
-- date: 2022-10-24
+- date: 2022-10-03
   title: Code For Germany Summit
-  text: Dieses Jahr soll es wieder ein Vor-Ort-Treffen der Code For Germany Community in Berlin geben. Der Termin steht noch nicht fest. Für Code For Münster Mitglieder gibt's Fahrtkostenzuschuss.
+  text: Dieses Jahr wird es wieder ein Vor-Ort-Treffen der Code For Germany Community in Berlin geben. Für Code For Münster Mitglieder gibt's Fahrtkostenzuschuss.
   address: Berlin
   url: https://codefor.de
 - date: 2022-12-27
