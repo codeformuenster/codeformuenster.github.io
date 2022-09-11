@@ -8,7 +8,13 @@ We're using a very fine theme called [bulma-clean-theme](https://github.com/chri
 
 ## Development
 
+```bash
+    # Using docker-compose (recommended)
+    sudo docker-compose up
+
+    # Using docker run
     sudo docker run -it --rm -v "$PWD":/usr/src/app -e JEKYLL_GITHUB_TOKEN=my-github-token -p "4000:4000" starefossen/github-pages@sha256:5097d63b50e7a894b694761ded6ace912aa901b98f283824801db649ddb37684 jekyll serve --drafts --unpublished --future --host 0.0.0.0
+```
 
 Remove the `-e JEKYLL_GITHUB_TOKEN=my-github-token` option if you don't have a GitHub token handy (The GitHub API credentials you provided aren't valid.)
 
