@@ -1,8 +1,3 @@
-- date: 2022-08-20
-  title: Hackday Moers
-  text: Code For Niederrhein veranstaltet jedes Jahr den Hackday (#ODDMO22) im Rathaus Moers. Vorträge hören, hacken, Leute treffen! Es gibt eine Fahrgemeinschaft aus Münster.
-  address: Rathausplatz 1, 47441 Moers
-  url: https://www.codeforniederrhein.de/hackday-2022/
 - date: 2022-09-16
   title: Parking Day Hammer Str.
   text: Beim Parking day wird dieses Jahr die Hammer Straße für Autos gesperrt, und es gibt statt dessen auf der Straße viele Aktionen, Stände und Platz zum flanieren. Ein empfehlenswertes Event!
@@ -18,6 +13,11 @@
   text: Dieses Jahr wird es wieder ein Vor-Ort-Treffen der Code For Germany Community in Berlin geben. Für Code For Münster Mitglieder gibt's Fahrtkostenzuschuss.
   address: Berlin
   url: https://codefor.de
+- date: 2022-11-15
+  title: Hacknight Special - "DIGIFARM.MS"
+  text: Eine Special Edition unserer Hacknight, mit Vortrag zu "DIGIFARM.MS", einem Open-Source-Förderkonzept. Smart City Münster spendiert Pizza und Getränke! Start 17:00 Uhr, Anmeldung siehe Link.
+  address: Digitallabor Münster, Leonardo-Campus 5-8, 48149 Münster
+  url: https://www.stadt-muenster.de/digifarm/projekte/newsdetail/einladung-zum-1-netzwerktreffen-digifarmms-am-15-november
 - date: 2022-12-27
   title: Chaos Communication Congress
   text: Der 39C3 findet wieder in Hamburg statt. Wir sind mit einigen Leuten von Code For Germany dabei und vom Münsteraner Hackerspace Warpzone werden sicher auch einige Leute hinfahren.
