@@ -13,10 +13,15 @@
   text: Dieses Jahr wird es wieder ein Vor-Ort-Treffen der Code For Germany Community in Berlin geben. Für Code For Münster Mitglieder gibt's Fahrtkostenzuschuss.
   address: Berlin
   url: https://codefor.de
+- date: 2022-10-11
+  title: Jugend Hackt Münster
+  text: Offizieller Eröffnungstermin mit VetreterInnen der Stadt Münster und von Jugend hackt aus Berlin. Nach einem Intro kann man ausprobieren und mit dem hacken loslegen.
+  address: Digitallabor Münster, Leonardo-Campus 5-8, Münster
+  url: https://jugendhackt.org/lab/muenster/
 - date: 2022-11-15
   title: Hacknight Special - "DIGIFARM.MS"
   text: Eine Special Edition unserer Hacknight, mit Vortrag zu "DIGIFARM.MS", einem Open-Source-Förderkonzept. Smart City Münster spendiert Pizza und Getränke! Start 17:00 Uhr, Anmeldung siehe Link.
-  address: Digitallabor Münster, Leonardo-Campus 5-8, 48149 Münster
+  address: Digitallabor Münster, Leonardo-Campus 5-8, Münster
   url: https://www.stadt-muenster.de/digifarm/projekte/newsdetail/einladung-zum-1-netzwerktreffen-digifarmms-am-15-november
 - date: 2022-12-27
   title: Chaos Communication Congress
