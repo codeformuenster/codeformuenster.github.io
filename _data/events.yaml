@@ -1,30 +1,15 @@
-- date: 2022-09-16
-  title: Parking Day Hammer Str.
-  text: Beim Parking day wird dieses Jahr die Hammer Straße für Autos gesperrt, und es gibt statt dessen auf der Straße viele Aktionen, Stände und Platz zum flanieren. Ein empfehlenswertes Event!
-  address: Hammer Straße, Münster
-  url: https://www.facebook.com/parkingdayms/
-- date: 2022-09-23
-  title: Münsterhack
-  text: Jedes Jahr im September findet der Münsterhack statt. Ein entspannter Hackathon, bei dem man in Teams lustige Ideen programmieren kann. Freitags morgens geht's los, bis zur Abschlussparty am Samstag Abend.
-  address: Hafenweg 16, 48155 Münster
-  url: https://www.muensterhack.de
-- date: 2022-10-03
-  title: Code For Germany Summit
-  text: Dieses Jahr wird es wieder ein Vor-Ort-Treffen der Code For Germany Community in Berlin geben. Für Code For Münster Mitglieder gibt's Fahrtkostenzuschuss.
-  address: Berlin
-  url: https://codefor.de
-- date: 2022-10-11
-  title: Jugend Hackt Münster
-  text: Offizieller Eröffnungstermin mit VetreterInnen der Stadt Münster und von Jugend hackt aus Berlin. Nach einem Intro kann man ausprobieren und mit dem hacken loslegen.
-  address: Digitallabor Münster, Leonardo-Campus 5-8, Münster
-  url: https://jugendhackt.org/lab/muenster/
 - date: 2022-11-15
   title: Hacknight Special - "DIGIFARM.MS"
   text: Eine Special Edition unserer Hacknight, mit Vortrag zu "DIGIFARM.MS", einem Open-Source-Förderkonzept. Smart City Münster spendiert Pizza und Getränke! Start 17:00 Uhr, Anmeldung siehe Link.
   address: Digitallabor Münster, Leonardo-Campus 5-8, Münster
   url: https://www.stadt-muenster.de/digifarm/projekte/newsdetail/einladung-zum-1-netzwerktreffen-digifarmms-am-15-november
-- date: 2022-12-27
-  title: Chaos Communication Congress
-  text: Der 39C3 findet wieder in Hamburg statt. Wir sind mit einigen Leuten von Code For Germany dabei und vom Münsteraner Hackerspace Warpzone werden sicher auch einige Leute hinfahren.
-  address: Kongresszentrum CCH, Hamburg
-  url: https://www.ccc.de/de/updates/2022/37-chaos-communication-congress-in-hamburg
+- date: 2022-11-17
+  title: Forum Offene Stadt
+  text: Das Forum Offene Stadt ist die größte Fachkonferenz zum Thema Open Data und Open Government in Deutschland. Das Forum ist eine Plattform für kreative Ideen zwischen Zivilgesellschaft und öffentlichem Sektor.
+  address: Körber-Stiftung, Kehrwieder 12, 20457 Hamburg
+  url: https://offenestadt.info
+- date: 2023-03-04
+  title: Open Data Day
+  text: Der Open Data Day ist eine jährlich stattfindende Veranstaltung um international auf die Bedeutung offener Daten hinzuweisen. Vielleicht machen wir in Münster wieder eine Veranstaltung.
+  address: TBD
+  url: https://opendataday.org/
