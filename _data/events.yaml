@@ -1,13 +1,18 @@
-- date: 2022-11-15
-  title: Hacknight Special - "DIGIFARM.MS"
-  text: Eine Special Edition unserer Hacknight, mit Vortrag zu "DIGIFARM.MS", einem Open-Source-Förderkonzept. Smart City Münster spendiert Pizza und Getränke! Start 17:00 Uhr, Anmeldung siehe Link.
-  address: Digitallabor Münster, Leonardo-Campus 5-8, Münster
-  url: https://www.stadt-muenster.de/digifarm/projekte/newsdetail/einladung-zum-1-netzwerktreffen-digifarmms-am-15-november
-- date: 2022-11-17
-  title: Forum Offene Stadt
-  text: Das Forum Offene Stadt ist die größte Fachkonferenz zum Thema Open Data und Open Government in Deutschland. Das Forum ist eine Plattform für kreative Ideen zwischen Zivilgesellschaft und öffentlichem Sektor.
-  address: Körber-Stiftung, Kehrwieder 12, 20457 Hamburg
-  url: https://offenestadt.info
+- date: 2022-12-12
+  title: Code for Berlin - Open Lab
+  text: Im OK Lab Berlin gibt es 1x im Monat ein "Open Lab"-Treffen online, meist mit spannenden Talks, die über die verlinkte Meetup-Seite angekündigt werden.
+  address: Online, Anmeldung siehe Link im Titel
+  url: https://www.meetup.com/ok-lab-berlin/
+- date: 2022-12-28
+  title: KAMPHACK 2022
+  text: Zwischen den Jahren im Münsteraner Hackspace abhängen - Spannende Talks, hacken, chillen, connecten! Du interessierst Dich für Elektronik, Informatik, IT und hast Spaß am kreativen Umgang mit Technik? Komm vorbei!
+  address: Warpzone, Am Hawerkamp 31 (Haus G), 48155 Münster
+  url: https://www.warpzone.ms/perma/category/events/kamphack/
+- date: 2023-01-09
+  title: Code for Berlin - Open Lab
+  text: Im OK Lab Berlin gibt es 1x im Monat ein "Open Lab"-Treffen online, meist mit spannenden Talks, die über die verlinkte Meetup-Seite angekündigt werden.
+  address: Online, Anmeldung siehe Link im Titel
+  url: https://www.meetup.com/ok-lab-berlin/
 - date: 2023-03-04
   title: Open Data Day
   text: Der Open Data Day ist eine jährlich stattfindende Veranstaltung um international auf die Bedeutung offener Daten hinzuweisen. Vielleicht machen wir in Münster wieder eine Veranstaltung.
