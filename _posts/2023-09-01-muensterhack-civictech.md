@@ -10,13 +10,11 @@ keywords:
   - "MSHACK"
 ---
 
-<img src="https://www.muensterhack.de/img/fotos/2022/muensterhack2022_05.jpg"/>
+In diesem Jahr findet der [MÜNSTERHACK](https://www.muensterhack.de) bereits zum 7. Mal statt. Damit gehört der Hackathon in Münster inzwischen zu den Evergreens der Civic Hackathon Szene. Dennoch bleibt es Jahr für Jahr eine Herausforderung, die Veranstaltung zukunftssicher zu machen. Im Kern steht dabei die Frage, ob Hackathons aufgrund ihrer Positionierung in einem bestimmten gesellschaftlichen Umfeld, überhaupt ein legitimes Mittel für Partizipation und Stadtentwicklung sein können.
+
+<img loading="lazy" class="inarticle" src="{{ '/assets/img/blog/mshack2023/muensterhack2022_05.jpg' | prepend: site.baseurl }}"/>
 
 <sup>Das Hackathon-Orgateam mit Alex Sommer, Ralf Leufkes und Sebastian Köffer (Foto: Thomas Mohn, [Digital Hub münsterLAND](https://www.digitalhub.ms]))</sup>
-
-<p>&nbsp;</p>
-
-**In diesem Jahr findet der [MÜNSTERHACK](https://www.muensterhack.de) bereits zum 7. Mal statt. Damit gehört der Hackathon in Münster inzwischen zu den Evergreens der Civic Hackathon Szene. Dennoch bleibt es Jahr für Jahr eine Herausforderung, die Veranstaltung zukunftssicher zu machen. Im Kern steht dabei die Frage, ob Hackathons aufgrund ihrer Positionierung in einem bestimmten gesellschaftlichen Umfeld, überhaupt ein legitimes Mittel für Partizipation und Stadtentwicklung sein können.**
 
 ## Der Anfang: „Einfach mal machen"
 
