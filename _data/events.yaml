@@ -20,6 +20,21 @@
   url: https://opendataday.org/
 - date: 2023-09-22
   title: MÜNSTERHACK #7
-  text: Beim MÜNSTERHACK kommt die Tech-Szene in Münster zusammen und entwickelt gemeinsam Ideen und Prototypen, um die eigene Stadt noch lebenswerter zu machen. 
+  text: Beim MÜNSTERHACK kommt die Tech-Szene in Münster zusammen und entwickelt gemeinsam Ideen und Prototypen, um die eigene Stadt noch lebenswerter zu machen.
+  address: Digital Hub / items / Stadtwerke
+  url: https://www.muensterhack.de
+- date: 2024-03-02
+  title: Hackday Niederrhein 2024
+  text: Hackday Niederrhein ist ein Open Data Event mit Tradition - Zum 9. Mal kommen Interessierte aus der Region und darüber hinaus für ein Wochenende im Moerser Rathaus zusammen.
+  address: Vor Ort im Rathaus Moers sowie per Online-Stream
+  url: https://www.codeforniederrhein.de/hackday-2024/
+- date: 2024-03-05
+  title: Open Data Day Münster 2024
+  text: Ein Abend mit spannenden Kurzvorträgen zu Open Data. Es gibt praktische Anwendungsbeispiele und Möglichkeit zur Vernetzung in gemütlicher Atmosphäre bei Getränken und Snacks.
+  address: Haus der Nachhaltigkeit, Hammer Straße 1, Münster
+  url: https://opendata.stadt-muenster.de/blog/einladung-zum-open-data-day-m%C3%BCnster-am-05-m%C3%A4rz-2024
+- date: 2024-09-27
+  title: MÜNSTERHACK #8
+  text: Beim MÜNSTERHACK kommt die Tech-Szene in Münster zusammen und entwickelt gemeinsam Ideen und Prototypen, um die eigene Stadt noch lebenswerter zu machen.
   address: Digital Hub / items / Stadtwerke
   url: https://www.muensterhack.de
