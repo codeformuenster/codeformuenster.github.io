@@ -18,6 +18,10 @@ We're using a very fine theme called [bulma-clean-theme](https://github.com/chri
 
 Remove the `-e JEKYLL_GITHUB_TOKEN=my-github-token` option if you don't have a GitHub token handy (The GitHub API credentials you provided aren't valid.)
 
+**Error "You have already activated X, but your Gemfile requires Y"?**
+
+Deleting your `Gemfile.lock` should solve the problem.
+
 ### I want to add an image to the front page carousel
 
 - Add your image to `assets/img/carousel`
