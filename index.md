@@ -54,8 +54,7 @@ carousel_images:
 
 Als wichtiger Baustein unserer Demokratie, ermöglichen es Offene Daten, dass Bürger*innen sich besser über Stadt, Umwelt und Leben informieren und sich beteiligen können.
 
-Klingt interessant? Komm vorbei, wir sind immer offen für neue Leute! Unser regelmäßiges, offenes Treffen "Hacknight" finden jede zweite Woche dienstags um 19:30 Uhr im [SpecOps network
- (Aegidiimarkt 5)](https://www.openstreetmap.org/node/11698372143) statt.
+Klingt interessant? Komm vorbei, wir sind immer offen für neue Leute! Unser regelmäßiges, offenes Treffen "Hacknight" finden jede zweite Woche dienstags um 19:30 Uhr an wechselnden Orten statt.
 
 {% include hacknight.html %}
 
